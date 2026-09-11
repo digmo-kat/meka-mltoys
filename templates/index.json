@@ -131,6 +131,16 @@
     "a845fd8c-a661-412b-b2da-7787cec2a078": {
       "type": "collection-tabs",
       "blocks": {
+        "collection_HNknhK": {
+          "type": "collection",
+          "settings": {
+            "collection": "1-globo-transfers",
+            "collection_title": "",
+            "show_view_all": false,
+            "button_label": "View all",
+            "button_style_secondary": false
+          }
+        },
         "collection_7DKKte": {
           "type": "collection",
           "settings": {
@@ -183,6 +193,7 @@
         }
       },
       "block_order": [
+        "collection_HNknhK",
         "collection_7DKKte",
         "collection_PczVrk",
         "collection_rCjLVR",
