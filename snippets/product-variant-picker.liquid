@@ -101,5 +101,12 @@
     <script type="application/json">
       {{ product.variants | json }}
     </script>
+    <script type="application/vnd.linked-addon+json" id="LinkedAddonVariants-{{ section.id }}">
+      {
+        {%- for variant in product.variants -%}
+          "{{ variant.id }}": {% if variant.metafields.custom.product_variant.value %}{{ variant.metafields.custom.product_variant.value.id }}{% else %}null{% endif %}{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      }
+    </script>
   </variant-selects>
 {%- endunless -%}

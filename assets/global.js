@@ -1194,13 +1194,23 @@ function getFocusableElements(container) {
 	  shareButton.updateUrl(`${window.shopUrl}${this.dataset.url}?variant=${this.currentVariant.id}`);
 	}
 
+	getLinkedAddonMap() {
+	  if (!this.linkedAddonMap) {
+		const script = document.getElementById(`LinkedAddonVariants-${this.dataset.section}`);
+		this.linkedAddonMap = script ? JSON.parse(script.textContent) : {};
+	  }
+	  return this.linkedAddonMap;
+	}
+
 	updateVariantInput() {
 	  const productForms = document.querySelectorAll(
 		`#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`
 	  );
+	  const linkedVariantId = this.getLinkedAddonMap()[this.currentVariant.id];
 	  productForms.forEach((productForm) => {
 		const input = productForm.querySelector('input[name="id"]');
 		input.value = this.currentVariant.id;
+		productForm.dataset.linkedVariantId = linkedVariantId ? linkedVariantId : '';
 		input.dispatchEvent(new Event('change', { bubbles: true }));
 	  });
 	}

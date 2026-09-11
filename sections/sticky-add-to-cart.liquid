@@ -24,11 +24,18 @@
           {{ product.title | escape }}
         </p>
 
-        {% render 'price', 
-          product: product, 
-          use_variant: true, 
-          show_prices: true, 
+        {%- liquid
+          assign sticky_addon_price = 0
+          if product.selected_or_first_available_variant.metafields.custom.product_variant.value
+            assign sticky_addon_price = product.selected_or_first_available_variant.metafields.custom.product_variant.value.price
+          endif
+        -%}
+        {% render 'price',
+          product: product,
+          use_variant: true,
+          show_prices: true,
           show_badges: false,
+          extra_price: sticky_addon_price,
         %}
       </div>
 
@@ -47,13 +54,26 @@
             <span class="product-form__error-message"></span>
           </div>
 
-          {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+          {%- liquid
+            assign sticky_linked_addon_variant_id = ''
+            if product.selected_or_first_available_variant.metafields.custom.product_variant.value
+              assign sticky_linked_addon_variant_id = product.selected_or_first_available_variant.metafields.custom.product_variant.value.id
+            endif
+          -%}
+          {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form', data-linked-variant-id: sticky_linked_addon_variant_id -%}
             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
               {%- if product.has_only_default_variant == false -%}
                 <div class="select small-hide{% if section.settings.style != 'default' %} medium-hide large-up-hide{% endif %}">
                   <select name="id" class="atc-bar-product__select select__select" aria-label="Select variant">
                     {% for variant in product.variants %}
-                      <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %} data-price="{{ variant.price | money }}" {% if variant.featured_image != blank %}data-media="{{ variant.featured_image | image_url: width: 80 }}"{% endif %}>
+                      {%- liquid
+                        assign variant_addon_price = 0
+                        if variant.metafields.custom.product_variant.value
+                          assign variant_addon_price = variant.metafields.custom.product_variant.value.price
+                        endif
+                        assign variant_display_price = variant.price | plus: variant_addon_price
+                      -%}
+                      <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %} data-price="{{ variant_display_price | money }}" {% if variant.featured_image != blank %}data-media="{{ variant.featured_image | image_url: width: 80 }}"{% endif %}>
                         {{- variant.title -}}
                       </option>
                     {% endfor %}

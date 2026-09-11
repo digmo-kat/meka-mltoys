@@ -5,7 +5,17 @@ class CartRemoveButton extends HTMLElement {
     this.addEventListener('click', (event) => {
       event.preventDefault();
       const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
-      cartItems.updateQuantity(this.dataset.index, 0);
+      const linkedAddonButton = cartItems && cartItems.findLinkedAddonButton(this.dataset.variantId);
+
+      if (linkedAddonButton) {
+        cartItems.syncLinkedQuantities(
+          [this.dataset.variantId, linkedAddonButton.dataset.variantId],
+          0,
+          this.dataset.index
+        );
+      } else {
+        cartItems.updateQuantity(this.dataset.index, 0);
+      }
     });
   }
 }
@@ -190,6 +200,18 @@ class CartItems extends HTMLElement {
     this.initSlider();
   }
 
+  // If variantId is the "parent" of a native addon line (see product-form.js /
+  // product-variant-picker.liquid), find that addon's remove-button so both
+  // lines can be removed together.
+  findLinkedAddonButton(variantId) {
+    if (!variantId) return null;
+    return (
+      [...this.querySelectorAll('cart-remove-button')].find(
+        (button) => button.dataset.addonParentVariantId === variantId
+      ) || null
+    );
+  }
+
   getSectionsToRender() {
     return [
       {
@@ -216,6 +238,12 @@ class CartItems extends HTMLElement {
   }
 
   updateQuantity(line, quantity, name, variantId) {
+    const linkedAddonButton = this.findLinkedAddonButton(variantId);
+    if (linkedAddonButton) {
+      this.syncLinkedQuantities([variantId, linkedAddonButton.dataset.variantId], quantity, line);
+      return;
+    }
+
     this.enableLoading(line);
 
     const body = JSON.stringify({
@@ -298,6 +326,73 @@ class CartItems extends HTMLElement {
       })
       .finally(() => {
         this.disableLoading(line);
+      });
+  }
+
+  // Sets several cart lines to the same quantity in one request, keyed by
+  // variant id rather than line position, so index-shifting between the
+  // updates can't leave one of them behind. Used to keep a native addon
+  // line (e.g. an installation aid) in sync with the parent line it
+  // belongs to - including removing both together when quantity is 0.
+  syncLinkedQuantities(variantIds, quantity, primaryLine) {
+    this.enableLoading(primaryLine);
+
+    const updates = {};
+    variantIds.forEach((variantId) => {
+      updates[variantId] = quantity;
+    });
+
+    const body = JSON.stringify({
+      updates,
+      sections: this.getSectionsToRender().map((section) => section.section),
+      sections_url: window.location.pathname,
+    });
+
+    fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } })
+      .then((response) => response.text())
+      .then((state) => {
+        const parsedState = JSON.parse(state);
+        if (parsedState.errors) {
+          const errors = document.getElementById('cart-errors') || document.getElementById('CartDrawer-CartErrors');
+          errors.textContent = parsedState.errors;
+          return;
+        }
+
+        this.classList.toggle('is-empty', parsedState.item_count === 0);
+        const cartDrawerWrapper = document.querySelector('cart-drawer');
+        const cartFooter = document.getElementById('main-cart-footer');
+        if (cartFooter) cartFooter.classList.toggle('is-empty', parsedState.item_count === 0);
+        if (cartDrawerWrapper) cartDrawerWrapper.classList.toggle('is-empty', parsedState.item_count === 0);
+
+        this.getSectionsToRender().forEach((section) => {
+          const getSectionId = document.getElementById(section.id);
+          if (getSectionId != null) {
+            const elementToReplace =
+              document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
+            elementToReplace.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
+          }
+        });
+
+        if (parsedState.item_count === 0 && cartDrawerWrapper) {
+          trapFocus(cartDrawerWrapper.querySelector('.drawer__inner-empty'), cartDrawerWrapper.querySelector('a'));
+        }
+
+        publish(PUB_SUB_EVENTS.cartUpdate, { source: 'cart-items', cartData: parsedState });
+
+        const updateCartQuantityIconQ = document.querySelectorAll('.totals__items');
+        if (updateCartQuantityIconQ.length) {
+          updateCartQuantityIconQ.forEach((icon) => {
+            icon.textContent = parsedState.item_count;
+          });
+        }
+      })
+      .catch(() => {
+        this.querySelectorAll('.loading__spinner').forEach((overlay) => overlay.classList.add('hidden'));
+        const errors = document.getElementById('cart-errors') || document.getElementById('CartDrawer-CartErrors');
+        errors.textContent = window.cartStrings.error;
+      })
+      .finally(() => {
+        this.disableLoading(primaryLine);
       });
   }
 

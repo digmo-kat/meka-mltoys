@@ -11,7 +11,8 @@
     assign target = product.selected_or_first_available_variant
   endif
 
-  assign price = target.price | default: 1999
+  assign extra_price = extra_price | default: 0
+  assign price = target.price | default: 1999 | plus: extra_price
   assign compare_at_price = target.compare_at_price
   assign available = target.available | default: false
 

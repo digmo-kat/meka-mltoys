@@ -113,10 +113,13 @@
                       {%- for item in cart.items -%}
                         {%- liquid
                           assign isAddonProduct = false
+                          assign addon_parent_variant_id = ''
                           for property in item.properties
-                            if property contains '_gpo_parent_product_group'
+                            if property contains '_gpo_parent_product_group' or property contains '_addon_parent_group'
                               assign isAddonProduct = true
-                              break
+                            endif
+                            if property.first == '_addon_parent_group'
+                              assign addon_parent_variant_id = property.last | remove: 'main-'
                             endif
                           endfor
                         -%}
@@ -242,6 +245,10 @@
                                 <div class="quantity-popover-container{% if has_qty_rules or has_vol_pricing %} quantity-popover-container--hover{% endif %}">
                                   {%- if isAddonProduct -%}
                                   <input type="hidden" name="updates[]" value="{{ item.quantity }}">
+                                  <span class="cart-item__quantity-display">
+                                    <span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span>
+                                    {{ item.quantity }}
+                                  </span>
                                   {%- endif -%}
                                   {%- unless isAddonProduct -%}
                                   <quantity-input class="quantity cart-quantity ml-button-primary">
@@ -271,7 +278,7 @@
                                   {%- endunless -%}
                                 </div>
 
-                                <cart-remove-button id="CartDrawer-Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                                <cart-remove-button id="CartDrawer-Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}" data-variant-id="{{ item.variant.id }}" data-addon-parent-variant-id="{{ addon_parent_variant_id }}">
                                   {%- liquid
                                     assign remove_button_style = ''
                                     assign remove_button_icon = false

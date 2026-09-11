@@ -26,6 +26,11 @@
       if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
         assign show_dynamic_checkout = true
       endif
+
+      assign linked_addon_variant_id = ''
+      if product.selected_or_first_available_variant.metafields.custom.product_variant.value
+        assign linked_addon_variant_id = product.selected_or_first_available_variant.metafields.custom.product_variant.value.id
+      endif
     -%}
 
     <product-form class="product-form" data-hide-errors="{{ gift_card_recipient_feature_active }}" data-section-id="{{ section.id }}">
@@ -40,7 +45,7 @@
       </div>
 
       {%- form 'product', product, id: product_form_id, class: 'form',
-        novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+        novalidate: 'novalidate', data-type: 'add-to-cart-form', data-linked-variant-id: linked_addon_variant_id -%}
 
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %} disabled {% endif %} class="product-variant-id">
 

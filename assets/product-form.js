@@ -45,10 +45,7 @@ if (!customElements.get('product-form')) {
 			this.querySelector('.loading__spinner').classList.remove('hidden');
 		  }
 
-		  const config = fetchConfig('javascript');
-		  config.headers['X-Requested-With'] = 'XMLHttpRequest';
-		  delete config.headers['Content-Type'];
-
+		  const linkedVariantId = this.form.dataset.linkedVariantId;
 		  const formData = new FormData(this.form);
 
 		  // Re-check for cart element in case it wasn't available during initialization
@@ -56,15 +53,55 @@ if (!customElements.get('product-form')) {
 			this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
 		  }
 
-		  if (this.cart) {
-			formData.append(
-			  'sections',
-			  this.cart.getSectionsToRender().map((section) => section.id)
-			);
-			formData.append('sections_url', window.location.pathname);
-			this.cart.setActiveElement(document.activeElement);
+		  let config;
+		  if (linkedVariantId) {
+			// This variant carries a linked addon (e.g. an installation aid) - add both
+			// as separate cart line items in one request. NOTE: this intentionally does NOT
+			// reuse Globo's `_gpo_parent_product_group` key - Globo's own app-embed script
+			// (still active site-wide during the migration) scans the cart on page load and
+			// strips any line carrying that exact property that it didn't create itself.
+			// `_addon_parent_group` is our own key; cart-drawer.liquid and main-cart-items.liquid
+			// check for either key so both Globo and natively-migrated addons render the same way.
+			const quantity = Number(formData.get('quantity')) || 1;
+			const payload = {
+			  items: [
+				{ id: Number(formData.get('id')), quantity },
+				{
+				  id: Number(linkedVariantId),
+				  quantity,
+				  properties: { _addon_parent_group: `main-${formData.get('id')}` },
+				},
+			  ],
+			};
+			if (this.cart) {
+			  payload.sections = this.cart.getSectionsToRender().map((section) => section.id);
+			  payload.sections_url = window.location.pathname;
+			  this.cart.setActiveElement(document.activeElement);
+			}
+			config = {
+			  method: 'POST',
+			  headers: {
+				'Content-Type': 'application/json',
+				Accept: 'application/json',
+				'X-Requested-With': 'XMLHttpRequest',
+			  },
+			  body: JSON.stringify(payload),
+			};
+		  } else {
+			config = fetchConfig('javascript');
+			config.headers['X-Requested-With'] = 'XMLHttpRequest';
+			delete config.headers['Content-Type'];
+
+			if (this.cart) {
+			  formData.append(
+				'sections',
+				this.cart.getSectionsToRender().map((section) => section.id)
+			  );
+			  formData.append('sections_url', window.location.pathname);
+			  this.cart.setActiveElement(document.activeElement);
+			}
+			config.body = formData;
 		  }
-		  config.body = formData;
 
 		  fetch(`${routes.cart_add_url}`, config)
 			.then((response) => response.json())

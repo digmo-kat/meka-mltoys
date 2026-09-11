@@ -111,11 +111,17 @@
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {% liquid
                     assign price_class = 'price--size-' | append: block.settings.price_size | append: ' price--color-' | append: block.settings.price_color
+
+                    assign linked_addon_price = 0
+                    if product.selected_or_first_available_variant.metafields.custom.product_variant.value
+                      assign linked_addon_price = product.selected_or_first_available_variant.metafields.custom.product_variant.value.price
+                    endif
                   %}
                   {%- render 'price',
                     product: product,
                     use_variant: true,
                     price_class: price_class,
+                    extra_price: linked_addon_price,
                     show_shipping_message: block.settings.show_shipping_message,
                     shipping_message_text: block.settings.shipping_message_text,
                     shipping_page: block.settings.shipping_page
