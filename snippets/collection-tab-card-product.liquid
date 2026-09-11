@@ -243,10 +243,6 @@
         {% comment %} here  {% endcomment %}
         {%- if show_quick_add -%}
           <div class="ml-toys-card-actions">
-            {%- liquid
-              assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
-            -%}
-
             <!-- View More Button (triggers quick shop modal) -->
             {% if card_product.gift_card? != true %}
               <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
@@ -266,24 +262,6 @@
                 </div>
               </quick-add-modal>
             {% endif %}
-
-            <!-- Plus Add Button -->
-            <product-form data-section-id="{{ section.id }}">
-              {%- form 'product' , card_product , id: product_form_id , class: 'form' , novalidate: 'novalidate' , data-type: 'add-to-cart-form' -%}
-                <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" class="product-variant-id"
-                  {% if card_product.selected_or_first_available_variant.available == false %} disabled {% endif %}>
-
-                <button id="{{ product_form_id }}-submit" type="submit" name="add"
-                  class="ml-toys-plus-btn"
-                  aria-label="Add {{ card_product.title | escape }} to cart"
-                  aria-live="polite" data-sold-out-message="true"
-                  {% if card_product.selected_or_first_available_variant.available == false %} disabled{% endif %}>
-
-                  <span class="ml-toys-plus-icon">+</span>
-                  {%- render 'loading-spinner' -%}
-                </button>
-              {%- endform -%}
-            </product-form>
           </div>
         {%- endif -%}
 

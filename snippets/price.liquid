@@ -62,7 +62,7 @@
   assign rendered_message = shipping_message_text | replace: ship_word, ship_link
 -%}
 
-<div class="price{% if price_class %} {{ price_class }}{% endif %}{% unless available %} price--sold-out{% endunless %}{% if on_sale %} price--on-sale{% endif %}{% if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}">
+<div class="price{% if price_class %} {{ price_class }}{% endif %}{% unless available %} price--sold-out{% endunless %}{% if on_sale %} price--on-sale{% endif %}{% if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}" data-unit-price="{{ price }}">
   <div class="price__container">
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>

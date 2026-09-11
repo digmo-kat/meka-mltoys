@@ -234,6 +234,7 @@ function getFocusableElements(container) {
 
 	onInputChange(event) {
 	  this.validateQtyRules();
+	  updatePriceForQuantity(this.input);
 	}
 
 	onButtonClick(event) {
@@ -286,6 +287,72 @@ function getFocusableElements(container) {
 	  method: 'POST',
 	  headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
 	};
+  }
+
+  // Formats a price in cents using the shop's money_format setting
+  // (window.moneyFormat, set in layout/theme.liquid). Standard Shopify
+  // formatMoney algorithm - no theme utility for this existed previously.
+  function formatMoney(cents, format) {
+	if (typeof cents === 'string') cents = cents.replace('.', '');
+	const formatString = format || window.moneyFormat || '${{amount}}';
+
+	function formatWithDelimiters(number, precision = 2, thousands = ',', decimal = '.') {
+	  if (isNaN(number) || number == null) return '0';
+
+	  number = (number / 100.0).toFixed(precision);
+
+	  const parts = number.split('.');
+	  const dollars = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, `$1${thousands}`);
+	  const centsPart = parts[1] ? decimal + parts[1] : '';
+
+	  return dollars + centsPart;
+	}
+
+	const placeholderMatch = formatString.match(/\{\{\s*(\w+)\s*\}\}/);
+	if (!placeholderMatch) return formatString;
+
+	let value;
+	switch (placeholderMatch[1]) {
+	  case 'amount_no_decimals':
+		value = formatWithDelimiters(cents, 0);
+		break;
+	  case 'amount_with_comma_separator':
+		value = formatWithDelimiters(cents, 2, '.', ',');
+		break;
+	  case 'amount_no_decimals_with_comma_separator':
+		value = formatWithDelimiters(cents, 0, '.', ',');
+		break;
+	  default:
+		value = formatWithDelimiters(cents, 2);
+	}
+
+	return formatString.replace(placeholderMatch[0], value);
+  }
+
+  // Keeps a product's displayed price in sync with its quantity input,
+  // showing quantity x unit price rather than a static per-unit price.
+  // Works for the main product page and the quick-add modal alike, since
+  // both share the same price-{sectionId} / Quantity-{sectionId} id pairing
+  // (see snippets/price.liquid, snippets/buy-buttons.liquid).
+  function updatePriceForQuantity(quantityInput) {
+	if (!quantityInput || !quantityInput.id) return;
+
+	const suffix = quantityInput.id.replace(/^Quantity-/, '');
+	const priceWrapper = document.getElementById(`price-${suffix}`);
+	const priceElement = priceWrapper && priceWrapper.querySelector('.price[data-unit-price]');
+	if (!priceElement) return;
+
+	const unitPrice = Number(priceElement.dataset.unitPrice);
+	if (!unitPrice) return;
+
+	const quantity = Number(quantityInput.value) || 1;
+	const formatted = formatMoney(unitPrice * quantity);
+
+	priceElement
+	  .querySelectorAll('.price__regular .price-item--regular, .price__sale .price-item--sale')
+	  .forEach((el) => {
+		el.textContent = formatted;
+	  });
   }
 
   /*
