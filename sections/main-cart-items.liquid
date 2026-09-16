@@ -143,10 +143,13 @@
               {%- for item in cart.items -%}
                 {%- liquid
                   assign isAddonProduct = false
+                  assign addon_parent_variant_id = ''
                   for property in item.properties
-                    if property contains '_gpo_parent_product_group'
+                    if property contains '_gpo_parent_product_group' or property contains '_addon_parent_group'
                       assign isAddonProduct = true
-                      break
+                    endif
+                    if property.first == '_addon_parent_group'
+                      assign addon_parent_variant_id = property.last | remove: 'main-'
                     endif
                   endfor
                 -%}
@@ -307,6 +310,10 @@
                           {%- endif -%}
                           {%- if isAddonProduct -%}
                           <input type="hidden" name="updates[]" value="{{ item.quantity }}">
+                          <span class="cart-item__quantity-display">
+                            <span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span>
+                            {{ item.quantity }}
+                          </span>
                           {%- endif -%}
                           {%- unless isAddonProduct -%}
                           <quantity-input class="quantity cart-quantity ml-button-primary">
@@ -475,7 +482,7 @@
                   </td>
 
                   <td class="cart-item__remove">
-                    <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                    <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}" data-variant-id="{{ item.variant.id }}" data-addon-parent-variant-id="{{ addon_parent_variant_id }}">
                       <a href="{{ item.url_to_remove }}" class="{{ button_style }} cart-item__remove-btn" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
                         {%- if section.settings.button_style != 'link_icon' -%}
                           <span class="small-hide"> {{ 'sections.cart.remove' | t }} </span>

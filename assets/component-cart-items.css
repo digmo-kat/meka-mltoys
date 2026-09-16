@@ -507,6 +507,12 @@ cart-items .title-wrapper-with-link {
   .cart-wrapper .cart-item.cart-item--addon .cart-item__quantity {
     padding-left: 0;
     width: auto;
+    text-align: center;
+  }
+
+  .cart-wrapper .cart-item.cart-item--addon .cart-item__quantity-wrapper {
+    width: 100%;
+    justify-content: center;
   }
 }
 

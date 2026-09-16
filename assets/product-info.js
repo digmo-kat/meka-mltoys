@@ -57,6 +57,7 @@ if (!customElements.get('product-info')) {
           this.input.removeAttribute('max')
         }
         this.input.value = min;
+        updatePriceForQuantity(this.input);
         publish(PUB_SUB_EVENTS.quantityUpdate, undefined);
       }
 

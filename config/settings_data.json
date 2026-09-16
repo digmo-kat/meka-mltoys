@@ -95,7 +95,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": false,
-    "cart_type": "page",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": true,
     "cart_show_agree_to_terms_checkbox": false,
@@ -179,11 +179,6 @@
       },
       "319724205969189013": {
         "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
-        "disabled": false,
-        "settings": {}
-      },
-      "15971307017328703636": {
-        "type": "shopify://apps/ecom-youtube-card-gallery/blocks/app-embed/a0f27191-6c92-4d0a-a87c-2e3f3ecdeeab",
         "disabled": false,
         "settings": {}
       },

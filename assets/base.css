@@ -4736,6 +4736,18 @@ details-disclosure > details {
   display: none;
 }
 
+/* read-only quantity display for addon line items (no stepper, not editable) */
+.cart-item__quantity-display {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-width: 4.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
 /*****************
 
 DIGMO UPDATES BEGIN

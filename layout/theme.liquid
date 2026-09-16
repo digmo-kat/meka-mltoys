@@ -397,6 +397,7 @@
 
     <script>
       window.shopUrl = '{{ request.origin }}';
+      window.moneyFormat = {{ shop.money_format | json }};
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
