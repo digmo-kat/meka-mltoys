@@ -246,6 +246,7 @@
                                   {%- if isAddonProduct -%}
                                   <input type="hidden" name="updates[]" value="{{ item.quantity }}">
                                   <span class="cart-item__quantity-display">
+                                    <span aria-hidden="true">QTY:</span>
                                     <span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span>
                                     {{ item.quantity }}
                                   </span>
