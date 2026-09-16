@@ -1,0 +1,70 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "aside",
+  "name": "Features",
+  "sections": {
+    "notification_f8xtxd": {
+      "type": "notification",
+      "disabled": true,
+      "settings": {
+        "enable_in_customizer": false,
+        "color_scheme": "",
+        "show_notifications_times": 1,
+        "notification": "Welcome discount of 10%",
+        "custom_text_color": "#083c7e",
+        "highlight_text": "10%",
+        "custom_highlight_text_color": "#fb542f"
+      }
+    },
+    "social_share_eJkHCm": {
+      "type": "social-share",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "social_label": "Share",
+        "show_linkedin_share": true,
+        "show_fb_share": true,
+        "show_twitter_share": true,
+        "show_pinterest_share": false,
+        "show_telegram_share": false,
+        "show_snapchat_share": false,
+        "show_tumblr_share": false,
+        "show_mobile": false
+      }
+    },
+    "promo_popup_Nph6RR": {
+      "type": "promo-popup",
+      "disabled": true,
+      "settings": {
+        "enable_in_customizer": false,
+        "popup_type": "popup_subscribe",
+        "enable_promo_popup": true,
+        "color_scheme": "",
+        "popup_text": "<h3>Welcome to Autoparts!</h3><p>Join our newsletter for exclusive updates and offers.</p>",
+        "popup_description": "<h6>Get 10% off on your first purchase</h6>",
+        "text_alignment": "center",
+        "popup_tag": "Discount code.",
+        "popup_timeout": 30,
+        "popup_times": 1,
+        "discount_popup_heading": "Congratulations! You’ve successfully joined our list",
+        "discount_popup_description": "<p>Stay tuned for further updates</p>",
+        "text_color": "foreground",
+        "discount_promocode": "Promo",
+        "text_alignment_promo": "center"
+      }
+    }
+  },
+  "order": [
+    "notification_f8xtxd",
+    "social_share_eJkHCm",
+    "promo_popup_Nph6RR"
+  ]
+}

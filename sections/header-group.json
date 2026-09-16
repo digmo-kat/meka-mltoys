@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Introducing the ML Toys Fire Truck Vehicle!",
-            "link": "shopify://products/firetruck-12v-ride-on-vehicle"
+            "text": "Exclusive ML Toys Fire Truck Vehicle!",
+            "link": "https://www.mltoys.com/products/firetruck-ride-on-vehicle"
           }
         }
       },
@@ -77,7 +77,7 @@
         "drawer_card_badge_text": "NEW",
         "drawer_card_title": "MLToys Fire Truck 12v Ride-On Vehicle",
         "drawer_card_subtext": "The ML Toys Fire Truck is here! The 12V Ride-On Fire Truck isn't just another toy off a warehouse pallet — it's the ride-on we wish existed when we were small.",
-        "drawer_card_button_link": "shopify://products/firetruck-12v-ride-on-vehicle",
+        "drawer_card_button_link": "shopify://products/firetruck-ride-on-vehicle",
         "drawer_card_button_text": "Shop Now",
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,

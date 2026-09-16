@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_top": false,
+        "radius_background": true,
+        "banner_height": "default",
+        "banner_mobile_height": "default",
+        "content_alignment": "top",
+        "image_block": false,
+        "image_size": "60",
+        "image_overlay_opacity": 70,
+        "title": "",
+        "heading_size": "h1",
+        "description_text": "",
+        "text_size_block": "medium",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "text_secondary_color": false,
+        "section_full_width": true,
+        "section_background": "#ffffff",
+        "content_text_color": "main",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "content_padding_top": 50,
+        "content_padding_bottom": 50
+      }
+    },
+    "featured_grid_teH8cm": {
+      "type": "featured-grid",
+      "blocks": {
+        "grid_item_3Lqhkx": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-batteries_1.jpg",
+            "title": "Upgraded Batteries For Power Wheels & Ride on Toys",
+            "url": "https://www.mltoys.com/collections/power-wheels-upgrade-batteries"
+          }
+        },
+        "grid_item_8MdKKP": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-electrical_37b5c53c-3070-4a14-b424-f7c2c051a4e8.jpg",
+            "title": "Electrical Upgrades For Power Wheels & Ride-On Toys",
+            "url": "https://www.mltoys.com/collections/power-wheels-electrical-upgrades"
+          }
+        },
+        "grid_item_qCWh9e": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/MLToys-Stage-V-66_22-Gears-3.jpg",
+            "title": "Upgraded Individual Performance Gears For Power Wheels & Ride-On Toys",
+            "url": "https://www.mltoys.com/collections/individual-performance-gears-for-power-wheels"
+          }
+        },
+        "grid_item_hFezNV": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/replacement_775.jpg",
+            "title": "Upgraded & Faster Motors for Power Wheels & Ride-On Toys",
+            "url": "shopify://collections/power-wheels-motor-upgrades"
+          }
+        },
+        "grid_item_fAMijw": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-motor-systems.jpg",
+            "title": "Motor / Gearing Tuned Systems",
+            "url": "https://www.mltoys.com/collections/motor-gearing-tuned-systems"
+          }
+        },
+        "grid_item_FAVU3L": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-lighting_8396c57a-2348-4eab-ae88-6040525014e9.jpg",
+            "title": "Lighting Upgrades for Power Wheels & Ride-On Toys",
+            "url": "shopify://collections/power-wheels-lighting-upgrades"
+          }
+        },
+        "grid_item_Q8gttg": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/3900-3179-2.jpg",
+            "title": "Power Wheels Stickers",
+            "url": "shopify://collections/stickers"
+          }
+        },
+        "grid_item_TQeAEQ": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/18v_lithium_combo_505815b0-8ec3-4d83-a4ff-25f32ec8c68c.jpg",
+            "title": "Combination Kits",
+            "url": "shopify://collections/combination-kits"
+          }
+        },
+        "grid_item_6TGyW4": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/First_Gear_Delete_Kid_Trax.png",
+            "title": "Racing-Parts",
+            "url": "shopify://collections/racing-parts"
+          }
+        },
+        "grid_item_ThMDLL": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-other-cool-upgrades.jpg",
+            "title": "Other Cool Upgrades",
+            "url": "shopify://collections/other-cool-upgrades"
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_3Lqhkx",
+        "grid_item_8MdKKP",
+        "grid_item_qCWh9e",
+        "grid_item_hFezNV",
+        "grid_item_fAMijw",
+        "grid_item_FAVU3L",
+        "grid_item_Q8gttg",
+        "grid_item_TQeAEQ",
+        "grid_item_6TGyW4",
+        "grid_item_ThMDLL"
+      ],
+      "name": "Grid view",
+      "settings": {
+        "grid_gap": 30,
+        "padding_top": 72,
+        "padding_bottom": 76,
+        "text_alignment": "center",
+        "image_border_radius": 14,
+        "title_size": 18,
+        "title_spacing": 18,
+        "title_weight": "700",
+        "title_color": "#1d1d1f"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_grid_teH8cm"
+  ]
+}

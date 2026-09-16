@@ -1,0 +1,161 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_top": false,
+        "image": "",
+        "radius_background": false,
+        "banner_height": "default",
+        "banner_mobile_height": "default",
+        "content_alignment": "top",
+        "image_block": false,
+        "image_size": "60",
+        "image_overlay_opacity": 70,
+        "title": "Gifts page",
+        "heading_size": "h0",
+        "description_text": "<p>Discover the perfect presents for car lovers. Our premium automotive accessories <\/p><p>enhance comfort, protection, and convenience for every drive.<\/p>",
+        "text_size_block": "medium",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "text_secondary_color": false,
+        "section_full_width": true,
+        "section_background": "#f4f2ec",
+        "padding_top": 200,
+        "padding_bottom": 60,
+        "content_padding_top": 100,
+        "content_padding_bottom": 100
+      }
+    },
+    "featured_collection_gb3Lke": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Top gifts for car enthusiasts",
+        "heading_size": "h2",
+        "description": "",
+        "text_size_block": "medium",
+        "show_description": false,
+        "countdown_label": "",
+        "countdown_font_weight": "600",
+        "numbers_size": "h4",
+        "countdown_date": "",
+        "countdown_end": "cycle",
+        "days_label": "Days",
+        "hours_label": "Hours",
+        "mins_label": "Minutes",
+        "secs_label": "Seconds",
+        "countdown_label_bg": "",
+        "collection": "",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "landscape",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 134,
+        "padding_bottom": 70
+      }
+    },
+    "featured_product_kDhind": {
+      "type": "featured-product",
+      "blocks": {
+        "product_label_CnJkTF": {
+          "type": "product_label",
+          "settings": {
+            "text": "Automotive Accessories",
+            "text_color": "#ffffff",
+            "background_color": "#2cb683"
+          }
+        },
+        "title_KQwnQi": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price_4YhMj3": {
+          "type": "price",
+          "settings": {
+            "price_size": "price--medium"
+          }
+        },
+        "text_KJRRgp": {
+          "type": "text",
+          "settings": {
+            "text": "Give the gift of choice with our versatile gift cards, perfect for any occasion.",
+            "text_size_block": "medium",
+            "text_style": "body"
+          }
+        },
+        "variant_picker_DMKN9R": {
+          "type": "variant_picker",
+          "settings": {
+            "color_scheme": "",
+            "picker_type": "button",
+            "swatch_picker_type": "button",
+            "swatch_shape": "square",
+            "swatches_style": "outlined"
+          }
+        },
+        "buy_buttons_DRdLTe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "product_label_CnJkTF",
+        "title_KQwnQi",
+        "price_4YhMj3",
+        "text_KJRRgp",
+        "variant_picker_DMKN9R",
+        "buy_buttons_DRdLTe"
+      ],
+      "settings": {
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": true,
+        "secondary_background_color": "#f4f2ec",
+        "enable_sticky_info": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "thumbnail_position": "bottom",
+        "media_position": "left",
+        "mobile_thumbnails": "show",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 70,
+        "padding_bottom": 140
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_collection_gb3Lke",
+    "featured_product_kDhind"
+  ]
+}

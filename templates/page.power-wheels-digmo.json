@@ -1,0 +1,377 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_top": false,
+        "radius_background": true,
+        "banner_height": "default",
+        "banner_mobile_height": "default",
+        "content_alignment": "top",
+        "image_block": false,
+        "image_size": "60",
+        "image_overlay_opacity": 70,
+        "title": "",
+        "heading_size": "h1",
+        "description_text": "<p>Power Wheels aren't just for the backyard anymore! There are lots of places you can take your kid to compete against others in a variety of racing formats. From drag racing to demolition derbies, this is a list of parts that are used by racers around the world to bring home the trophy!</p>",
+        "text_size_block": "medium",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "text_secondary_color": false,
+        "section_full_width": true,
+        "section_background": "#ffffff",
+        "content_text_color": "main",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "content_padding_top": 50,
+        "content_padding_bottom": 50
+      }
+    },
+    "featured_grid_geV8d4": {
+      "type": "featured-grid",
+      "blocks": {
+        "grid_item_hfwMmK": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/775BBI_1.jpg",
+            "title": "Matched Pair of 775 Ball Bearing Performance Motors",
+            "url": "https://www.mltoys.com/products/matched-pair-of-775-ball-bearing-performance-motors"
+          }
+        },
+        "grid_item_jWCThX": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/775-heatsink-2.jpg",
+            "title": "775 Heatsink",
+            "url": "https://www.mltoys.com/products/775-heatsink"
+          }
+        },
+        "grid_item_Crar7Q": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Dual775motorFirstGearDelete.jpg",
+            "title": "Phoenix First Gear Delete & Dual 775 Motor Mounting Plates",
+            "url": "https://www.mltoys.com/products/phoenix-first-gear-delete-dual-775-motor-mounting-plates"
+          }
+        },
+        "grid_item_TkDJTP": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/First_Gear_Delete_7R.jpg",
+            "title": "7R First Gear Delete & Dual 775 Motor Mounting Plates",
+            "url": "https://www.mltoys.com/products/7r-first-gear-delete-dual-775-motor-mounting-plates"
+          }
+        },
+        "grid_item_MjHEAz": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/First_Gear_Delete_Kid_Trax.jpg",
+            "title": "Kid Trax First Gear Delete & Dual 775 Motor Mounting Plates",
+            "url": "https://www.mltoys.com/products/kid-trax-first-gear-delete-dual-775-motor-mounting-plates"
+          }
+        },
+        "grid_item_4MC3DY": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/solenoid.png",
+            "title": "Heavy Duty Solenoid",
+            "url": "https://www.mltoys.com/products/heavy-duty-solenoid"
+          }
+        },
+        "grid_item_CPqEzt": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/KillSwitch1.png",
+            "title": "High Capacity Kill Switch",
+            "url": "https://www.mltoys.com/products/high-capacity-kill-switch"
+          }
+        },
+        "grid_item_aYBG3W": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Drag_Wheel1.jpg",
+            "title": "Drag Front Wheels & Bearings",
+            "url": "shopify://products/dragster-front-wheels-bearings"
+          }
+        },
+        "grid_item_wqQfHG": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Steeringstabilizer.jpg",
+            "title": "Steering Stabilizer and Toe Adjuster",
+            "url": "https://www.mltoys.com/products/steering-stabilizer-and-toe-adjuster"
+          }
+        },
+        "grid_item_wyHtKp": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Wheelie3.jpg",
+            "title": "Wheelie Bar Kit",
+            "url": "https://www.mltoys.com/products/wheelie-bar-kit"
+          }
+        },
+        "grid_item_kpTjhm": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/100aBreaker.png",
+            "title": "100 amp Breaker",
+            "url": "https://www.mltoys.com/products/100-amp-breaker"
+          }
+        },
+        "grid_item_QgFwPH": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/8awgterminals_d5db531d-956c-4ddc-a22b-cd5b6d295558.png",
+            "title": "8awg Junction Terminal Bus Blocks",
+            "url": "https://www.mltoys.com/products/8awg-junction-terminal-blocks"
+          }
+        },
+        "grid_item_tinjMb": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled.png",
+            "title": "8AWG Wire 10'",
+            "url": "https://www.mltoys.com/products/8awg-wire-10"
+          }
+        },
+        "grid_item_FkXTmD": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/8awgconnectorrings.png",
+            "title": "8awg Copper Ring Wire Connectors",
+            "url": "https://www.mltoys.com/products/8awg-copper-ring-wire-connectors-due-early-july-if-you-order-now"
+          }
+        },
+        "grid_item_9NpRF9": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/killswitch3.jpg",
+            "title": "Kill Switch / Removable Key",
+            "url": "https://www.mltoys.com/products/key-start-for-ride-ons"
+          }
+        },
+        "grid_item_PqiwrK": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/36vConversionKit.jpg",
+            "title": "36 Volt Conversion Kit * RACE ONLY *",
+            "url": "https://www.mltoys.com/products/36-volt-conversion-kit-race-only"
+          }
+        },
+        "grid_item_YPC6Uz": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Podium-Banner-2.png",
+            "title": "Power Wheels Podium Banner - Borrow or Buy",
+            "url": "https://www.mltoys.com/products/power-wheels-podium-banner-borrow-or-buy"
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_hfwMmK",
+        "grid_item_jWCThX",
+        "grid_item_Crar7Q",
+        "grid_item_TkDJTP",
+        "grid_item_MjHEAz",
+        "grid_item_4MC3DY",
+        "grid_item_CPqEzt",
+        "grid_item_aYBG3W",
+        "grid_item_wqQfHG",
+        "grid_item_wyHtKp",
+        "grid_item_kpTjhm",
+        "grid_item_QgFwPH",
+        "grid_item_tinjMb",
+        "grid_item_FkXTmD",
+        "grid_item_9NpRF9",
+        "grid_item_PqiwrK",
+        "grid_item_YPC6Uz"
+      ],
+      "name": "Grid view",
+      "settings": {
+        "grid_gap": 30,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "text_alignment": "center",
+        "image_border_radius": 14,
+        "title_size": 18,
+        "title_spacing": 12,
+        "title_weight": "700",
+        "title_color": "#1d1d1f"
+      }
+    },
+    "ml_toys_product_slider_eCpE3j": {
+      "type": "ml-toys-product-slider",
+      "blocks": {
+        "slide_iTb9jR": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/unblurimageai_Mask_group_1.jpg",
+            "enable_img_radius": true,
+            "slide_title": "Drag racing",
+            "highlight_slide_title": "",
+            "heading_size": "h2",
+            "slide_description": "",
+            "text_size_block": "medium",
+            "text_color": "main",
+            "slide_link": "shopify://blogs/power-wheels-and-ride-on-toys/how-to-get-in-to-power-wheels-racing",
+            "slide_link_label": "See Rules",
+            "enable_add_to_cart": false,
+            "color_scheme_slide": "scheme-3",
+            "product": "",
+            "product_heading_font_family": "heading-font"
+          }
+        }
+      },
+      "block_order": [
+        "slide_iTb9jR"
+      ],
+      "name": "ML Toys Product slider",
+      "settings": {
+        "enable_ripped_edges_top": false,
+        "image_position": "image-right",
+        "section_color": "",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
+    "image_with_text_g8Eize": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fxFR3R": {
+          "type": "heading",
+          "settings": {
+            "heading": "<a>Demolition Derbies</a>",
+            "heading_size": "h2"
+          }
+        },
+        "text_VRHpXL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>An easy event to organize. Tape a balloon to each side of the cars. Last kid with a balloon inflated wins.</p><p>We recommend no more than 18v for this type event.</p>",
+            "text_style": "body",
+            "text_color": "foreground"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fxFR3R",
+        "text_VRHpXL"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/power_wheels_demo_derby_1200x_2045561c-f48f-4211-8dca-61685f67f592.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
+    "image_with_text_34mVt7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gdG43D": {
+          "type": "heading",
+          "settings": {
+            "heading": "<a>Road Course Racing</a>",
+            "heading_size": "h2"
+          }
+        },
+        "text_mkT7ED": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use cones or chalk to create a course in your neighborhood. Or contact a local gocart track to see if they'll host an event.</p><p>We recommend creating classes for 12 volt, 18 volt, and 24 volt.</p><p>Great birthday party on a cul-de-sac!</p>",
+            "text_style": "body",
+            "text_color": "foreground"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gdG43D",
+        "text_mkT7ED"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/DSCF1662.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 22
+      }
+    },
+    "image_with_text_Hqgpmy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Hp86Fk": {
+          "type": "heading",
+          "settings": {
+            "heading": "<a>How to Find a Race</a>",
+            "heading_size": "h2"
+          }
+        },
+        "text_PnhUPr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most races are organized through Facebook. Ask on the Power Wheels Addicts group to find out what's near you. Also check at county fairs, go cart tracks, local racetracks, and monster truck shows.</p><p>If you don't find one then make one! It's not hard to do. Reach out to us if you need help.</p>",
+            "text_style": "body",
+            "text_color": "foreground"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hp86Fk",
+        "text_PnhUPr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/county_fair_racing_1200x_e680968d-999f-46ef-9d20-853ef94edf6a.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_grid_geV8d4",
+    "ml_toys_product_slider_eCpE3j",
+    "image_with_text_g8Eize",
+    "image_with_text_34mVt7",
+    "image_with_text_Hqgpmy"
+  ]
+}

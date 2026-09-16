@@ -12,6 +12,32 @@
     "6a2fc120-4bf3-4610-a05d-7f55944c6720": {
       "type": "image-banner-filter",
       "blocks": {
+        "image_slide_73mVmn": {
+          "type": "image_slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Labor_Day_-Desktop.jpg",
+            "image_mobile": "shopify://shop_images/Labor_Day_-Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Save 15% - Limited Time",
+            "heading_size": "h1",
+            "text": "<p>Shop The Labor Day sale and save 15% on most items in the store. Hurry, this sale ends Monday.</p>",
+            "text_size_block": "medium",
+            "button_label_1": "Shop By Vehicle",
+            "button_link_1": "shopify://pages/upgrades-by-vehicle",
+            "button_style_secondary_1": false,
+            "enable_button_arrow": false,
+            "button_label_2": "Shop By Category",
+            "button_link_2": "shopify://pages/upgrades-by-category",
+            "button_style_secondary_2": true,
+            "color_scheme": "scheme-3",
+            "show_text_box": false,
+            "desktop_content_position": "bottom-center",
+            "mobile_content_position": "bottom-center",
+            "desktop_content_alignment": "left",
+            "mobile_content_alignment": "center"
+          }
+        },
         "image_slide_6Dg7rM": {
           "type": "image_slide",
           "settings": {
@@ -48,37 +74,11 @@
             "text": "",
             "text_size_block": "medium",
             "button_label_1": "View Now",
-            "button_link_1": "shopify://products/firetruck-12v-ride-on-vehicle",
+            "button_link_1": "shopify://products/firetruck-ride-on-vehicle",
             "button_style_secondary_1": false,
             "enable_button_arrow": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": true,
-            "color_scheme": "scheme-3",
-            "show_text_box": false,
-            "desktop_content_position": "bottom-center",
-            "mobile_content_position": "bottom-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "center"
-          }
-        },
-        "image_slide_73mVmn": {
-          "type": "image_slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/unblurimageai_Mask_group_1_88e68c94-4d8a-493f-9f8e-b3e09bded034.jpg",
-            "image_mobile": "shopify://shop_images/unblurimageai_Mask_group_2.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "Save 15% On Racing Parts",
-            "heading_size": "h1",
-            "text": "<p>For a limited time, our most serious riders can save on performance racing parts!</p>",
-            "text_size_block": "medium",
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify://pages/power-wheels-racing",
-            "button_style_secondary_1": false,
-            "enable_button_arrow": false,
-            "button_label_2": "Racing Parts!",
-            "button_link_2": "shopify://pages/power-wheels-racing",
             "button_style_secondary_2": true,
             "color_scheme": "scheme-3",
             "show_text_box": false,
@@ -115,9 +115,9 @@
         }
       },
       "block_order": [
+        "image_slide_73mVmn",
         "image_slide_6Dg7rM",
         "image_slide_JcyBwK",
-        "image_slide_73mVmn",
         "image_slide_TGGRkA"
       ],
       "settings": {
@@ -131,16 +131,6 @@
     "a845fd8c-a661-412b-b2da-7787cec2a078": {
       "type": "collection-tabs",
       "blocks": {
-        "collection_HNknhK": {
-          "type": "collection",
-          "settings": {
-            "collection": "1-globo-transfers",
-            "collection_title": "",
-            "show_view_all": false,
-            "button_label": "View all",
-            "button_style_secondary": false
-          }
-        },
         "collection_7DKKte": {
           "type": "collection",
           "settings": {
@@ -193,7 +183,6 @@
         }
       },
       "block_order": [
-        "collection_HNknhK",
         "collection_7DKKte",
         "collection_PczVrk",
         "collection_rCjLVR",
@@ -1310,7 +1299,7 @@
         "sub_header": "Our Own Ride-On Vehicle",
         "description": "Skip the upgraded parts and buy a ride-on that's built tough to last from day 1",
         "button_text": "Shop Now",
-        "button_link": "shopify://products/firetruck-12v-ride-on-vehicle",
+        "button_link": "shopify://products/firetruck-ride-on-vehicle",
         "show_button_arrow": true,
         "static_image": "shopify://shop_images/firetruck-highlight-group.png",
         "central_image": "shopify://shop_images/Fire-truck-transparent.png",
@@ -1635,6 +1624,45 @@
         "padding_top": 40,
         "padding_bottom": 120
       }
+    },
+    "178828406449d0f52b": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "heading": "Watch our Videos",
+        "subheading": "",
+        "text_alignment": "center",
+        "include_margins": true,
+        "include_treadmark_bg": true
+      }
+    },
+    "17885368325c8573b6": {
+      "type": "apps",
+      "blocks": {
+        "youtube_gallery_carousel_widget_block_LMBrXf": {
+          "type": "shopify://apps/youtube-gallery/blocks/carousel-widget-block/20730f6a-6b3e-4beb-9cbf-452a9ade13e3",
+          "settings": {
+            "contentIndex": "1",
+            "themeId": "light",
+            "autoscroll": true,
+            "autoplay": "off",
+            "focus": true
+          }
+        }
+      },
+      "block_order": [
+        "youtube_gallery_carousel_widget_block_LMBrXf"
+      ],
+      "custom_css": [
+        ".reputon-youtube-widget {padding-bottom: 25px;}"
+      ],
+      "settings": {
+        "heading": "Watch Our Videos",
+        "subheading": "From installation instructions to product explanations, kids going fast and more. Check out the YouTube Channel!",
+        "text_alignment": "center",
+        "include_margins": true,
+        "include_treadmark_bg": false
+      }
     }
   },
   "order": [
@@ -1646,6 +1674,8 @@
     "collection_list_grid_QcWpEc",
     "image_hubspot_banner_NDAMET",
     "ml_toys_product_slider_qxnMqY",
-    "mltoys_featured_blog_v2_PN6CwJ"
+    "mltoys_featured_blog_v2_PN6CwJ",
+    "178828406449d0f52b",
+    "17885368325c8573b6"
   ]
 }

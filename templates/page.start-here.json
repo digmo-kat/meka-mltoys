@@ -1,0 +1,425 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_top": false,
+        "radius_background": true,
+        "banner_height": "default",
+        "banner_mobile_height": "default",
+        "content_alignment": "top",
+        "image_block": false,
+        "image_size": "60",
+        "image_overlay_opacity": 70,
+        "title": "",
+        "heading_size": "h1",
+        "description_text": "<p>Our curated collections are meant to inspire your creative side and provide you with product options.</p>",
+        "text_size_block": "medium",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "text_secondary_color": false,
+        "section_full_width": true,
+        "section_background": "#ffffff",
+        "content_text_color": "main",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "content_padding_top": 50,
+        "content_padding_bottom": 50
+      }
+    },
+    "image_banner_BbCAjG": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Uk3Aq9": {
+          "type": "heading",
+          "settings": {
+            "heading": "How can I customize my power wheel?",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_aDg3dn": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Let Us Guide You",
+            "button_link_1": "shopify://pages/upgrades-by-category-old",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Uk3Aq9",
+        "buttons_aDg3dn"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/HeroPanels_Start_5000x_f579ca9f-efb7-4f48-9dce-7327f125f49a.webp",
+        "image_overlay_opacity": 17,
+        "image_height": "medium",
+        "content_width": 850,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_JXUf83": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_3d6A3c": {
+          "type": "column",
+          "settings": {
+            "item_color_scheme": "",
+            "image_cover": false,
+            "image_overlay_opacity": 0,
+            "reduce_spaces": false,
+            "content_full_width": false,
+            "caption": "",
+            "title": "Don't Know Where To Begin?",
+            "heading_size_block": "h2",
+            "heading_color": "foreground",
+            "subheading": "",
+            "text": "<p>So your kid wants to go faster but you have no clue where to begin? We can help you pick the right car, determine which set up is right for you, learn about batteries, motors, gears, tires and more</p>",
+            "text_size_block": "medium",
+            "text_color": "foreground",
+            "button_style": "solid",
+            "link_label": "Start Modifying Now!",
+            "link": "shopify://pages/how-to-start-modifying-power-wheels-and-ride-on-toys"
+          }
+        }
+      },
+      "block_order": [
+        "column_3d6A3c"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "enable_center": true,
+        "title": "",
+        "heading_alignment": "center",
+        "heading_size": "h2",
+        "description": "",
+        "text_size_block": "medium",
+        "text_color": "main",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "grid_type": "grid",
+        "column_divider": false,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "background_color_full_width": true,
+        "background_border_radius": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
+    "multicolumn_aki8Ag": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FeJGEN": {
+          "type": "column",
+          "settings": {
+            "item_color_scheme": "scheme-3",
+            "image": "shopify://shop_images/message-regular.png",
+            "image_cover": false,
+            "image_overlay_opacity": 0,
+            "reduce_spaces": false,
+            "content_full_width": false,
+            "caption": "",
+            "title": "",
+            "heading_size_block": "h2",
+            "heading_color": "foreground",
+            "subheading": "",
+            "text": "<p>Pre-sale support ensures you select the correct parts for your ride-on.</p>",
+            "text_size_block": "medium",
+            "text_color": "foreground",
+            "button_style": "link_icon",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Lx4Hnt": {
+          "type": "column",
+          "settings": {
+            "item_color_scheme": "scheme-3",
+            "image": "shopify://shop_images/badge-check-sharp-regular.png",
+            "image_cover": false,
+            "image_overlay_opacity": 0,
+            "reduce_spaces": false,
+            "content_full_width": false,
+            "caption": "",
+            "title": "",
+            "heading_size_block": "h2",
+            "heading_color": "foreground",
+            "subheading": "",
+            "text": "<p>All modification have been tested and proven to work.</p>",
+            "text_size_block": "medium",
+            "text_color": "foreground",
+            "button_style": "link_icon",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gQRRpm": {
+          "type": "column",
+          "settings": {
+            "item_color_scheme": "scheme-3",
+            "image": "shopify://shop_images/wrench-solid.png",
+            "image_cover": false,
+            "image_overlay_opacity": 0,
+            "reduce_spaces": false,
+            "content_full_width": false,
+            "caption": "",
+            "title": "",
+            "heading_size_block": "h2",
+            "heading_color": "foreground",
+            "subheading": "",
+            "text": "<p>Post-sale support to ensure successful installation of the modifications.</p>",
+            "text_size_block": "medium",
+            "text_color": "foreground",
+            "button_style": "link_icon",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Jz6Y9J": {
+          "type": "column",
+          "settings": {
+            "item_color_scheme": "scheme-3",
+            "image": "shopify://shop_images/heart-regular.png",
+            "image_cover": false,
+            "image_overlay_opacity": 0,
+            "reduce_spaces": false,
+            "content_full_width": false,
+            "caption": "",
+            "title": "",
+            "heading_size_block": "h2",
+            "heading_color": "foreground",
+            "subheading": "",
+            "text": "<p>You can maximize the lifetime enjoyment (and investment in) your Power Wheel.</p>",
+            "text_size_block": "medium",
+            "text_color": "foreground",
+            "button_style": "link_icon",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VrCzfm": {
+          "type": "column",
+          "settings": {
+            "item_color_scheme": "scheme-3",
+            "image": "shopify://shop_images/list-check-regular.png",
+            "image_cover": false,
+            "image_overlay_opacity": 0,
+            "reduce_spaces": false,
+            "content_full_width": false,
+            "caption": "",
+            "title": "",
+            "heading_size_block": "h2",
+            "heading_color": "foreground",
+            "subheading": "",
+            "text": "<p>We eliminate the guesswork involved in selecting/choosing parts.</p>",
+            "text_size_block": "medium",
+            "text_color": "foreground",
+            "button_style": "link_icon",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nNKJJJ": {
+          "type": "column",
+          "settings": {
+            "item_color_scheme": "scheme-3",
+            "image": "shopify://shop_images/face-smile-regular.png",
+            "image_cover": false,
+            "image_overlay_opacity": 0,
+            "reduce_spaces": false,
+            "content_full_width": false,
+            "caption": "",
+            "title": "",
+            "heading_size_block": "h2",
+            "heading_color": "foreground",
+            "subheading": "",
+            "text": "<p>The modifications can be completed by anyone.</p>",
+            "text_size_block": "medium",
+            "text_color": "foreground",
+            "button_style": "link_icon",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_FeJGEN",
+        "column_Lx4Hnt",
+        "column_gQRRpm",
+        "column_Jz6Y9J",
+        "column_VrCzfm",
+        "column_nNKJJJ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "enable_center": true,
+        "title": "The ML Toys Difference",
+        "heading_alignment": "center",
+        "heading_size": "h1",
+        "description": "<p>We help families maximize the enjoyment of their power wheels through proven, plug-and-play<br/>modifications <strong>and </strong>the support to get the job done.</p>",
+        "text_size_block": "medium",
+        "text_color": "main",
+        "image_width": "fourth",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "grid_type": "grid",
+        "column_divider": false,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "background_color_full_width": true,
+        "background_border_radius": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
+    "image_banner_rW8mRn": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_jBXMcQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Help Create Super Moms & Super Dads!",
+            "heading_size": "h1"
+          }
+        },
+        "text_L4NKWV": {
+          "type": "text",
+          "settings": {
+            "text": "You, too, can achieve power wheel super hero status",
+            "text_style": "subtitle",
+            "text_color": "main"
+          }
+        },
+        "buttons_qWPFFV": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Start Here",
+            "button_link_1": "shopify://pages/how-to-start-modifying-power-wheels-and-ride-on-toys",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jBXMcQ",
+        "text_L4NKWV",
+        "buttons_qWPFFV"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/banner--super_5000x_f1cf7b15-3c16-4622-9aea-511cd0958cee.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "content_width": 700,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_JBNJF8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_awq8fk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Upgrade Your Ride-On",
+            "heading_size": "h2"
+          }
+        },
+        "text_XKEHhw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can waste a lot of time and effort looking for the right parts on your own. Don't waste money on unproven solutions that won't last. Get proven, plug-and-play modifications along with the support needed to get the job done right the first time.</p>",
+            "text_style": "body",
+            "text_color": "foreground"
+          }
+        },
+        "button_PGk9zU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Upgrades",
+            "button_link": "shopify://pages/upgrades-by-vehicle",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_awq8fk",
+        "text_XKEHhw",
+        "button_PGk9zU"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/jeep2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_BbCAjG",
+    "multicolumn_JXUf83",
+    "multicolumn_aki8Ag",
+    "image_banner_rW8mRn",
+    "image_with_text_JBNJF8"
+  ]
+}

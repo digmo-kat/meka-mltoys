@@ -1,0 +1,891 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_top": false,
+        "radius_background": true,
+        "banner_height": "default",
+        "banner_mobile_height": "default",
+        "content_alignment": "top",
+        "image_block": false,
+        "image_size": "60",
+        "image_overlay_opacity": 70,
+        "title": "Upgrades by Vehicle",
+        "heading_size": "h1",
+        "description_text": "",
+        "text_size_block": "medium",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "text_secondary_color": false,
+        "section_full_width": true,
+        "section_background": "#ffffff",
+        "content_text_color": "main",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "content_padding_top": 50,
+        "content_padding_bottom": 50
+      }
+    },
+    "featured_grid_teH8cm": {
+      "type": "featured-grid",
+      "blocks": {
+        "grid_item_baetGY": {
+          "type": "grid_item",
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "grid_item_1": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-all-other-vehicles-800px.jpg",
+            "title": "All Others / Off Brand / Amazon Vehicles",
+            "url": "/collections/all-other-vehicles"
+          }
+        },
+        "grid_item_3Y63P3": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-adventure-force-24v-thunder-tank-800px.jpg",
+            "title": "Adventure Force 24v Thunder Tank",
+            "url": "https://www.mltoys.com/collections/adventure-force-24v-thunder-tank"
+          }
+        },
+        "grid_item_43KgHN": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BCP_Angry_Jeep.png",
+            "title": "Best Choice Products 12v Angry Jeep",
+            "url": "shopify://collections/best-choice-products-12v-angry-jeep"
+          }
+        },
+        "grid_item_XqADci": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BCP_Land_rover.png",
+            "title": "Best Choice Products 12v Land Rover",
+            "url": "shopify://collections/best-choice-products-12v-land-rover"
+          }
+        },
+        "grid_item_Ci9xtx": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BCP_12v_Jeep.png",
+            "title": "Best Choice Products 12v Jeep",
+            "url": "shopify://collections/best-choice-products-12v-jeep"
+          }
+        },
+        "grid_item_11": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BTC_Red_Tiger.png",
+            "title": "Big Toys Direct 24v Red Tiger",
+            "url": "/collections/big-toys-direct-24v-red-tiger"
+          }
+        },
+        "grid_item_PJpRPX": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BTC_Lambo.png",
+            "title": "Big Toys Direct Lamborghini Aventador SVJ",
+            "url": "shopify://collections/big-toys-country-lamborghini-aventador-svj"
+          }
+        },
+        "grid_item_frcCx7": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_5.jpg",
+            "title": "Big Toys Green Country Alpine Crawler",
+            "url": "shopify://collections/big-toys-green-country-24v-alpine-crawler-4x4"
+          }
+        },
+        "grid_item_AfKeEp": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BTGC_Can_Am_28d44708-e877-4ff7-bb1e-1691e08fe56f.png",
+            "title": "Big Toys Green Country Can-Am Maverick X3 4x4 UTV 24v",
+            "url": "shopify://collections/big-toys-green-country-24v-can-am-maverick-x3-4x4-utv"
+          }
+        },
+        "grid_item_10": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BTC_Challenger.png",
+            "title": "Big Toys Green Country 24v Challenger XL",
+            "url": "/collections/big-toys-country-24v-challenger-xl"
+          }
+        },
+        "grid_item_VKFMGU": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BTGC_GMC_Denali.png",
+            "title": "Big Toys Green Country GMC Denali",
+            "url": "shopify://collections/big-toys-green-country-12v-gmc-denali-4x4"
+          }
+        },
+        "grid_item_BHi7rx": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BTGC_G63.png",
+            "title": "Big Toys Green Country Mercedes G63 24v",
+            "url": "shopify://collections/big-toys-green-country-24v-mercedes-g63"
+          }
+        },
+        "grid_item_gzhMtA": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-bravo-monster-jam-24v-grave-digger-800px.jpg",
+            "title": "Bravo Monster Jam 24v Grave Digger",
+            "url": "https://www.mltoys.com/collections/bravo-monster-jam-24v-grave-digger"
+          }
+        },
+        "grid_item_xtG8AC": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-dynacraft-mighty-dump-truck-800px.jpg",
+            "title": "Dynacraft 12v Mighty Dump Truck",
+            "url": "https://www.mltoys.com/collections/dynacraft-12v-mighty-dump-truck"
+          }
+        },
+        "grid_item_TtGBcH": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Contact_Us_1.png",
+            "title": "Dynacraft 24v Trailrider",
+            "url": "https://www.mltoys.com/collections/dynacraft-24v-trailrider"
+          }
+        },
+        "grid_item_12": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-dynacraft-24v-UTV-800px.jpg",
+            "title": "Dynacraft 24v UTV",
+            "url": "/collections/dynacraft-24v-utv"
+          }
+        },
+        "grid_item_J398gb": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_C8.png",
+            "title": "Freddo Toys 12v C8 Corvette",
+            "url": "shopify://collections/freddo-12v-c8-corvette-stingray"
+          }
+        },
+        "grid_item_wAtdcy": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Cat_Dump.png",
+            "title": "Freddo Toys 12v Cat Dump Truck",
+            "url": "shopify://collections/freddo-12v-cat-dump-truck"
+          }
+        },
+        "grid_item_DnRMfF": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Buccaneer.png",
+            "title": "Freddo Toys 24v Buccaneer",
+            "url": "shopify://collections/freddo-24v-buccaneer-dune-buggy"
+          }
+        },
+        "grid_item_YqqK6Q": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Buccaneer_XXL.png",
+            "title": "Freddo Toys 24v Buccaneer XXL",
+            "url": "shopify://collections/freddo-24v-buccaneer-xxl-dune-buggy"
+          }
+        },
+        "grid_item_X9TQRD": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_24v_C8.png",
+            "title": "Freddo Toys 24v C8 Corvette",
+            "url": "shopify://collections/freddo-24v-c8-corvette-stingray"
+          }
+        },
+        "grid_item_Y6aARY": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Can-Am_Maverick.png",
+            "title": "Freddo Toys 24v Can-Am Maverick",
+            "url": "shopify://collections/freddo-24v-can-am-maverick"
+          }
+        },
+        "grid_item_WJNQdX": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Can-Am_Outlander.png",
+            "title": "Freddo Toys 24v Can-Am Outlander",
+            "url": "shopify://collections/freddo-24v-can-am-outlander"
+          }
+        },
+        "grid_item_aPfbVY": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Can-Am_renegade.png",
+            "title": "Freddo Toys 24v Can-Am Renegade",
+            "url": "shopify://collections/freddo-24v-can-am-renegade"
+          }
+        },
+        "grid_item_nPkJJa": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Silverado.png",
+            "title": "Freddo Toys 24v Chevy Silverado",
+            "url": "shopify://collections/freddo-24v-chevy-silverado"
+          }
+        },
+        "grid_item_3ANmXB": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_GMC_Denali.png",
+            "title": "Freddo Toys 24v GMC Denali",
+            "url": "shopify://collections/freddo-24v-gmc-denali"
+          }
+        },
+        "grid_item_VdbL6V": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Huracan.png",
+            "title": "Freddo Toys 24v Lamborghini Huracan",
+            "url": "shopify://collections/freddo-24v-lamborghini-huracan"
+          }
+        },
+        "grid_item_jc9rKk": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_GWagon.png",
+            "title": "Freddo Toys 24v Mercedes G63",
+            "url": "shopify://collections/freddo-24v-mercedes-benx-gwagon"
+          }
+        },
+        "grid_item_EwnwE3": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Mercedes_GT63.png",
+            "title": "Freddo Toys 24v GT63 Mercedes AMG",
+            "url": "shopify://collections/freddo-24v-mercedes-gt63"
+          }
+        },
+        "grid_item_8zQGgK": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Willys.png",
+            "title": "Freddo Toys 24v Willy Jeep",
+            "url": "shopify://collections/freddo-24v-willy-military-jeep"
+          }
+        },
+        "grid_item_Rd7Uwq": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Raider.png",
+            "title": "Freddo Toys 24v Raider Jeep",
+            "url": "shopify://collections/freddo-24v-raider-jeep"
+          }
+        },
+        "grid_item_ch4rB3": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Freddo_Storm.png",
+            "title": "Freddo Toys 24v Storm UTV",
+            "url": "shopify://collections/freddo-24v-storm-utv"
+          }
+        },
+        "grid_item_B68eQM": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Chevy_Silverado.png",
+            "title": "Garvee 24v Chevy Silverado",
+            "url": "shopify://collections/garvee-24v-chevy-silverado"
+          }
+        },
+        "grid_item_RFjFBm": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Dump_Truck.png",
+            "title": "Garvee 24v Dump Truck 6x6",
+            "url": "shopify://collections/garvee-24v-dump-truck"
+          }
+        },
+        "grid_item_MXtBim": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Jeep.png",
+            "title": "Garvee 24v Jeep",
+            "url": "shopify://collections/garvee-24v-jeep"
+          }
+        },
+        "grid_item_LgDi4F": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Challenger.png",
+            "title": "Garvee 24v Speed UTV",
+            "url": "shopify://collections/big-toys-country-24v-challenger-xl-copy"
+          }
+        },
+        "grid_item_nFnGHA": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Toyota_Landcruiser.png",
+            "title": "Garvee 24v Toyota Land Cruiser",
+            "url": "shopify://collections/garvee-24v-toyota-land-cruiser"
+          }
+        },
+        "grid_item_egNE6n": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Contact_Us-3.png",
+            "title": "Huffy 12v Ford F150",
+            "url": "https://www.mltoys.com/collections/huffy-12v-f-150"
+          }
+        },
+        "grid_item_YcEnLK": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Contact_Us.png",
+            "title": "Huffy C8 Corvette",
+            "url": "https://www.mltoys.com/collections/huffy-c8-corvette"
+          }
+        },
+        "grid_item_13": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Contact_Us-1.png",
+            "title": "Huffy Land Rover",
+            "url": "/collections/huffy-land-rover"
+          }
+        },
+        "grid_item_hJC8tW": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Huffy_McClaren_F1.jpg",
+            "title": "Huffy McClaren",
+            "url": "shopify://collections/huffy-mcclaren-upgraded-faster-parts"
+          }
+        },
+        "grid_item_14": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehcile-kid-motorz-camaro-800px.jpg",
+            "title": "Kid Motorz Camaro",
+            "url": "/collections/kid-motorz-camaro"
+          }
+        },
+        "grid_item_Y4ndwt": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-kid-trax-1969-ford-bronco-800px.jpg",
+            "title": "Kid Trax 1969 Ford Bronco",
+            "url": "https://www.mltoys.com/collections/kid-trax-1969-bronco"
+          }
+        },
+        "grid_item_UhCRTj": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-kid-trax-2021-ford-bronco-800px.jpg",
+            "title": "Kid Trax 2021 Ford Bronco",
+            "url": "https://www.mltoys.com/collections/kid-trax-2021-ford-bronco"
+          }
+        },
+        "grid_item_15": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-kid-trax-dodge-charger-800px.jpg",
+            "title": "Kid Trax Dodge Charger",
+            "url": "/collections/kid-trax-dodge-charger"
+          }
+        },
+        "grid_item_DKtAfQ": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-kid-trax-dodge-ram-800px.jpg",
+            "title": "Kid Trax Dodge Ram",
+            "url": "https://www.mltoys.com/collections/kid-trax-dodge-ram"
+          }
+        },
+        "grid_item_EWMgDr": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-mercedes-G63-6x6-800px.jpg",
+            "title": "Mercedes G63 6x6",
+            "url": "https://www.mltoys.com/collections/mercedes-g63-6x6"
+          }
+        },
+        "grid_item_ae6cwe": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/FireTruck15729__2_1.png",
+            "title": "MLToys Firetruck",
+            "url": "shopify://collections/mltoys-firetruck-upgrade-parts"
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_baetGY",
+        "grid_item_1",
+        "grid_item_3Y63P3",
+        "grid_item_43KgHN",
+        "grid_item_XqADci",
+        "grid_item_Ci9xtx",
+        "grid_item_11",
+        "grid_item_PJpRPX",
+        "grid_item_frcCx7",
+        "grid_item_AfKeEp",
+        "grid_item_10",
+        "grid_item_VKFMGU",
+        "grid_item_BHi7rx",
+        "grid_item_gzhMtA",
+        "grid_item_xtG8AC",
+        "grid_item_TtGBcH",
+        "grid_item_12",
+        "grid_item_J398gb",
+        "grid_item_wAtdcy",
+        "grid_item_DnRMfF",
+        "grid_item_YqqK6Q",
+        "grid_item_X9TQRD",
+        "grid_item_Y6aARY",
+        "grid_item_WJNQdX",
+        "grid_item_aPfbVY",
+        "grid_item_nPkJJa",
+        "grid_item_3ANmXB",
+        "grid_item_VdbL6V",
+        "grid_item_jc9rKk",
+        "grid_item_EwnwE3",
+        "grid_item_8zQGgK",
+        "grid_item_Rd7Uwq",
+        "grid_item_ch4rB3",
+        "grid_item_B68eQM",
+        "grid_item_RFjFBm",
+        "grid_item_MXtBim",
+        "grid_item_LgDi4F",
+        "grid_item_nFnGHA",
+        "grid_item_egNE6n",
+        "grid_item_YcEnLK",
+        "grid_item_13",
+        "grid_item_hJC8tW",
+        "grid_item_14",
+        "grid_item_Y4ndwt",
+        "grid_item_UhCRTj",
+        "grid_item_15",
+        "grid_item_DKtAfQ",
+        "grid_item_EWMgDr",
+        "grid_item_ae6cwe"
+      ],
+      "name": "Grid view",
+      "settings": {
+        "grid_gap": 30,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "text_alignment": "center",
+        "image_border_radius": 14,
+        "title_size": 18,
+        "title_spacing": 12,
+        "title_weight": "700",
+        "title_color": "#1d1d1f"
+      }
+    },
+    "featured_grid_6MymWm": {
+      "type": "featured-grid",
+      "blocks": {
+        "grid_item_bqtKQW": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BTGC_Can_Am_28d44708-e877-4ff7-bb1e-1691e08fe56f.png",
+            "title": "Moderno Can-Am Maverick X3 4x4 UTV 24v",
+            "url": "shopify://collections/moderno-24v-can-am-maverick-x3-4x4-utv-copy"
+          }
+        },
+        "grid_item_Pd3GCT": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/moderno_can-am_outlander.png",
+            "title": "Moderno Can-Am Outlander",
+            "url": "shopify://collections/moderno-can-am-outlander"
+          }
+        },
+        "grid_item_4JyLEL": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/moderno_can_am_renegade.png",
+            "title": "Moderno Can-Am Renegade",
+            "url": "shopify://collections/moderno-can-am-renegade"
+          }
+        },
+        "grid_item_yCMxUH": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Moderno_Lambo.png",
+            "title": "Moderno Lamborghini Aventador SVJ",
+            "url": "shopify://collections/moderno-lamborghini-aventador-svj"
+          }
+        },
+        "grid_item_wNn7bi": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/moderno_g63.png",
+            "title": "Moderno Mercedes G63 24v",
+            "url": "shopify://collections/moderno-24v-mercedes-g63"
+          }
+        },
+        "grid_item_za84cb": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-peg-perego-john-deere-gator-800px.jpg",
+            "title": "Peg Perego John Deere Gator",
+            "url": "shopify://collections/peg-perego-gator"
+          }
+        },
+        "grid_item_iTqfjG": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-peg-perego-john-deere-ground-force-tractor-800px.jpg",
+            "title": "Peg Perego John Deere Ground Force Tractor",
+            "url": "https://www.mltoys.com/collections/peg-perego-john-deere-ground-force-tractor"
+          }
+        },
+        "grid_item_bzrXrX": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/John_Deere_Ground_Loader.png",
+            "title": "Peg Perego John Deere Ground Force Loader",
+            "url": "shopify://collections/peg-perego-john-deere-ground-loader-tractor-copy"
+          }
+        },
+        "grid_item_pcRnbV": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-peg-perego-polaris-RZR-900-800px.jpg",
+            "title": "Peg Perego Polaris RZR 900",
+            "url": "https://www.mltoys.com/collections/peg-perego-polaris-rzr-900"
+          }
+        },
+        "grid_item_tHzt49": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-arctic-cat-800px.jpg",
+            "title": "Power Wheels Arctic Cat",
+            "url": "/collections/power-wheels-arctic-cat"
+          }
+        },
+        "grid_item_XGcm8r": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-quad-800px_7d3cd6b7-51a8-44d4-bbcc-8eee294ce037.jpg",
+            "title": "Power Wheels ATV",
+            "url": "/collections/power-wheels-atv-quads"
+          }
+        },
+        "grid_item_Ajw3mj": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-baja-extreme-800px.jpg",
+            "title": "Power Wheels Baja Extreme",
+            "url": "/collections/power-wheels-baja-extreme"
+          }
+        },
+        "grid_item_PNp7yM": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-baja-trailster-800px.jpg",
+            "title": "Power Wheels Baja Trailster",
+            "url": "/collections/power-wheels-baja-trailster"
+          }
+        },
+        "grid_item_MCLkxM": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-cadillac-escalade-800px_600x_cutout_1.png",
+            "title": "Power Wheels Cadillac Escalade",
+            "url": "/collections/power-wheels-cadillac-escalade"
+          }
+        },
+        "grid_item_KFzgfU": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle0-power-wheels-dune-racer-800px.jpg",
+            "title": "Power Wheels Dune Racer",
+            "url": "https://www.mltoys.com/collections/power-wheels-dune-racer"
+          }
+        },
+        "grid_item_JfMwGq": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-ford-F-150-800px_600x_641f9ad5-a8a7-48e1-a825-09b46c24c1da.webp",
+            "title": "Power Wheels Ford F-150",
+            "url": "/collections/power-wheels-ford-f-150"
+          }
+        },
+        "grid_item_TgLL3w": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-ford-mustang-800px.jpg",
+            "title": "Power Wheels Ford Mustang",
+            "url": "https://www.mltoys.com/collections/power-wheels-ford-mustang"
+          }
+        },
+        "grid_item_GMBw9X": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-hot-wheels-racer-800px.jpg",
+            "title": "Power Wheels Hot Wheels Racer",
+            "url": "https://www.mltoys.com/collections/power-wheels-hot-wheels-racer"
+          }
+        },
+        "grid_item_W4XKDN": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-barbie-dream-camper.jpg",
+            "title": "Power Wheels Jeep Hurricane",
+            "url": "/collections/power-wheels-jeep-hurricane"
+          }
+        },
+        "grid_item_rpnmLR": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-jeep-hurricane-800px.jpg",
+            "title": "Power Wheels Jeep Hurricane",
+            "url": "https://www.mltoys.com/collections/power-wheels-jeep-hurricane"
+          }
+        },
+        "grid_item_JdNxb6": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-jeep-wrangler-800px.jpg",
+            "title": "Power Wheels Jeep Wranglers",
+            "url": "https://www.mltoys.com/collections/power-wheels-jeep-wranglers"
+          }
+        },
+        "grid_item_YLdAhm": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-kawasaki-KFX.jpg",
+            "title": "Power Wheels Kawasaki KFX's",
+            "url": "https://www.mltoys.com/collections/power-wheels-quads"
+          }
+        },
+        "grid_item_BLrWKk": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-lightning-mcqueen-800px.jpg",
+            "title": "Power Wheels Lightning McQueen",
+            "url": "shopify://collections/power-wheels-disney-lightning-mcqueen"
+          }
+        },
+        "grid_item_HMyXeR": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-power-wheels-porsche-GT3-800px.jpg",
+            "title": "Power Wheels Porsche GT3",
+            "url": "https://www.mltoys.com/collections/power-wheels-porsche-gt3"
+          }
+        },
+        "grid_item_YxGNzJ": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-roll-play-24v-monster-truck-800px_600x_e5dc4a5c-ce77-4fed-a75b-402517e9693f.webp",
+            "title": "Roll Play 24v Monster Truck",
+            "url": "https://www.mltoys.com/collections/rollplay-24v-monster-truck"
+          }
+        },
+        "grid_item_MkPMfc": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-roll-play-GMC-denali-800px.jpg",
+            "title": "Roll Play GMC Denali",
+            "url": "https://www.mltoys.com/collections/roll-play-gmc-denali"
+          }
+        },
+        "grid_item_fxMmX3": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Ryder_24v.png",
+            "title": "Ryder Toys 24v All Wheel Drive Buggy",
+            "url": "https://www.mltoys.com/collections/ryder-toys-24v-all-wheel-drive-buggy"
+          }
+        },
+        "grid_item_p99DV4": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Ryder_XXL_UTV.png",
+            "title": "Ryder Toys 24v XXL UTV",
+            "url": "shopify://collections/ryder-24v-xxl-utv"
+          }
+        },
+        "grid_item_Ae7Yti": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Ryder_2.0_drifter.png",
+            "title": "Ryder Toys Drifter 2.0 Go Kart",
+            "url": "shopify://collections/ryder-2-0-go-kart"
+          }
+        },
+        "grid_item_WypQFN": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/ryder_ford_super_duty.png",
+            "title": "Ryder Toys Ford Super Duty Truck",
+            "url": "shopify://collections/ryder-mercedes-benz-g63-copy"
+          }
+        },
+        "grid_item_LXwTRK": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/ryder_lambo.png",
+            "title": "Ryder Toys Lamborghini Aventador SVJ",
+            "url": "shopify://collections/ryder-lamborghini-aventador"
+          }
+        },
+        "grid_item_tb8HmJ": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/ryder_lifted_jeep.jpg",
+            "title": "Ryder Toys Lifted Jeep",
+            "url": "shopify://collections/ryder-lifted-jeep"
+          }
+        },
+        "grid_item_qKfGLY": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Ryder_Mercedes_G63.png",
+            "title": "Ryder Toys Mercedes Benz G63",
+            "url": "shopify://collections/ryder-mercedes-benz-g63"
+          }
+        },
+        "grid_item_3Tyb6D": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/ryder_trailflex_jeep.jpg",
+            "title": "Ryder Toys Trailflex Jeep",
+            "url": "shopify://collections/ryder-trailflex-jeep"
+          }
+        },
+        "grid_item_3BxbzF": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/ryder_vintage_jeep.png",
+            "title": "Ryder Toys Vintage Jeep",
+            "url": "shopify://collections/ryder-vintage-jeep"
+          }
+        },
+        "grid_item_YEFLPw": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Ryder_XL_UTV.png",
+            "title": "Ryder Toys XL UTV",
+            "url": "shopify://collections/ryder-xl-utv"
+          }
+        },
+        "grid_item_tbwRUM": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Tobbi_Lamborghini.png",
+            "title": "Tobbi Lamborghini Aventador SVJ",
+            "url": "shopify://collections/tobbi-24v-lamborghini"
+          }
+        },
+        "grid_item_GHaeWX": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-all-other-vehicles-800px.jpg",
+            "title": "All Others / Off Brand / Amazon Vehicles",
+            "url": "/collections/all-other-vehicles"
+          }
+        },
+        "grid_item_YFL3tK": {
+          "type": "grid_item",
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "grid_item_Yqyt98": {
+          "type": "grid_item",
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "grid_item_Jg8Tfg": {
+          "type": "grid_item",
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_bqtKQW",
+        "grid_item_Pd3GCT",
+        "grid_item_4JyLEL",
+        "grid_item_yCMxUH",
+        "grid_item_wNn7bi",
+        "grid_item_za84cb",
+        "grid_item_iTqfjG",
+        "grid_item_bzrXrX",
+        "grid_item_pcRnbV",
+        "grid_item_tHzt49",
+        "grid_item_XGcm8r",
+        "grid_item_Ajw3mj",
+        "grid_item_PNp7yM",
+        "grid_item_MCLkxM",
+        "grid_item_KFzgfU",
+        "grid_item_JfMwGq",
+        "grid_item_TgLL3w",
+        "grid_item_GMBw9X",
+        "grid_item_W4XKDN",
+        "grid_item_rpnmLR",
+        "grid_item_JdNxb6",
+        "grid_item_YLdAhm",
+        "grid_item_BLrWKk",
+        "grid_item_HMyXeR",
+        "grid_item_YxGNzJ",
+        "grid_item_MkPMfc",
+        "grid_item_fxMmX3",
+        "grid_item_p99DV4",
+        "grid_item_Ae7Yti",
+        "grid_item_WypQFN",
+        "grid_item_LXwTRK",
+        "grid_item_tb8HmJ",
+        "grid_item_qKfGLY",
+        "grid_item_3Tyb6D",
+        "grid_item_3BxbzF",
+        "grid_item_YEFLPw",
+        "grid_item_tbwRUM",
+        "grid_item_GHaeWX",
+        "grid_item_YFL3tK",
+        "grid_item_Yqyt98",
+        "grid_item_Jg8Tfg"
+      ],
+      "name": "2nd Grid",
+      "settings": {
+        "grid_gap": 30,
+        "padding_top": 0,
+        "padding_bottom": 76,
+        "text_alignment": "center",
+        "image_border_radius": 14,
+        "title_size": 18,
+        "title_spacing": 12,
+        "title_weight": "700",
+        "title_color": "#1d1d1f"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_grid_teH8cm",
+    "featured_grid_6MymWm"
+  ]
+}

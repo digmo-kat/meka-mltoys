@@ -1,0 +1,308 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_top": false,
+        "radius_background": true,
+        "banner_height": "default",
+        "banner_mobile_height": "default",
+        "content_alignment": "top",
+        "image_block": false,
+        "image_size": "60",
+        "image_overlay_opacity": 70,
+        "title": "",
+        "heading_size": "h1",
+        "description_text": "<p>Our curated collections are meant to inspire your creative side and provide you with product options.</p>",
+        "text_size_block": "medium",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "text_secondary_color": false,
+        "section_full_width": true,
+        "section_background": "#ffffff",
+        "content_text_color": "main",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "content_padding_top": 50,
+        "content_padding_bottom": 50
+      }
+    },
+    "featured_grid_pYrpcX": {
+      "type": "featured-grid",
+      "blocks": {
+        "grid_item_VqYabR": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-axles-front.jpg",
+            "title": "Front Axles",
+            "url": "https://www.mltoys.com/collections/front-axles"
+          }
+        },
+        "grid_item_yc3n9z": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-axles-rear.jpg",
+            "title": "Rear Axles",
+            "url": "https://www.mltoys.com/collections/rear-axles"
+          }
+        },
+        "grid_item_CFpCFN": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-barbie-dream-camper.jpg",
+            "title": "Barbie Dream Camper Power Wheels Parts",
+            "url": "https://www.mltoys.com/collections/barbie-dream-camper"
+          }
+        },
+        "grid_item_dGcEpD": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-batteries-chargers.jpg",
+            "title": "Batteries & Chargers",
+            "url": "https://www.mltoys.com/collections/batteries-chargers"
+          }
+        },
+        "grid_item_ddKtkQ": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/3900-4936-2.jpg",
+            "title": "Bumpers",
+            "url": "https://www.mltoys.com/collections/bumpers"
+          }
+        },
+        "grid_item_q4EPRa": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-bushings.jpg",
+            "title": "Bushings",
+            "url": "https://www.mltoys.com/collections/bushings"
+          }
+        },
+        "grid_item_QjRdr3": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-doors.jpg",
+            "title": "Doors",
+            "url": "https://www.mltoys.com/collections/doors"
+          }
+        },
+        "grid_item_eGw7Qz": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-electrical-parts.jpg",
+            "title": "Electrical Parts",
+            "url": "https://www.mltoys.com/collections/electrical-parts"
+          }
+        },
+        "grid_item_C9t9eM": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-gears-motors.jpg",
+            "title": "Gears & Motors",
+            "url": "https://www.mltoys.com/collections/gears-motors"
+          }
+        },
+        "grid_item_DprCNj": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-grills.jpg",
+            "title": "Grills",
+            "url": "https://www.mltoys.com/collections/grills"
+          }
+        },
+        "grid_item_9mjizW": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-hardware.jpg",
+            "title": "Hardware",
+            "url": "https://www.mltoys.com/collections/hardware"
+          }
+        },
+        "grid_item_7dMi7y": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-hood-latches.jpg",
+            "title": "Hood Latches",
+            "url": "https://www.mltoys.com/collections/hood-latches"
+          }
+        },
+        "grid_item_fNxdeE": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-hoods.jpg",
+            "title": "Hoods",
+            "url": "https://www.mltoys.com/collections/hoods"
+          }
+        },
+        "grid_item_abmWHt": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-owners-manuals.jpg",
+            "title": "Owners Manuals",
+            "url": "https://www.mltoys.com/collections/owners-manuals"
+          }
+        },
+        "grid_item_CCMAap": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-parts-bags.jpg",
+            "title": "Parts Bags",
+            "url": "https://www.mltoys.com/collections/parts-bags"
+          }
+        },
+        "grid_item_TxYrxp": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-radios-soundboxes.jpg",
+            "title": "Radios & Soundboxes",
+            "url": "https://www.mltoys.com/collections/radios-soundboxes"
+          }
+        },
+        "grid_item_xYAYcw": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-rims-hubcaps.jpg",
+            "title": "Rims & Hubcaps",
+            "url": "https://www.mltoys.com/collections/rims-hubcaps"
+          }
+        },
+        "grid_item_KLi3CF": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-seats.jpg",
+            "title": "Seats",
+            "url": "shopify://collections/seats"
+          }
+        },
+        "grid_item_hDh6WA": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-sideview-mirrors.jpg",
+            "title": "Sideview Mirrors",
+            "url": "https://www.mltoys.com/collections/sideview-mirrors"
+          }
+        },
+        "grid_item_NEPjxc": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-steering-columns-handlebars.jpg",
+            "title": "Steering Columns & Handlebars",
+            "url": "https://www.mltoys.com/collections/steering-columns-handlebars"
+          }
+        },
+        "grid_item_8Tgwnr": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-steering-linkages.jpg",
+            "title": "Steering Linkages",
+            "url": "https://www.mltoys.com/collections/steering-linkages"
+          }
+        },
+        "grid_item_MEV6Da": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-steering-wheels.jpg",
+            "title": "Steering Wheels",
+            "url": "https://www.mltoys.com/collections/steering-wheels"
+          }
+        },
+        "grid_item_cRgJra": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/3900-3179-2.jpg",
+            "title": "Power Wheels Stickers",
+            "url": "https://www.mltoys.com/collections/stickers"
+          }
+        },
+        "grid_item_nChnNL": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-tailgates.jpg",
+            "title": "Tailgates",
+            "url": "https://www.mltoys.com/collections/tailgates"
+          }
+        },
+        "grid_item_3nmEaJ": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/BCK85-2659-x2-2.jpg",
+            "title": "Tires & Wheels",
+            "url": "https://www.mltoys.com/collections/tires-wheels"
+          }
+        },
+        "grid_item_PqAKer": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-wheel-driver-hubs.jpg",
+            "title": "Wheel Driver Hubs",
+            "url": "https://www.mltoys.com/collections/wheel-driver-hubs"
+          }
+        },
+        "grid_item_AWKeWM": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/collection-other-stock-parts.jpg",
+            "title": "Other Stock Parts",
+            "url": "https://www.mltoys.com/collections/other-stock-parts"
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_VqYabR",
+        "grid_item_yc3n9z",
+        "grid_item_CFpCFN",
+        "grid_item_dGcEpD",
+        "grid_item_ddKtkQ",
+        "grid_item_q4EPRa",
+        "grid_item_QjRdr3",
+        "grid_item_eGw7Qz",
+        "grid_item_C9t9eM",
+        "grid_item_DprCNj",
+        "grid_item_9mjizW",
+        "grid_item_7dMi7y",
+        "grid_item_fNxdeE",
+        "grid_item_abmWHt",
+        "grid_item_CCMAap",
+        "grid_item_TxYrxp",
+        "grid_item_xYAYcw",
+        "grid_item_KLi3CF",
+        "grid_item_hDh6WA",
+        "grid_item_NEPjxc",
+        "grid_item_8Tgwnr",
+        "grid_item_MEV6Da",
+        "grid_item_cRgJra",
+        "grid_item_nChnNL",
+        "grid_item_3nmEaJ",
+        "grid_item_PqAKer",
+        "grid_item_AWKeWM"
+      ],
+      "name": "Grid view",
+      "settings": {
+        "grid_gap": 30,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "text_alignment": "center",
+        "image_border_radius": 14,
+        "title_size": 18,
+        "title_spacing": 12,
+        "title_weight": "700",
+        "title_color": "#1d1d1f"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_grid_pYrpcX"
+  ]
+}

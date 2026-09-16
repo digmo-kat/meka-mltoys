@@ -1,0 +1,122 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_top": false,
+        "radius_background": true,
+        "banner_height": "default",
+        "banner_mobile_height": "default",
+        "content_alignment": "top",
+        "image_block": false,
+        "image_size": "60",
+        "image_overlay_opacity": 70,
+        "title": "",
+        "heading_size": "h1",
+        "description_text": "<p>Our curated collections are meant to inspire your creative side and provide you with product options.</p>",
+        "text_size_block": "medium",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "content_color_scheme": "",
+        "text_secondary_color": false,
+        "section_full_width": true,
+        "section_background": "#ffffff",
+        "content_text_color": "main",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "content_padding_top": 50,
+        "content_padding_bottom": 50
+      }
+    },
+    "multirow_GcKeke": {
+      "type": "multirow",
+      "blocks": {
+        "row_8xzGrH": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/144_480x480_9e636461-f867-4cf1-8b66-044d5298b79d.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "<p>If you have two of the same thing, man will try to race them. The employees at MLToys are no exception. We are constantly looking for opportunities to prove that our motors, gears, and batteries produce the fastest and most durable ride-ons in any type of competition.</p><p>Our off-the-shelf kits will get you to Victory Lane for most types of races. If you have a custom need or unusual event then please reach out to us to see if a personalized set-up is called for. If you're hosting a race you can reach out to us for event sponsorship. We do not sponsor individual vehicles but do provide help for event organizers.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_UJCdGX": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/pinkvette_600x_1402477a-3ccd-42a3-b3d4-6328b4b8a819.webp",
+            "caption": "",
+            "heading": "",
+            "text": "<p>2019 National Trail Raceway Power Wheels Race. First Place Winner Maddie in our Pink Vette. Stage IV Motor/Gearboxes and 24v Conversion Kit<br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_NECzM3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2020derby1_600x_84d7b224-41f8-4715-9496-598322952252.webp",
+            "caption": "",
+            "heading": "",
+            "text": "<p>2020 Buried Alive Derby by Deadman Derby Productions 3rd Place. Ryder Friend using Stage IV Motor/Gearboxes</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_8xzGrH",
+        "row_UJCdGX",
+        "row_NECzM3"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
+    "video_9mQDiE": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Featured Races",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=lGtcAv51Hco&list=PLZp7pAWgeOujg_mNTx2EfstZG5I9bFR99",
+        "cover_image": "shopify://shop_images/maxresdefault_6bcbf8fc-5e76-47eb-b45d-70b717085df5.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multirow_GcKeke",
+    "video_9mQDiE"
+  ]
+}

@@ -47,22 +47,9 @@
             "shipping_page": "shipping-policy"
           }
         },
-        "collapsible_tab_kLNhqq": {
-          "type": "collapsible_tab",
-          "name": "Description",
-          "settings": {
-            "heading": "Description",
-            "heading_size": "h5",
-            "icon": "none",
-            "content": "{{ product.description }}",
-            "page": ""
-          }
-        },
         "globo_product_options_app_block_czPKJJ": {
           "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-          "settings": {
-            "product": ""
-          }
+          "settings": {}
         },
         "inventory_pbCRT8": {
           "type": "inventory",
@@ -140,6 +127,12 @@
             "font_weight": "fw-400",
             "text_color": "text-secondary"
           }
+        },
+        "custom_liquid_tabs_Xm9pKq": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  /* === Testing-template overrides for product-tabs === */\n  .pd-tabs {\n    border: 1px solid #e1dccd;\n    border-radius: 8px;\n    overflow: hidden;\n    margin: 24px 0;\n  }\n  .pd-tabs .pd-tabs__nav-wrap {\n    background-color: #f1f1f1 !important;\n    border-bottom: 1.5px solid #e1dccd !important;\n    border-radius: 0 !important;\n    align-items: stretch !important;\n    padding: 0 !important;\n  }\n  @media (min-width: 990px) {\n    .pd-tabs .pd-tabs__nav-wrap {\n      padding: 0 !important;\n    }\n  }\n  .pd-tabs .pd-tabs__nav {\n    align-items: stretch !important;\n    padding: 0 !important;\n    gap: 0 !important;\n  }\n  .pd-tabs .pd-tabs__nav-wrap.pd-tabs--count-2-3 .pd-tabs__nav {\n    justify-content: space-evenly !important;\n    gap: 0 !important;\n  }\n  .pd-tabs .pd-tabs__btn {\n    color: rgba(11,12,14,0.5) !important;\n    opacity: 1 !important;\n    font-weight: 600 !important;\n    background: transparent !important;\n    display: flex !important;\n    align-items: center !important;\n    justify-content: center !important;\n    padding: 1.375rem 1.5rem 1.625rem !important;\n    flex: 1 0 auto !important;\n  }\n  .pd-tabs .pd-tabs__btn::after {\n    background: #e11d2a !important;\n    height: 4px !important;\n    border-radius: 4px !important;\n    bottom: 0 !important;\n  }\n  .pd-tabs .pd-tabs__btn.is-active {\n    color: #0b0c0e !important;\n    background: #fff !important;\n  }\n  .pd-tabs .pd-tabs__btn:hover:not(.is-active) {\n    color: rgba(11,12,14,0.75) !important;\n  }\n  .pd-tabs .pd-tabs__panels {\n    margin-top: 0 !important;\n    background: #fff;\n  }\n  input.pd-tabs__radio:checked ~ .pd-tabs__panels .pd-tabs__panel {\n    padding: 2rem !important;\n    padding-bottom: 2.5rem !important;\n  }\n</style>\n{%- if product.metafields.custom.about != blank -%}\n  <div class=\"product__about-meta rte\">\n    {{ product.metafields.custom.about | metafield_tag }}\n  </div>\n{%- endif -%}"
+          }
         }
       },
       "block_order": [
@@ -148,7 +141,7 @@
         "judge_me_reviews_preview_badge_ddEEJh",
         "sku_Htybng",
         "price",
-        "collapsible_tab_kLNhqq",
+        "custom_liquid_tabs_Xm9pKq",
         "globo_product_options_app_block_czPKJJ",
         "inventory_pbCRT8",
         "variant_picker",
@@ -242,8 +235,8 @@
           "type": "video",
           "settings": {
             "video_title": "",
-            "video_url": "https://youtu.be/cq_5WHTGx-s",
-            "cover_image": "shopify://shop_images/Select_A_Ride-On_Car_For_Modifying.png",
+            "video_url": "https://youtu.be/Xldr-V0ZEgo?si=pgZqs8im5U32xWG-",
+            "cover_image": "shopify://shop_images/choose_car_thumbnail.webp",
             "description": "",
             "enable_video_looping": false
           }
@@ -301,32 +294,18 @@
         "button_text": "Learn More"
       }
     },
-    "1788537130cf2885e5": {
+    "175607666646f45d5d": {
       "type": "apps",
-      "blocks": {
-        "youtube_gallery_carousel_widget_block_HXG3wK": {
-          "type": "shopify://apps/youtube-gallery/blocks/carousel-widget-block/20730f6a-6b3e-4beb-9cbf-452a9ade13e3",
-          "settings": {
-            "contentIndex": "1",
-            "themeId": "light",
-            "autoscroll": true,
-            "autoplay": "off",
-            "focus": true
-          }
-        }
-      },
-      "block_order": [
-        "youtube_gallery_carousel_widget_block_HXG3wK"
-      ],
-      "custom_css": [
-        ".app-wrapper {padding-bottom: 45px; padding-top: 45px;}"
-      ],
       "settings": {
-        "heading": "Watch Our Videos",
-        "subheading": "From installation instructions to product explanations, kids going fast and more. Check out the YouTube Channel!",
+        "heading": "Our Podcast",
+        "subheading": "Join us as we discuss all things power wheels!",
         "text_alignment": "center",
         "include_margins": true,
-        "include_treadmark_bg": false
+        "include_treadmark_bg": true,
+        "podcast_character_one_desktop": "shopify://shop_images/ML_character_one_1.svg",
+        "podcast_character_one_mobile": "shopify://shop_images/MLTOYS_HEAD_one_1.svg",
+        "podcast_character_two_desktop": "shopify://shop_images/MLG_character_two_1.svg",
+        "podcast_character_two_mobile": "shopify://shop_images/MLTOYS_HEAD_two_1.svg"
       }
     }
   },
@@ -336,6 +315,6 @@
     "related_products",
     "17560776142eb8d1a3",
     "ml_video_carousel_DdUVtr",
-    "1788537130cf2885e5"
+    "175607666646f45d5d"
   ]
 }
