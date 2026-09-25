@@ -60,7 +60,9 @@
         },
         "globo_product_options_app_block_czPKJJ": {
           "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-          "settings": {}
+          "settings": {
+            "product": ""
+          }
         },
         "inventory_pbCRT8": {
           "type": "inventory",
@@ -177,20 +179,6 @@
     },
     "175607880400077e24": {
       "type": "apps",
-      "blocks": {
-        "ecom_youtube_card_gallery_carousel_yqx8GH": {
-          "type": "shopify://apps/ecom-youtube-card-gallery/blocks/carousel/a0f27191-6c92-4d0a-a87c-2e3f3ecdeeab",
-          "disabled": true,
-          "settings": {
-            "gallery-id": "nbXfspti",
-            "main-color": "#000000",
-            "sub-color": "#111111"
-          }
-        }
-      },
-      "block_order": [
-        "ecom_youtube_card_gallery_carousel_yqx8GH"
-      ],
       "settings": {
         "heading": "",
         "subheading": "",
@@ -313,31 +301,32 @@
         "button_text": "Learn More"
       }
     },
-    "175607666646f45d5d": {
+    "1788537130cf2885e5": {
       "type": "apps",
       "blocks": {
-        "ecom_youtube_card_gallery_carousel_zQPXaP": {
-          "type": "shopify://apps/ecom-youtube-card-gallery/blocks/carousel/a0f27191-6c92-4d0a-a87c-2e3f3ecdeeab",
+        "youtube_gallery_carousel_widget_block_HXG3wK": {
+          "type": "shopify://apps/youtube-gallery/blocks/carousel-widget-block/20730f6a-6b3e-4beb-9cbf-452a9ade13e3",
           "settings": {
-            "gallery-id": "AQR3Qx7V",
-            "main-color": "#000000",
-            "sub-color": "#111111"
+            "contentIndex": "1",
+            "themeId": "light",
+            "autoscroll": true,
+            "autoplay": "off",
+            "focus": true
           }
         }
       },
       "block_order": [
-        "ecom_youtube_card_gallery_carousel_zQPXaP"
+        "youtube_gallery_carousel_widget_block_HXG3wK"
+      ],
+      "custom_css": [
+        ".app-wrapper {padding-bottom: 45px; padding-top: 45px;}"
       ],
       "settings": {
-        "heading": "Our Podcast",
-        "subheading": "Join us as we discuss all things power wheels!",
+        "heading": "Watch Our Videos",
+        "subheading": "From installation instructions to product explanations, kids going fast and more. Check out the YouTube Channel!",
         "text_alignment": "center",
         "include_margins": true,
-        "include_treadmark_bg": true,
-        "podcast_character_one_desktop": "shopify://shop_images/ML_character_one_1.svg",
-        "podcast_character_one_mobile": "shopify://shop_images/MLTOYS_HEAD_one_1.svg",
-        "podcast_character_two_desktop": "shopify://shop_images/MLG_character_two_1.svg",
-        "podcast_character_two_mobile": "shopify://shop_images/MLTOYS_HEAD_two_1.svg"
+        "include_treadmark_bg": false
       }
     }
   },
@@ -347,6 +336,6 @@
     "related_products",
     "17560776142eb8d1a3",
     "ml_video_carousel_DdUVtr",
-    "175607666646f45d5d"
+    "1788537130cf2885e5"
   ]
 }

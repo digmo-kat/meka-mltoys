@@ -227,20 +227,6 @@
     },
     "175607880400077e24": {
       "type": "apps",
-      "blocks": {
-        "ecom_youtube_card_gallery_carousel_yqx8GH": {
-          "type": "shopify://apps/ecom-youtube-card-gallery/blocks/carousel/a0f27191-6c92-4d0a-a87c-2e3f3ecdeeab",
-          "disabled": true,
-          "settings": {
-            "gallery-id": "nbXfspti",
-            "main-color": "#000000",
-            "sub-color": "#111111"
-          }
-        }
-      },
-      "block_order": [
-        "ecom_youtube_card_gallery_carousel_yqx8GH"
-      ],
       "settings": {
         "heading": "",
         "subheading": "",
@@ -395,7 +381,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Firetruck Parts & Accessories",
+        "title": "Firetruck Upgrades!",
         "heading_size": "h2",
         "description": "",
         "text_size_block": "medium",
@@ -429,6 +415,103 @@
         "swipe_on_mobile": true,
         "padding_top": 70,
         "padding_bottom": 70
+      }
+    },
+    "sp_founder_nDztyp": {
+      "type": "sp-founder",
+      "name": "Founder Story",
+      "settings": {
+        "photo": "shopify://shop_images/Headshot.png",
+        "cap_tag": "ML TOYS FOUNDER",
+        "founder_name": "ALAN PLACER",
+        "eyebrow": "ABOUT THE Owner",
+        "headline": "Built By A Firefighter. For The Next Generation.",
+        "quote": "“When I say this truck is built right, I mean it. I served 20 years in fire and EMS. I was on the scene at the World Trade Center on September 11, 2001. I don’t make claims I can’t back up.”",
+        "attribution": "ALAN PLACER · FOUNDER, ML TOYS",
+        "body": "ML Toys is owned by a real American family. Alan started this company because he wanted his own kids to have something built right — and quickly realized other parents needed the same thing.",
+        "closing": "This is the perfect ride for the kids of firefighters — or for any kid who dreams of taking on the job one day.",
+        "show_top_rip": true,
+        "top_rip_bg": "#FFFFFF",
+        "show_bottom_rip": false
+      }
+    },
+    "sp_features_bhN6Pm": {
+      "type": "sp-features",
+      "blocks": {
+        "tile_jiktR9": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/1_94b6fcdd-d5ab-4554-be03-28b5e9061858.png",
+            "tag": "GRIP",
+            "tag_color": "navy",
+            "title": "Rubber All-Terrain Tires",
+            "description": "EVA rubber tread that bites into grass, dirt, and pavement. None of the plastic-skid nonsense from generic listings."
+          }
+        },
+        "tile_3jYMFJ": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/2_c922f207-feb9-46bd-9122-c5a62333c914.png",
+            "tag": "BODY",
+            "tag_color": "navy",
+            "title": "Authentic Fire Truck Body",
+            "description": "Working details kids go crazy for. Realistic livery, ladder rack, side compartments, and a chrome bumper that actually looks the part."
+          }
+        },
+        "tile_wnRKME": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/3_8a40e0f6-fe38-46ab-a145-ccb7900ed27a.png",
+            "tag": "AUDIO",
+            "tag_color": "navy",
+            "title": "Built-In Bluetooth Radio",
+            "description": "Touchscreen audio dash with Bluetooth, AM/FM, working PA system, and a siren that doesn't sound like a cartoon."
+          }
+        },
+        "tile_VUa3xj": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/4_daf4c52f-4a43-407b-bf84-77d885a81915.png",
+            "tag": "LIGHTS",
+            "tag_color": "red",
+            "title": "LED Headlights & Bar",
+            "description": "Bright, realistic, and ready for full effect day or night. Working emergency light bar on the roof, head/tail beams up front and back."
+          }
+        },
+        "tile_KMFzek": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jun_8_2026_11_22_55_AM.png",
+            "tag": "DRIVE",
+            "tag_color": "red",
+            "title": "Stronger Motors & Gearboxes",
+            "description": "Built tougher than stock from day one. Reinforced linkages, upgraded gearbox internals, and rated for the rough stuff kids put it through."
+          }
+        },
+        "tile_Fy7kV4": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jun_8_2026_11_24_38_AM.png",
+            "tag": "FUTURE",
+            "tag_color": "navy",
+            "title": "Upgrade-Ready Electronics",
+            "description": "Pre-wired and waiting. Full ML Toys performance catalog drops in cleanly when your kid is ready for more speed and torque."
+          }
+        }
+      },
+      "block_order": [
+        "tile_jiktR9",
+        "tile_3jYMFJ",
+        "tile_wnRKME",
+        "tile_VUa3xj",
+        "tile_KMFzek",
+        "tile_Fy7kV4"
+      ],
+      "name": "Features",
+      "settings": {
+        "eyebrow": "UNDER THE HOOD",
+        "headline": "Built to Handle Everything A Kid Can Throw at It",
+        "margin_top": "-40px"
       }
     },
     "sp_upgrade_story_LeafAn": {
@@ -516,175 +599,8 @@
         "eyebrow": "THE PATH AHEAD",
         "headline": "The Last Ride-On You'll Ever Need To Buy",
         "subtext": "Most ride-ons have a ceiling. This one doesn't. When your kid is ready for more, the ML Toys upgrade path is already waiting.",
-        "show_top_rip": true,
+        "show_top_rip": false,
         "show_bottom_rip": true
-      }
-    },
-    "sp_features_bhN6Pm": {
-      "type": "sp-features",
-      "blocks": {
-        "tile_jiktR9": {
-          "type": "tile",
-          "settings": {
-            "image": "shopify://shop_images/1_94b6fcdd-d5ab-4554-be03-28b5e9061858.png",
-            "tag": "GRIP",
-            "tag_color": "navy",
-            "title": "Rubber All-Terrain Tires",
-            "description": "EVA rubber tread that bites into grass, dirt, and pavement. None of the plastic-skid nonsense from generic listings."
-          }
-        },
-        "tile_3jYMFJ": {
-          "type": "tile",
-          "settings": {
-            "image": "shopify://shop_images/2_c922f207-feb9-46bd-9122-c5a62333c914.png",
-            "tag": "BODY",
-            "tag_color": "navy",
-            "title": "Authentic Fire Truck Body",
-            "description": "Working details kids go crazy for. Realistic livery, ladder rack, side compartments, and a chrome bumper that actually looks the part."
-          }
-        },
-        "tile_wnRKME": {
-          "type": "tile",
-          "settings": {
-            "image": "shopify://shop_images/3_8a40e0f6-fe38-46ab-a145-ccb7900ed27a.png",
-            "tag": "AUDIO",
-            "tag_color": "navy",
-            "title": "Built-In Bluetooth Radio",
-            "description": "Touchscreen audio dash with Bluetooth, AM/FM, working PA system, and a siren that doesn't sound like a cartoon."
-          }
-        },
-        "tile_VUa3xj": {
-          "type": "tile",
-          "settings": {
-            "image": "shopify://shop_images/4_daf4c52f-4a43-407b-bf84-77d885a81915.png",
-            "tag": "LIGHTS",
-            "tag_color": "red",
-            "title": "LED Headlights & Bar",
-            "description": "Bright, realistic, and ready for full effect day or night. Working emergency light bar on the roof, head/tail beams up front and back."
-          }
-        },
-        "tile_KMFzek": {
-          "type": "tile",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jun_8_2026_11_22_55_AM.png",
-            "tag": "DRIVE",
-            "tag_color": "red",
-            "title": "Stronger Motors & Gearboxes",
-            "description": "Built tougher than stock from day one. Reinforced linkages, upgraded gearbox internals, and rated for the rough stuff kids put it through."
-          }
-        },
-        "tile_Fy7kV4": {
-          "type": "tile",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jun_8_2026_11_24_38_AM.png",
-            "tag": "FUTURE",
-            "tag_color": "navy",
-            "title": "Upgrade-Ready Electronics",
-            "description": "Pre-wired and waiting. Full ML Toys performance catalog drops in cleanly when your kid is ready for more speed and torque."
-          }
-        }
-      },
-      "block_order": [
-        "tile_jiktR9",
-        "tile_3jYMFJ",
-        "tile_wnRKME",
-        "tile_VUa3xj",
-        "tile_KMFzek",
-        "tile_Fy7kV4"
-      ],
-      "name": "Features",
-      "settings": {
-        "eyebrow": "UNDER THE HOOD",
-        "headline": "Built to Handle Everything A Kid Can Throw at It",
-        "margin_top": "-40px"
-      }
-    },
-    "sp_sound_familiar_e7nFpH": {
-      "type": "sp-sound-familiar",
-      "blocks": {
-        "pain_row_Y9n6Xk": {
-          "type": "pain_row",
-          "settings": {
-            "text": "You bought a ride-on and it fell apart after a few weeks."
-          }
-        },
-        "pain_row_tAeDew": {
-          "type": "pain_row",
-          "settings": {
-            "text": "The brand was some vague Amazon listing — no name, no identity, no accountability."
-          }
-        },
-        "pain_row_47ErAB": {
-          "type": "pain_row",
-          "settings": {
-            "text": "It looked great in the photos but the parts felt cheap the moment you opened the box."
-          }
-        },
-        "pain_row_EfBLEK": {
-          "type": "pain_row",
-          "settings": {
-            "text": "You tried to upgrade it and the plastic components cracked under the stress."
-          }
-        },
-        "pain_row_C4UN3L": {
-          "type": "pain_row",
-          "settings": {
-            "text": "Something went wrong and there was nowhere to turn. No support, no response, no answers."
-          }
-        },
-        "fix_row_ceTdqi": {
-          "type": "fix_row",
-          "settings": {
-            "text": "A ride-on from a real American company with a real name behind it."
-          }
-        },
-        "fix_row_pYd7JV": {
-          "type": "fix_row",
-          "settings": {
-            "text": "Built stronger out of the box, with a full upgrade path waiting when your kid wants more."
-          }
-        },
-        "fix_row_jkXnCx": {
-          "type": "fix_row",
-          "settings": {
-            "text": "Questions answered fast, by people who actually know the product. No runaround. No dead ends."
-          }
-        },
-        "fix_row_gAftkR": {
-          "type": "fix_row",
-          "settings": {
-            "text": "Service centers across the USA. Parts in stock. A real warranty."
-          }
-        },
-        "fix_row_hP3GmL": {
-          "type": "fix_row",
-          "settings": {
-            "text": "Backed by the most trusted name in the ride-on hobby — and a community of families who get it."
-          }
-        }
-      },
-      "block_order": [
-        "pain_row_Y9n6Xk",
-        "pain_row_tAeDew",
-        "pain_row_47ErAB",
-        "pain_row_EfBLEK",
-        "pain_row_C4UN3L",
-        "fix_row_ceTdqi",
-        "fix_row_pYd7JV",
-        "fix_row_jkXnCx",
-        "fix_row_gAftkR",
-        "fix_row_hP3GmL"
-      ],
-      "name": "Sound Familiar?",
-      "settings": {
-        "eyebrow": "STRAIGHT TALK",
-        "headline": "Sounds Familiar?",
-        "pain_heading": "WHAT YOU'VE BEEN THROUGH",
-        "fix_heading": "NOW IMAGINE",
-        "button_label": "Get the ML Toys Fire Truck",
-        "button_url": "",
-        "show_top_rip": true,
-        "show_bottom_rip": false
       }
     },
     "sp_comparison_jWq4zE": {
@@ -854,21 +770,91 @@
         "headline": "Why Families Keep Coming Back To ML Toys"
       }
     },
-    "sp_founder_nDztyp": {
-      "type": "sp-founder",
-      "name": "Founder Story",
+    "sp_sound_familiar_e7nFpH": {
+      "type": "sp-sound-familiar",
+      "blocks": {
+        "pain_row_Y9n6Xk": {
+          "type": "pain_row",
+          "settings": {
+            "text": "You bought a ride-on and it fell apart after a few weeks."
+          }
+        },
+        "pain_row_tAeDew": {
+          "type": "pain_row",
+          "settings": {
+            "text": "The brand was some vague Amazon listing — no name, no identity, no accountability."
+          }
+        },
+        "pain_row_47ErAB": {
+          "type": "pain_row",
+          "settings": {
+            "text": "It looked great in the photos but the parts felt cheap the moment you opened the box."
+          }
+        },
+        "pain_row_EfBLEK": {
+          "type": "pain_row",
+          "settings": {
+            "text": "You tried to upgrade it and the plastic components cracked under the stress."
+          }
+        },
+        "pain_row_C4UN3L": {
+          "type": "pain_row",
+          "settings": {
+            "text": "Something went wrong and there was nowhere to turn. No support, no response, no answers."
+          }
+        },
+        "fix_row_ceTdqi": {
+          "type": "fix_row",
+          "settings": {
+            "text": "A ride-on from a real American company with a real name behind it."
+          }
+        },
+        "fix_row_pYd7JV": {
+          "type": "fix_row",
+          "settings": {
+            "text": "Built stronger out of the box, with a full upgrade path waiting when your kid wants more."
+          }
+        },
+        "fix_row_jkXnCx": {
+          "type": "fix_row",
+          "settings": {
+            "text": "Questions answered fast, by people who actually know the product. No runaround. No dead ends."
+          }
+        },
+        "fix_row_gAftkR": {
+          "type": "fix_row",
+          "settings": {
+            "text": "Service centers across the USA. Parts in stock. A real warranty."
+          }
+        },
+        "fix_row_hP3GmL": {
+          "type": "fix_row",
+          "settings": {
+            "text": "Backed by the most trusted name in the ride-on hobby — and a community of families who get it."
+          }
+        }
+      },
+      "block_order": [
+        "pain_row_Y9n6Xk",
+        "pain_row_tAeDew",
+        "pain_row_47ErAB",
+        "pain_row_EfBLEK",
+        "pain_row_C4UN3L",
+        "fix_row_ceTdqi",
+        "fix_row_pYd7JV",
+        "fix_row_jkXnCx",
+        "fix_row_gAftkR",
+        "fix_row_hP3GmL"
+      ],
+      "name": "Sound Familiar?",
       "settings": {
-        "photo": "shopify://shop_images/Headshot.png",
-        "cap_tag": "ML TOYS FOUNDER",
-        "founder_name": "ALAN PLACER",
-        "eyebrow": "ABOUT THE Owner",
-        "headline": "Built By A Firefighter. For The Next Generation.",
-        "quote": "“When I say this truck is built right, I mean it. I served 20 years in fire and EMS. I was on the scene at the World Trade Center on September 11, 2001. I don’t make claims I can’t back up.”",
-        "attribution": "ALAN PLACER · FOUNDER, ML TOYS",
-        "body": "ML Toys is owned by a real American family. Alan started this company because he wanted his own kids to have something built right — and quickly realized other parents needed the same thing.",
-        "closing": "This is the perfect ride for the kids of firefighters — or for any kid who dreams of taking on the job one day.",
-        "show_top_rip": true,
-        "top_rip_bg": "#f0f0f0",
+        "eyebrow": "STRAIGHT TALK",
+        "headline": "Sounds Familiar?",
+        "pain_heading": "WHAT YOU'VE BEEN THROUGH",
+        "fix_heading": "NOW IMAGINE",
+        "button_label": "Get the ML Toys Fire Truck",
+        "button_url": "",
+        "show_top_rip": false,
         "show_bottom_rip": false
       }
     },
@@ -1037,13 +1023,13 @@
     "sp_social_proof_ixHC8m",
     "sp_video_9gYm76",
     "featured_collection_LM7fB8",
-    "sp_upgrade_story_LeafAn",
+    "sp_founder_nDztyp",
     "sp_features_bhN6Pm",
-    "sp_sound_familiar_e7nFpH",
+    "sp_upgrade_story_LeafAn",
     "sp_comparison_jWq4zE",
     "sp_firetruck_divider_RiFVJW",
     "sp_why_mltoys_Jh9M8H",
-    "sp_founder_nDztyp",
+    "sp_sound_familiar_e7nFpH",
     "sp_guarantee_jqmQUD",
     "sp_final_cta_ijt9wD",
     "sp_faq_zhjHBV",

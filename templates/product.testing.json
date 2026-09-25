@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -163,20 +172,6 @@
     },
     "175607880400077e24": {
       "type": "apps",
-      "blocks": {
-        "ecom_youtube_card_gallery_carousel_yqx8GH": {
-          "type": "shopify://apps/ecom-youtube-card-gallery/blocks/carousel/a0f27191-6c92-4d0a-a87c-2e3f3ecdeeab",
-          "disabled": true,
-          "settings": {
-            "gallery-id": "nbXfspti",
-            "main-color": "#000000",
-            "sub-color": "#111111"
-          }
-        }
-      },
-      "block_order": [
-        "ecom_youtube_card_gallery_carousel_yqx8GH"
-      ],
       "settings": {
         "heading": "",
         "subheading": "",
@@ -301,19 +296,6 @@
     },
     "175607666646f45d5d": {
       "type": "apps",
-      "blocks": {
-        "ecom_youtube_card_gallery_carousel_zQPXaP": {
-          "type": "shopify://apps/ecom-youtube-card-gallery/blocks/carousel/a0f27191-6c92-4d0a-a87c-2e3f3ecdeeab",
-          "settings": {
-            "gallery-id": "AQR3Qx7V",
-            "main-color": "#000000",
-            "sub-color": "#111111"
-          }
-        }
-      },
-      "block_order": [
-        "ecom_youtube_card_gallery_carousel_zQPXaP"
-      ],
       "settings": {
         "heading": "Our Podcast",
         "subheading": "Join us as we discuss all things power wheels!",
