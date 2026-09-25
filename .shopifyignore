@@ -17,3 +17,4 @@ vite.config.js
 *.zip
 *.psd
 *.sketch
+docs/
