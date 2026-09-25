@@ -107,6 +107,12 @@
                 </quantity-input>
               {% endif %}
 
+            {%- if product.metafields.custom.safety_notice.value != blank and product.selected_or_first_available_variant.available -%}
+              {%- comment -%} Safety notice products can't be added from here - send the shopper to the notice checkbox on the product form. {%- endcomment -%}
+              <a href="#SafetyNoticeAnchor" class="button button-add-card" data-safety-notice-jump>
+                <span>{{ 'products.product.add_to_cart' | t }}</span>
+              </a>
+            {%- else -%}
             <button type="submit" name="add" class="button button-add-card" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} tabindex="0">
               <span>
                 {%- if product.selected_or_first_available_variant.available -%}
@@ -116,6 +122,7 @@
                 {%- endif -%}
               </span>
             </button>
+            {%- endif -%}
 
           {%- endform -%}
         </product-form>

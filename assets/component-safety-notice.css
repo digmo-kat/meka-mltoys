@@ -1,0 +1,50 @@
+.safety-notice {
+  margin: 0 0 1.6rem;
+  padding: 1.4rem 1.6rem;
+  border: 0.2rem solid #b3261e;
+  border-radius: 0.6rem;
+  background: rgba(179, 38, 30, 0.06);
+}
+
+.safety-notice__text {
+  margin: 0 0 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.safety-notice__text > *:first-child {
+  margin-top: 0;
+}
+
+.safety-notice__text > *:last-child {
+  margin-bottom: 0;
+}
+
+.safety-notice__label {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.safety-notice__checkbox {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.safety-notice__error {
+  margin: 1rem 0 0;
+  color: #b3261e;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.safety-notice--invalid {
+  box-shadow: 0 0 0 0.3rem rgba(179, 38, 30, 0.35);
+}

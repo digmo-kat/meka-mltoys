@@ -1,0 +1,37 @@
+{% comment %}
+  Renders a product's safety notice with a required acknowledgement checkbox.
+  Data: product metafield custom.safety_notice -> metaobject with fields notice_text and checkbox_label.
+  Render this INSIDE the product form. The checked box submits the line item property
+  "Safety Notice: Acknowledged", which shows in the cart, the admin order and the packing slip.
+  product-form.js blocks add-to-cart until the box is ticked.
+
+  Accepts:
+  - product: {Object} product object
+  - section_id: {String} id of the section this snippet belongs to
+{% endcomment %}
+
+{%- assign safety_notice = product.metafields.custom.safety_notice.value -%}
+{%- if safety_notice != blank -%}
+  {{ 'component-safety-notice.css' | asset_url | stylesheet_tag }}
+  <div class="safety-notice" id="SafetyNotice-{{ section_id }}">
+    <span id="SafetyNoticeAnchor"></span>
+    <div class="safety-notice__text rte">
+      {{ safety_notice.notice_text | metafield_tag }}
+    </div>
+    <label class="safety-notice__label" for="SafetyNoticeCheckbox-{{ section_id }}">
+      <input
+        type="checkbox"
+        class="safety-notice__checkbox"
+        id="SafetyNoticeCheckbox-{{ section_id }}"
+        name="properties[Safety Notice]"
+        value="Acknowledged"
+        data-safety-notice-checkbox
+        aria-describedby="SafetyNoticeError-{{ section_id }}"
+      >
+      <span>{{ safety_notice.checkbox_label.value | escape }}</span>
+    </label>
+    <p class="safety-notice__error" id="SafetyNoticeError-{{ section_id }}" role="alert" hidden>
+      Please tick the box to confirm you have read and accept the safety notice.
+    </p>
+  </div>
+{%- endif -%}
