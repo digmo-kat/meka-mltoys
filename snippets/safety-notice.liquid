@@ -2,7 +2,7 @@
   Renders a product's safety notice with a required acknowledgement checkbox.
   Data: product metafield custom.safety_notice -> metaobject with fields notice_text and checkbox_label.
   Render this INSIDE the product form. The checked box submits the line item property
-  "Safety notice: Accepted", which shows in the cart, the admin order and the packing slip.
+  "Safety Notice: Acknowledged", which shows in the cart, the admin order and the packing slip.
   product-form.js blocks add-to-cart until the box is ticked.
 
   Accepts:
@@ -23,8 +23,8 @@
         type="checkbox"
         class="safety-notice__checkbox"
         id="SafetyNoticeCheckbox-{{ section_id }}"
-        name="properties[Safety notice]"
-        value="Accepted"
+        name="properties[Safety Notice]"
+        value="Acknowledged"
         data-safety-notice-checkbox
         aria-describedby="SafetyNoticeError-{{ section_id }}"
       >
