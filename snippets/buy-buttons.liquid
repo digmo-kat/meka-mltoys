@@ -48,6 +48,10 @@
         novalidate: 'novalidate', data-type: 'add-to-cart-form', data-linked-variant-id: linked_addon_variant_id -%}
 
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %} disabled {% endif %} class="product-variant-id">
+        {%- unless product.has_only_default_variant -%}
+          {%- comment -%} Hidden order metadata so packing slips can label variant values (Label: Value). {%- endcomment -%}
+          <input type="hidden" name="properties[_option_names]" value="{{ product.options | join: '|' | escape }}">
+        {%- endunless -%}
 
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', 
