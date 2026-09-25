@@ -63,9 +63,15 @@ if (!customElements.get('product-form')) {
 			// `_addon_parent_group` is our own key; cart-drawer.liquid and main-cart-items.liquid
 			// check for either key so both Globo and natively-migrated addons render the same way.
 			const quantity = Number(formData.get('quantity')) || 1;
+			// The JSON request doesn't get form fields for free - carry over the main item's properties[...] inputs.
+			const mainProperties = {};
+			for (const [key, value] of formData.entries()) {
+			  const match = key.match(/^properties\[(.+)\]$/);
+			  if (match) mainProperties[match[1]] = value;
+			}
 			const payload = {
 			  items: [
-				{ id: Number(formData.get('id')), quantity },
+				{ id: Number(formData.get('id')), quantity, properties: mainProperties },
 				{
 				  id: Number(linkedVariantId),
 				  quantity,

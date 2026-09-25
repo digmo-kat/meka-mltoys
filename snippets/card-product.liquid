@@ -250,6 +250,9 @@
 
                 <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" class="product-variant-id"
                   {% if card_product.selected_or_first_available_variant.available == false %} disabled {% endif %}>
+                {%- unless card_product.has_only_default_variant -%}
+                  <input type="hidden" name="properties[_option_names]" value="{{ card_product.options | join: '|' | escape }}">
+                {%- endunless -%}
 
                 <button id="{{ product_form_id }}-submit" type="submit" name="add"
                   class="quick-add__submit button button--full-width {% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"

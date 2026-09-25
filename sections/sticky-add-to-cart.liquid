@@ -62,6 +62,9 @@
           -%}
           {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form', data-linked-variant-id: sticky_linked_addon_variant_id -%}
             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            {%- unless product.has_only_default_variant -%}
+              <input type="hidden" name="properties[_option_names]" value="{{ product.options | join: '|' | escape }}">
+            {%- endunless -%}
               {%- if product.has_only_default_variant == false -%}
                 <div class="select small-hide{% if section.settings.style != 'default' %} medium-hide large-up-hide{% endif %}">
                   <select name="id" class="atc-bar-product__select select__select" aria-label="Select variant">
