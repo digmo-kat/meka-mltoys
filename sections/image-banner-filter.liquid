@@ -562,7 +562,7 @@
                               assign qty_rules = true
                             endif
                           -%}
-                          {%- if card_product.variants.size > 1 or qty_rules -%}
+                          {%- if card_product.variants.size > 1 or qty_rules or card_product.metafields.custom.safety_notice.value != blank -%}
                             <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
                               <button id="{{ product_form_id }}-submit" type="submit" name="add" class="quick-add__submit button button--full-width" aria-haspopup="dialog" aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}" data-product-url="{{ card_product.url }}" tabindex="0">
                                 {{ 'products.product.choose_options' | t }}

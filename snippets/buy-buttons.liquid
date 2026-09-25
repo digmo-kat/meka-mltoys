@@ -26,6 +26,12 @@
       if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
         assign show_dynamic_checkout = true
       endif
+      comment
+        Accelerated checkout buttons skip our add-to-cart script, so they would bypass the safety notice checkbox.
+      endcomment
+      if product.metafields.custom.safety_notice.value != blank
+        assign show_dynamic_checkout = false
+      endif
 
       assign linked_addon_variant_id = ''
       if product.selected_or_first_available_variant.metafields.custom.product_variant.value
@@ -60,6 +66,8 @@
             section: section 
           -%}
         {%- endif -%}
+
+        {%- render 'safety-notice', product: product, section_id: section.id -%}
 
         <div class="product-form__buttons">
           {%- liquid

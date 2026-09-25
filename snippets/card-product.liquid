@@ -244,6 +244,7 @@
               endif
             -%}
 
+            {%- if card_product.metafields.custom.safety_notice.value == blank -%}
             <product-form data-section-id="{{ section.id }}">
 
               {%- form 'product' , card_product , id: product_form_id , class: 'form' , novalidate: 'novalidate' , data-type: 'add-to-cart-form' -%}
@@ -279,6 +280,7 @@
                 </button>
               {%- endform -%}
             </product-form>
+            {%- endif -%}
 
             {% if card_product.gift_card? != true %}
 

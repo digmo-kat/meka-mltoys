@@ -19,6 +19,21 @@ if (!customElements.get('product-form')) {
 		  if (document.querySelector('cart-drawer') && this.submitButton) this.submitButton.setAttribute('aria-haspopup', 'dialog');
 
 		  this.hideErrors = this.dataset.hideErrors === 'true';
+
+		  const safetyCheckbox = this.form && this.form.querySelector('[data-safety-notice-checkbox]');
+		  if (safetyCheckbox) {
+			safetyCheckbox.addEventListener('change', () => {
+			  if (safetyCheckbox.checked) this.toggleSafetyNoticeError(safetyCheckbox, false);
+			});
+		  }
+		}
+
+		toggleSafetyNoticeError(checkbox, show) {
+		  const notice = checkbox.closest('.safety-notice');
+		  if (!notice) return;
+		  const error = notice.querySelector('.safety-notice__error');
+		  if (error) error.hidden = !show;
+		  notice.classList.toggle('safety-notice--invalid', show);
 		}
 
 		initializeCart() {
@@ -35,6 +50,14 @@ if (!customElements.get('product-form')) {
 		onSubmitHandler(evt) {
 		  evt.preventDefault();
 		  if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
+
+		  // Products with a safety notice must have the acknowledgement box ticked before anything is added.
+		  const safetyCheckbox = this.form.querySelector('[data-safety-notice-checkbox]');
+		  if (safetyCheckbox && !safetyCheckbox.checked) {
+			this.toggleSafetyNoticeError(safetyCheckbox, true);
+			safetyCheckbox.focus();
+			return;
+		  }
 
 		  this.handleErrorMessage();
 
