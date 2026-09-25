@@ -1,0 +1,656 @@
+{% comment %} Set to true to print debug info under each item (for troubleshooting variant labels). {% endcomment %}
+{% assign show_debug = false %}
+<div class="wrapper">
+  <div class="header">
+    <div class="shop-title">
+      <p class="to-uppercase">
+        <img src="https://cdn.shopify.com/s/files/1/0773/7150/7009/files/logo-email-200px.png?v=1706019984" alt="{{ shop.name }}" width="200">
+      </p>
+    </div>
+    <div class="order-title">
+      <p class="text-align-right">
+        Order {{ order.name }}
+      </p>
+      {% if order.po_number != blank %}
+        <p class="text-align-right">
+          PO number #{{ order.po_number }}
+        </p>
+      {% endif %}
+      <p class="text-align-right">
+        {{ order.created_at | date: format: "date" }}
+      </p>
+      {% if order.discount_applications.size > 0 %}
+        <p class="text-align-right">
+          Discounts:
+          {% for item in order.discount_applications %}
+            {{ item.title }}
+          {% endfor %}
+        </p>
+      {% endif %}
+    </div>
+  </div>
+  <div class="customer-addresses">
+    <div class="shipping-address">
+      <p class="subtitle-bold to-uppercase">
+        {% if delivery_method.instructions != blank %}
+          Delivery to
+        {% else %}
+          Ship to
+        {% endif %}
+      </p>
+      <p class="address-detail">
+        {% if shipping_address != blank %}
+          {{ shipping_address.name }}
+          {% if shipping_address.company != blank %}
+            <br>
+            {{ shipping_address.company }}
+          {% endif %}
+          <br>
+          {{ shipping_address.address1 }}
+          {% if shipping_address.address2 != blank %}
+            <br>
+            {{ shipping_address.address2 }}
+          {% endif %}
+          {% if shipping_address.city_province_zip != blank %}
+            <br>
+            {{ shipping_address.city_province_zip }}
+          {% endif %}
+          <br>
+          {{ shipping_address.country }}
+          {% if shipping_address.phone != blank %}
+            <br>
+            {{ shipping_address.phone }}
+          {% endif %}
+        {% else %}
+          No shipping address
+        {% endif %}
+      </p>
+    </div>
+    <div class="billing-address">
+      <p class="subtitle-bold to-uppercase">
+        Bill to
+      </p>
+      <p class="address-detail">
+        {% if billing_address != blank %}
+          {{ billing_address.name }}
+          {% if billing_address.company != blank %}
+            <br>
+            {{ billing_address.company }}
+          {% endif %}
+          <br>
+          {{ billing_address.address1 }}
+          {% if billing_address.address2 != blank %}
+            <br>
+            {{ billing_address.address2 }}
+          {% endif %}
+          {% if billing_address.city_province_zip != blank %}
+            <br>
+            {{ billing_address.city_province_zip }}
+          {% endif %}
+          <br>
+          {{ billing_address.country }}
+        {% else %}
+          No billing address
+        {% endif %}
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="order-container">
+    <div class="order-container-header">
+      <div class="order-container-header-left-content">
+        <p class="subtitle-bold to-uppercase">
+          Items
+        </p>
+      </div>
+      <div class="order-container-header-right-content">
+        <p class="subtitle-bold to-uppercase">
+          Quantity
+        </p>
+      </div>
+    </div>
+
+    {% assign desired_image_size = 58 %}
+    {% assign resolution_adjusted_size = desired_image_size | times: 300 | divided_by: 72 | ceil %}
+    {% capture effective_image_dimensions %}{{ resolution_adjusted_size }}x{{ resolution_adjusted_size }}{% endcapture %}
+
+    {% for line_item in line_items_in_shipment %}
+      {% assign isAddonProduct = false %}
+      {% for p in line_item.properties %}
+        {% if p.first == '_gpo_parent_product_group' or p.first == '_addon_parent_group' %}
+          {% assign isAddonProduct = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
+      <div class="flex-line-item{% if isAddonProduct %} globo-addon-line{% endif %}">
+        <div class="flex-line-item-img">
+          {% if line_item.image != blank %}
+            <div class="aspect-ratio aspect-ratio-square" style="width: {{ desired_image_size }}px; height: {{ desired_image_size }}px;">
+              {{ line_item.image | img_url: effective_image_dimensions | img_tag: '', 'aspect-ratio__content' }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="flex-line-item-description">
+          <p>
+            {% if isAddonProduct %}
+              <span class="addon-pick-label">&#9658; Add-On &mdash; Pick &amp; Include</span>
+            {% endif %}
+            <span class="line-item-description-line line-item-title">
+              {{ line_item.title }}
+            </span>
+
+            {%- comment -%}
+              LABEL LOOKUP (existing orders). Packing slips don't expose product option names, so for lines without
+              the _option_names property we match the SKU (minus its trailing -N part) to the table below.
+              Regenerate/extend the table when new multi-option products are added. Unmatched products still print values without labels.
+              Table built from the live catalog on 2026-09-23 (181 multi-option products).
+            {%- endcomment -%}
+            {%- comment -%}
+              SKU shown to packers = parent SKU. For real variants the generated trailing -N is dropped
+              (only when that last part is all digits). sku_base always drops the last part and is used by the lookup below.
+            {%- endcomment -%}
+            {%- assign sku_display = line_item.sku -%}
+            {%- assign sku_base = line_item.sku -%}
+            {%- assign sku_parts = line_item.sku | split: '-' -%}
+            {%- if sku_parts.size > 1 -%}
+              {%- assign sku_last = sku_parts | last -%}
+              {%- assign sku_suffix = '-' | append: sku_last -%}
+              {%- assign sku_base = line_item.sku | remove_last: sku_suffix -%}
+              {%- assign sku_last_nondigits = sku_last | remove: '0' | remove: '1' | remove: '2' | remove: '3' | remove: '4' | remove: '5' | remove: '6' | remove: '7' | remove: '8' | remove: '9' -%}
+              {%- if line_item.variant_title != blank and line_item.variant_title != 'Default Title' and sku_last_nondigits == '' -%}
+                {%- assign sku_display = sku_base -%}
+              {%- endif -%}
+            {%- endif -%}
+
+            {%- assign option_names = '' | split: '|' -%}
+            {%- for p in line_item.properties -%}
+              {%- if p.first == '_option_names' -%}
+                {%- assign option_names = p.last | split: '|' -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if option_names.size == 0 and line_item.variant_title != blank and line_item.variant_title != 'Default Title' -%}
+              {%- assign names_csv = '' -%}
+              {%- if line_item.sku != blank -%}
+                {%- case sku_base -%}
+    {%- when '3900-3185H.3185P.3186D', '3900-5863H.5871P.5872D', '3900-6619P.6609D', '3900-6848P.6847D',
+            '3900-6853H.6864P.6863D', '3900-6886H.6888P.6887D', '3900-7097H.7108P.7103D',
+            '3900-7337H.7345P.7342D', '3900-7348H.7356P.7353D', '3900-7517H.7523P.7521D',
+            '3900-7552H.7600P.7554D', '3900-7643H.7650P.7647D', '3900-7661H.7668P.7664D',
+            '3900-7938H.7931P.7932D', '3900-8066H.8140P.8141D' -%}{%- assign names_csv = 'Select side of car and/or hinges' -%}
+        {%- when '4mm-Kid-Trax-screws', '74180-9519-01', '74550-9279', '74580-9269', '74580-9539', '74780-9509-01',
+            'BCK85-2659-x2', 'High-Voltage-Plunger', 'KFX-24v-Circuit-Board', 'On-Off-Switch',
+            'Plunger-Style-Footswitch', 'Replacement-550-Performance', 'Universal-Motor-Mount', 'Wheel-Collar' -%}{%- assign names_csv = 'Installation Aids' -%}
+        {%- when 'Stage-II-DIY-Arctic-Cat', 'Stage-III-Phoenix-Escalade', 'Stage-III-Phoenix-Mustang',
+            'Stage-III-Phoenix-Quad', 'Stage-III-Phoenix-Wrangler', 'Stage-IV-Phoenix-Escalade',
+            'Stage-IV-Phoenix-Mustang', 'Stage-IV-Phoenix-Quad', 'Stage-IV-Phoenix-Wrangler',
+            'Stage-V-Phoenix-Arctic-Cat', 'Stage-V-Phoenix-Corvette', 'Stage-V-Phoenix-Escalade',
+            'Stage-V-Phoenix-Quad', 'Stage-V-Phoenix-Wrangler' -%}{%- assign names_csv = 'Installation aids|Heatsinks?' -%}
+        {%- when 'Stage-III-Kid-Trax-Motors', 'Stage-III-Phoenix-Dune-Racer', 'Stage-III-Phoenix-F150',
+            'Stage-III-Phoenix-Hurricane', 'Stage-III-Roll-Play-Motors', 'Stage-IV-Kid-Trax',
+            'Stage-IV-Phoenix-Dune-Racer', 'Stage-IV-Phoenix-F-150', 'Stage-IV-Phoenix-Hurricane',
+            'Stage-IV-Roll-Play', 'Stage-V-Phoenix-F150', 'Stage-V-Phoenix-Hurricane',
+            'Stage-V-Super-Speed-Dune-Racer' -%}{%- assign names_csv = 'Heatsinks?' -%}
+        {%- when 'Stage-I-Kid-Trax-Motors', 'Stage-I-Phoenix-Dune-Racer', 'Stage-I-Phoenix-F150', 'Stage-I-Phoenix-Hurricane',
+            'Stage-I-Roll-Play-Motors', 'Stage-II-DIY-Dune-Racer', 'Stage-II-DIY-F150', 'Stage-II-Hurricane',
+            'Stage-II-Phoenix-Dune-Racer', 'Stage-II-Phoenix-F-150', 'Stage-II-Roll-Play' -%}{%- assign names_csv = 'Heat Sink Option' -%}
+        {%- when '3900-5903-5904', '3900-7965x2', '3900-7968', '3900-7969', '3900-8094', '73233-2239', '74460-2249',
+            'B7659-2459-x2', 'J4390-2279-2289', 'j4390-rubberized-tires-all-powerwheels-mustangs-campers',
+            'L2170-2249' -%}{%- assign names_csv = 'Replacement Cap Nuts' -%}
+        {%- when '00968-2717', '00968-3700', '6v-KT-Motor', 'Stage-I-Dynacraft-Dump-19T', 'Stage-I-MotorZ-Camaro-10T',
+            'Stage-I-Phoenix-Arctic-Cat', 'Stage-I-Phoenix-Corvette', 'Stage-II-Phoenix-Arctic-Cat' -%}{%- assign names_csv = 'Installation Aids|Heat Sink Option' -%}
+        {%- when 'Stage-I-Phoenix-Escalade', 'Stage-I-Phoenix-Jeep-Wrangler', 'Stage-I-Phoenix-Quad', 'Stage-II-DIY-Escalade',
+            'Stage-II-Phoenix-Escalade', 'Stage-II-Phoenix-Jeep-Wrangler', 'Stage-II-Phoenix-Mustang',
+            'Stage-II-Phoenix-Quad' -%}{%- assign names_csv = 'Installation aids|Heat Sink Option' -%}
+        {%- when '12v-12a-no-connector', '12v-12a-with-connector', '12v-parallel-battery-soldered', '12v-wire-harness',
+            'Dune-Racer-24v-v2.0', 'Fuse-Holder', 'Monster-Jam-Motor-Upgrade', 'Monster-Jam-Motor-Upgrade-Pack' -%}{%- assign names_csv = 'Spare Fuses' -%}
+        {%- when 'Matched-550s', 'Matched-775-Ball Bearing-Innercooled', 'Stage-III-DIY-Corvette',
+            'Stage-III-DIY-Jeep-Wrangler', 'Stage-III-DIY-Quad' -%}{%- assign names_csv = 'Heatsinks?|Installation aids|Pinion Gear Teeth' -%}
+        {%- when '18-Volt-SLA-HOLLOW-Combo-Pack', '18-Volt-SLA-SOLID-Combo-Pack', '24-Volt-Combo-Pack-SOLID',
+            '24-Volt-HOLLOW-Combo-Pack' -%}{%- assign names_csv = 'Heat Sink Option|Installation aids|Spare Fuses' -%}
+        {%- when 'Stage-III-Phoenix-Arctic-Cat', 'Stage-IV-17T-DIY', 'Stage-IV-Phoenix-Arctic-Cat', 'Stage-V-DIY' -%}{%- assign names_csv = 'Installation Aids|Heatsinks?' -%}
+        {%- when '7R-First-Gear', '7R-Third-Gear', 'Power-Wheels-Steel-First-Gear', 'Stage-III-to-V-Peg-RZR-900' -%}{%- assign names_csv = 'Installation Aids|Lubrication Options' -%}
+        {%- when 'Stage-II-DIY-ATV-1723', 'Stage-II-DIY-Jeep-Wrangler', 'Stage-II-DIY-Mustang', 'Stage-II-DIY-Quad' -%}{%- assign names_csv = 'Installation aids|Pinion Gear Teeth|Heat Sink Option' -%}
+        {%- when '18-volt-battery', '18-volt-conversion', '24-volt-battery', '24-volt-conversion' -%}{%- assign names_csv = 'Spare Fuses|Spade or Soldered Connection' -%}
+        {%- when 'Stage-III-DIY-Dune-Racer', 'Stage-III-DIY-F150', 'Stage-III-DIY-Hurricane' -%}{%- assign names_csv = 'Heatsinks?|Lubrication options' -%}
+        {%- when 'Stage-I-Dynacraft-24v-UTV', 'Stage-III-Dynacraft-24v-UTV', 'Stage-III-Peg-RZR-900' -%}{%- assign names_csv = 'Lubrication options' -%}
+        {%- when 'Amber-Warning-Lights', 'Emergency-Lights', 'LED-Lighting-Kit' -%}{%- assign names_csv = 'Voltage Reduction Module' -%}
+        {%- when '66T-22Tx2', 'Stage-V-Peg-RZR-900' -%}{%- assign names_csv = 'Installation aids|Lubrication options' -%}
+        {%- when 'Stage-I-DIY-Arctic-Cat', 'Stage-I-DIY-Escalade-17t' -%}{%- assign names_csv = 'Installation aids|Lubrication options|Heat Sink Option' -%}
+        {%- when '550-Pinion-Gear', '775-Pinion' -%}{%- assign names_csv = 'Installation aids|Pinion Gear Teeth' -%}
+        {%- when 'Stage-I-DIY-Mustang', 'Stage-I-DIY-Quad' -%}{%- assign names_csv = 'Installation aids|Pinion Gear Teeth|Heatsinks?' -%}
+        {%- when '12-Volt-Hollow-Combo-Pack', '12-Volt-SOLID-Combo-Pack' -%}{%- assign names_csv = 'Installation aids|Spare Fuses|Heat Sink Option' -%}
+        {%- when '18-20v Lithium HOLLOW Combo Kit', 'Lithium-Kit' -%}{%- assign names_csv = 'Lithium Battery Adapter|Spare Fuses' -%}
+        {%- when 'Kid-Trax-Steel-First-Gear', 'Roll-Play-Steel-First-Gear' -%}{%- assign names_csv = 'Lubrication Options' -%}
+        {%- when 'Stage-I-DIY-Dune-Racer-17t', 'Stage-I-DIY-F150-17t' -%}{%- assign names_csv = 'Lubrication options|Heat Sink Option' -%}
+        {%- when 'Dune-Racer-Rear-Axle', 'Wrangler-Rear-Axle' -%}{%- assign names_csv = 'Tire Style' -%}
+        {%- when 'F150-Rear-Axle' -%}{%- assign names_csv = 'Axle Length' -%}
+        {%- when 'Ball-Bearing' -%}{%- assign names_csv = 'Ball Bearing Type' -%}
+        {%- when 'ESC' -%}{%- assign names_csv = 'Battery Connector Option|Battery Voltage' -%}
+        {%- when 'fast-charger' -%}{%- assign names_csv = 'Battery Voltage|Connector Type' -%}
+        {%- when 'MLT101' -%}{%- assign names_csv = 'Color' -%}
+        {%- when 'foot pedal extension' -%}{%- assign names_csv = 'Extension Length' -%}
+        {%- when 'Phoenix' -%}{%- assign names_csv = 'First Gear Material|Installation Aids' -%}
+        {%- when 'Stage-II-Kid-Trax' -%}{%- assign names_csv = 'Heatsinks' -%}
+        {%- when 'Stage-III-DIY-Escalade' -%}{%- assign names_csv = 'Heatsinks?|Installation aids|Lubrication options' -%}
+        {%- when 'rear-axle-by-length' -%}{%- assign names_csv = 'Hollow or Solid and Length' -%}
+        {%- when 'Stage-IV-DIY' -%}{%- assign names_csv = 'Installation Aids|Heatsinks?|Pinion Gear Teeth' -%}
+        {%- when '3900-5836-01' -%}{%- assign names_csv = 'Installation aids' -%}
+        {%- when 'Stage-I-DIY-Jeep-Wrangler' -%}{%- assign names_csv = 'Installation aids|Heatsinks?|Pinion Gear Teeth' -%}
+        {%- when 'Stage-III-DIY-Arctic-Cat' -%}{%- assign names_csv = 'Installation aids|Lubrication options|Heatsinks?' -%}
+        {%- when 'Stage-I-Hurricane' -%}{%- assign names_csv = 'Lubrication Options|Heat Sink Option' -%}
+        {%- when 'Stage-I-Mercedes-6x6-0090' -%}{%- assign names_csv = 'Mercedes G63 Gearbox Count' -%}
+        {%- when 'Steering Stabilizer Kit' -%}{%- assign names_csv = 'Power Wheels Car Model' -%}
+        {%- when 'Rock Lights' -%}{%- assign names_csv = 'Rock Light Color' -%}
+        {%- when 'set screw' -%}{%- assign names_csv = 'Set Screw Size' -%}
+        {%- when 'Dune-Racer-24-Volt-Combo-Pack' -%}{%- assign names_csv = 'Spare Fuses|Heatsinks?' -%}
+        {%- when 'Monster-Jam-Springs' -%}{%- assign names_csv = 'Spring Length' -%}
+        {%- when 'mltoys-t-shirt-my-kid-is-faster-than-your-kid' -%}{%- assign names_csv = 'T-Shirt Size' -%}
+        {%- when 'Under-Dash-Lighting' -%}{%- assign names_csv = 'Under Dash Lighting Color' -%}
+        {%- when 'Underglow' -%}{%- assign names_csv = 'Underglow Color' -%}
+        {%- when 'Fuel-Gauge' -%}{%- assign names_csv = 'Volt Gauge Color' -%}
+                {%- endcase -%}
+              {%- else -%}
+                {%- if line_item.title contains 'Phoenix 2.0' -%}{%- assign names_csv = 'First Gear Material|Installation Aids' -%}{%- endif -%}
+                {%- if line_item.title contains 'Gift Card' -%}{%- assign names_csv = 'Denominations' -%}{%- endif -%}
+              {%- endif -%}
+              {%- assign option_names = names_csv | split: '|' -%}
+            {%- endif -%}
+
+            {% if line_item.variant_title != blank and line_item.variant_title != 'Default Title' %}
+              {% assign variant_values = line_item.variant_title | split: ' / ' %}
+              {% for variant_value in variant_values %}
+                {% assign option_name = option_names[forloop.index0] | default: '' %}
+                <span class="line-item-description-line line-item-indented">
+                  {% if option_name != '' %}<span class="variant-label">{{ option_name }}:</span> {% endif %}{{ variant_value }}
+                </span>
+              {% endfor %}
+            {% endif %}
+
+            {% if show_debug %}
+              {% for p in line_item.properties %}
+                <span class="line-item-description-line debug-line">DEBUG property {{ p.first }} = {{ p.last }}</span>
+              {% endfor %}
+              <span class="line-item-description-line debug-line">DEBUG variant_title={{ line_item.variant_title }}</span>
+            {% endif %}
+
+            {% if line_item.sku != blank %}
+              <span class="line-item-description-line line-item-indented">
+                sku: {{ sku_display }}
+              </span>
+            {% endif %}
+
+            {%- comment -%}
+              SAFETY NOTICE: the storefront checkbox adds the line item property "Safety Notice" = "Acknowledged".
+              It prints as its own highlighted line here and is left out of the Notes box below.
+            {%- endcomment -%}
+            {% for p in line_item.properties %}
+              {% if p.first == 'Safety Notice' and p.last != blank %}
+                <span class="line-item-description-line line-item-indented safety-notice-line">
+                  &#9888; <span class="variant-label">Safety Notice:</span> {{ p.last }}
+                </span>
+              {% endif %}
+            {% endfor %}
+
+            {% assign visible_prop_count = 0 %}
+            {% for p in line_item.properties %}
+              {% assign first_char = p.first | truncate: 1, '' %}
+              {% unless p.last == blank or first_char == '_' or p.first == 'Safety Notice' %}
+                {% assign visible_prop_count = visible_prop_count | plus: 1 %}
+              {% endunless %}
+            {% endfor %}
+            {% if visible_prop_count > 0 %}
+              <div class="order-notes">
+                <small class="notes-header">Notes</small>
+                {% for p in line_item.properties %}
+                  {% assign first_character_in_key = p.first | truncate: 1, '' %}
+                  {% unless p.last == blank or first_character_in_key == '_' or p.first == 'Safety Notice' %}
+                    <div class="order-note-line">
+                      <span>{{ p.first }}: </span>
+                      {%- if p.last contains '/uploads/' -%}
+                        <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+                      {%- else -%}
+                        {{ p.last }}
+                      {%- endif -%}
+                    </div>
+                  {% endunless %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% for group in line_item.groups %}
+              <span class="line-item-description-line">
+                Part of: {{ group.title }}
+              </span>
+            {% endfor %}
+          </p>
+        </div>
+        <div class="flex-line-item-quantity">
+          <p class="text-align-right">
+            {% if line_item.shipping_quantity != line_item.quantity %}
+              {{ line_item.shipping_quantity }} of {{ line_item.quantity }}
+            {% else %}
+              {{ line_item.quantity }}
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% unless includes_all_line_items_in_order %}
+    <hr class="subdued-separator">
+    <p class="missing-line-items-text">
+      There are other items from your order not included in this shipment.
+    </p>
+  {% endunless %}
+  <hr>
+  {% if order.note != blank %}
+    <div class="notes">
+      <p class="subtitle-bold to-uppercase">
+        Notes
+      </p>
+      <p class="notes-details">
+        {{ order.note }}
+      </p>
+    </div>
+  {% endif %}
+  {% if delivery_method.instructions != blank %}
+    <div class="notes">
+      <p class="subtitle-bold to-uppercase">
+        Delivery instructions
+      </p>
+      <p class="notes-details">
+        {{ delivery_method.instructions }}
+      </p>
+    </div>
+  {% endif %}
+  <div class="notes">
+    <p class="notes-details">
+      Shipping method: {{ order.shipping_method.title }}
+    </p>
+  </div>
+  <div class="footer">
+    <p>
+      Installation Instructions are on the product page on the website.<br>
+      For questions with your order or tech support please email <a href="mailto:gofast@mltoys.com">gofast@mltoys.com</a>.<br>
+      Refer a friend and you both get a discount! <a href="https://www.mltoys.com/pages/referral-program">www.mltoys.com/pages/referral-program</a>
+    </p>
+  </div>
+</div>
+<style type="text/css">
+  body {
+    font-size: 15px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    width: 831px;
+    margin: auto;
+    padding: 4em;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 250;
+  }
+
+  .header {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+  }
+
+  .header p {
+    margin: 0;
+  }
+
+  .shop-title {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    flex: 6;
+    font-size: 1.9em;
+  }
+
+  .order-title {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    flex: 4;
+  }
+
+  .customer-addresses {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+  }
+
+  .address-detail {
+    margin: 0.7em 0 0;
+    line-height: 1.5;
+  }
+
+  .subtitle-bold {
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.85em;
+  }
+
+  .to-uppercase {
+    text-transform: uppercase;
+  }
+
+  .text-align-right {
+    text-align: right;
+  }
+
+  .shipping-address {
+    float: left;
+    min-width: 18em;
+    max-width: 50%;
+  }
+
+  .billing-address {
+    padding-left: 20em;
+    min-width: 18em;
+  }
+
+  .order-container {
+    padding: 0 0.7em;
+  }
+
+  .order-container-header {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1.4em;
+  }
+
+  .order-container-header-left-content {
+    float: left;
+  }
+
+  .order-container-header-right-content {
+    float: right;
+  }
+
+  .flex-line-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.4em 0;
+    page-break-inside: avoid;
+  }
+
+  .flex-line-item-img {
+    margin-right: 1.4em;
+    min-width: {{ desired_image_size }}px;
+  }
+
+  .flex-line-item-description {
+    -webkit-box-flex: 7;
+    -webkit-flex: 7;
+    flex: 7;
+  }
+
+  .line-item-description-line {
+    display: block;
+  }
+
+  .line-item-indented {
+    padding-left: 1.5em;
+  }
+
+  .variant-label {
+    font-weight: bold;
+  }
+
+  .safety-notice-line {
+    margin-top: 4px;
+    font-weight: bold;
+  }
+
+  .line-item-title {
+    font-weight: bold;
+    font-size: calc(1em + 2px);
+  }
+
+  .debug-line {
+    font-size: 0.7em;
+    color: #b00020;
+  }
+
+  .flex-line-item-description p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .flex-line-item-quantity {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3;
+  }
+
+  .subdued-separator {
+    height: 0.07em;
+    border: none;
+    color: lightgray;
+    background-color: lightgray;
+    margin: 0;
+  }
+
+  .missing-line-items-text {
+    margin: 1.4em 0;
+    padding: 0 0.7em;
+  }
+
+  .notes {
+    margin-top: 2em;
+  }
+
+  .notes p {
+    margin-bottom: 0;
+  }
+
+  .notes .notes-details {
+    margin-top: 0.7em;
+  }
+
+  .footer {
+    margin-top: 2em;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .footer p {
+    margin: 0;
+    margin-bottom: 1.4em;
+  }
+
+  hr {
+    height: 0.14em;
+    border: none;
+    color: black;
+    background-color: black;
+    margin: 0;
+  }
+
+  .aspect-ratio {
+    position: relative;
+    display: block;
+    background: #fafbfc;
+    padding: 0;
+  }
+
+  .aspect-ratio::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(195,207,216,0.3);
+  }
+
+  .aspect-ratio--square {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+
+  .aspect-ratio__content {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .globo-addon-line {
+    font-size: 0.95em;
+  }
+
+  .globo-addon-line .flex-line-item-img {
+    margin-left: 4.5em;
+  }
+
+  .globo-addon-line .flex-line-item-description {
+    border-left: 2px solid #aaa;
+    padding-left: 0.75em;
+  }
+
+  .addon-pick-label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.72em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 3px;
+    color: #222;
+  }
+
+  .order-notes {
+    margin-top: 5px;
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    border-left: 2px solid #ccc;
+    font-size: 0.82em;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .notes-header {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.78em;
+    color: #999;
+    margin-bottom: 2px;
+  }
+</style>
