@@ -52,7 +52,7 @@
           "type": "grid_item",
           "settings": {
             "image": "shopify://shop_images/vehicle-all-other-vehicles-800px.jpg",
-            "title": "All Others / Off Brand / Amazon Vehicles",
+            "title": "All Others & Off Brands",
             "url": "/collections/all-other-vehicles"
           }
         },
@@ -62,6 +62,14 @@
             "image": "shopify://shop_images/vehicle-adventure-force-24v-thunder-tank-800px.jpg",
             "title": "Adventure Force 24v Thunder Tank",
             "url": "https://www.mltoys.com/collections/adventure-force-24v-thunder-tank"
+          }
+        },
+        "grid_item_pqTrLX": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/amazon-icon-logo-png_seeklogo-405254.png",
+            "title": "Amazon Brands",
+            "url": "shopify://collections/amazon-rideons"
           }
         },
         "grid_item_43KgHN": {
@@ -423,20 +431,13 @@
             "title": "Mercedes G63 6x6",
             "url": "https://www.mltoys.com/collections/mercedes-g63-6x6"
           }
-        },
-        "grid_item_ae6cwe": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/FireTruck15729__2_1.png",
-            "title": "MLToys Firetruck",
-            "url": "shopify://collections/mltoys-firetruck-upgrade-parts"
-          }
         }
       },
       "block_order": [
         "grid_item_baetGY",
         "grid_item_1",
         "grid_item_3Y63P3",
+        "grid_item_pqTrLX",
         "grid_item_43KgHN",
         "grid_item_XqADci",
         "grid_item_Ci9xtx",
@@ -481,8 +482,7 @@
         "grid_item_UhCRTj",
         "grid_item_15",
         "grid_item_DKtAfQ",
-        "grid_item_EWMgDr",
-        "grid_item_ae6cwe"
+        "grid_item_EWMgDr"
       ],
       "name": "Grid view",
       "settings": {
@@ -500,6 +500,14 @@
     "featured_grid_6MymWm": {
       "type": "featured-grid",
       "blocks": {
+        "grid_item_hBD4FX": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/FireTruck15729__2_1.png",
+            "title": "MLToys Firetruck",
+            "url": "shopify://collections/mltoys-firetruck-upgrade-parts"
+          }
+        },
         "grid_item_bqtKQW": {
           "type": "grid_item",
           "settings": {
@@ -800,7 +808,7 @@
           "type": "grid_item",
           "settings": {
             "image": "shopify://shop_images/vehicle-all-other-vehicles-800px.jpg",
-            "title": "All Others / Off Brand / Amazon Vehicles",
+            "title": "All Others & Off Brands",
             "url": "/collections/all-other-vehicles"
           }
         },
@@ -827,6 +835,7 @@
         }
       },
       "block_order": [
+        "grid_item_hBD4FX",
         "grid_item_bqtKQW",
         "grid_item_Pd3GCT",
         "grid_item_4JyLEL",
