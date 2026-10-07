@@ -79,19 +79,7 @@
       <span class="visually-hidden">{{ value | escape }}</span>
       {{ label_unavailable }}
     {%- endcapture -%}
-    {%
-      render 'swatch-input',
-      id: input_id,
-      name: option.name,
-      value: value | escape,
-      swatch: value.swatch,
-      product_form_id: product_form_id,
-      checked: checked,
-      visually_disabled: option_disabled,
-      shape: block.settings.swatch_shape,
-			swatches_style: block.settings.swatches_style,
-      help_text: help_text
-    %}
+    {% render 'swatch-input', id: input_id, name: option.name, value: value, swatch: value.swatch, product_form_id: product_form_id, checked: checked, visually_disabled: option_disabled, shape: block.settings.swatch_shape, swatches_style: block.settings.swatches_style, help_text: help_text %}
   {%- elsif picker_type == 'button' -%}
     <input
       type="radio"
@@ -130,4 +118,20 @@
       {%- endif %}
     </option>
   {%- endif -%}
-{%- endfor -%}
+{%- endfor -%}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%\n      render 'swatch-input',\n      id: input_id,\n      name: option.name,\n
+    \     value: value | escape,\n      swatch: value.swatch,\n      product_form_id:
+    product_form_id,\n      checked: checked,\n      visually_disabled: option_disabled,\n
+    \     shape: block.settings.swatch_shape,\n\t\t\tswatches_style: block.settings.swatches_style,\n
+    \     help_text: help_text\n    %}"
+  to: "{% render 'swatch-input', id: input_id, name: option.name, value: value, swatch:
+    value.swatch, product_form_id: product_form_id, checked: checked, visually_disabled:
+    option_disabled, shape: block.settings.swatch_shape, swatches_style: block.settings.swatches_style,
+    help_text: help_text %}"
+  position: 2766..3055
+{%- endcomment -%}
