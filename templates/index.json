@@ -12,32 +12,6 @@
     "6a2fc120-4bf3-4610-a05d-7f55944c6720": {
       "type": "image-banner-filter",
       "blocks": {
-        "image_slide_73mVmn": {
-          "type": "image_slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Labor_Day_-Desktop.jpg",
-            "image_mobile": "shopify://shop_images/Labor_Day_-Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "Save 15% - Limited Time",
-            "heading_size": "h1",
-            "text": "<p>Shop The Labor Day sale and save 15% on most items in the store. Hurry, this sale ends Monday.</p>",
-            "text_size_block": "medium",
-            "button_label_1": "Shop By Vehicle",
-            "button_link_1": "shopify://pages/upgrades-by-vehicle",
-            "button_style_secondary_1": false,
-            "enable_button_arrow": false,
-            "button_label_2": "Shop By Category",
-            "button_link_2": "shopify://pages/upgrades-by-category",
-            "button_style_secondary_2": true,
-            "color_scheme": "scheme-3",
-            "show_text_box": false,
-            "desktop_content_position": "bottom-center",
-            "mobile_content_position": "bottom-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "center"
-          }
-        },
         "image_slide_6Dg7rM": {
           "type": "image_slide",
           "settings": {
@@ -54,6 +28,31 @@
             "enable_button_arrow": false,
             "button_label_2": "Shop By Vehicle",
             "button_link_2": "shopify://pages/upgrades-by-vehicle",
+            "button_style_secondary_2": true,
+            "color_scheme": "scheme-3",
+            "show_text_box": false,
+            "desktop_content_position": "bottom-center",
+            "mobile_content_position": "bottom-center",
+            "desktop_content_alignment": "left",
+            "mobile_content_alignment": "center"
+          }
+        },
+        "image_slide_73mVmn": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Phoenix-Desktop_1.jpg",
+            "image_mobile": "shopify://shop_images/Phoenix-Mobile_1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "The Phoenix 2.0 Is Here",
+            "heading_size": "h1",
+            "text": "<p>Shop our most durable gearbox</p>",
+            "text_size_block": "medium",
+            "button_label_1": "View Now",
+            "button_link_1": "shopify://products/mltoys-phoenix-2-0-gearbox-upgrade-for-7r",
+            "button_style_secondary_1": false,
+            "enable_button_arrow": false,
+            "button_label_2": "",
+            "button_link_2": "shopify://pages/upgrades-by-category",
             "button_style_secondary_2": true,
             "color_scheme": "scheme-3",
             "show_text_box": false,
@@ -115,8 +114,8 @@
         }
       },
       "block_order": [
-        "image_slide_73mVmn",
         "image_slide_6Dg7rM",
+        "image_slide_73mVmn",
         "image_slide_JcyBwK",
         "image_slide_TGGRkA"
       ],
