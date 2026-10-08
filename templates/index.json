@@ -14,14 +14,13 @@
       "blocks": {
         "image_slide_73mVmn": {
           "type": "image_slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Labor_Day_-Desktop.jpg",
-            "image_mobile": "shopify://shop_images/Labor_Day_-Mobile.jpg",
+            "image": "shopify://shop_images/Phoenix-Desktop_1.jpg",
+            "image_mobile": "shopify://shop_images/Phoenix-Mobile_1.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Save 15% - Limited Time",
+            "heading": "The Phoenix 2.0 Is Here",
             "heading_size": "h1",
-            "text": "<p>Shop The Labor Day sale and save 15% on most items in the store. Hurry, this sale ends Monday.</p>",
+            "text": "<p>Shop our most durable gearbox</p>",
             "text_size_block": "medium",
             "button_label_1": "Shop By Vehicle",
             "button_link_1": "shopify://pages/upgrades-by-vehicle",
