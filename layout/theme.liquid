@@ -61,6 +61,10 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
 
+    {%- comment -%} Searchanise renders its own cards; this adds product_badge_1 to them. {%- endcomment -%}
+    {{ 'component-product-metafield-badges.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'searchanise-product-badges.js' | asset_url }}" defer="defer"></script>
+
     {% if shop.permanent_domain contains 'ml-toys-dev' or theme.role != 'main' %}
       <!-- BugHerd: dev store or any unpublished theme preview -->
       <script async src="https://www.bugherd.com/sidebarv2.js?apikey=xvs5asrlhkhunm7kot6exq"></script>
