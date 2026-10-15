@@ -101,6 +101,7 @@
             {%- case block.type -%}
 
               {%- when 'title' -%}
+                {%- render 'product-metafield-badges', product_obj: product, show_badge_2: true -%}
                 <div class="product__title-wrapper" {{ block.shopify_attributes }}>
                   <{{ block.settings.heading_size }} class="product__title {{ block.settings.heading_size }}">
                     {{ product.title | escape }}

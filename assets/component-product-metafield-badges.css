@@ -1,0 +1,41 @@
+.product-metafield-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.product-metafield-badges__badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.32px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.product-metafield-badges__badge--primary {
+  padding: 6px 10px;
+  color: #fff;
+  background: #e11d2a;
+}
+
+.product-metafield-badges__badge--secondary {
+  padding: 5px 10px;
+  color: #0b0c0e;
+  background: #fff;
+  border: 1.5px solid #0b0c0e;
+}
+
+/* Product cards: sit above the title, tighter and smaller */
+.card__information > .product-metafield-badges {
+  margin-bottom: 6px;
+}
+
+.card__information > .product-metafield-badges .product-metafield-badges__badge {
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 5px 8px;
+}

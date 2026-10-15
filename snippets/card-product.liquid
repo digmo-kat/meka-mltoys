@@ -158,6 +158,7 @@
       <div class="card__content">
 
         <div class="card__information">
+          {%- render 'product-metafield-badges', product_obj: card_product -%}
           <h3 class="card__heading h6 {{ settings.card_heading_font_weight }} {{ settings.card_heading_font_family }}-family" {% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}" {% endif %}>
             <a href="{{ card_product.url }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
               {{ card_product.title | escape }}
