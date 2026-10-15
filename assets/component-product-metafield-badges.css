@@ -39,3 +39,29 @@
   letter-spacing: 1px;
   padding: 5px 8px;
 }
+
+/* Searchanise result cards (injected by searchanise-product-badges.js).
+   Searchanise's own stylesheet restyles every span inside its cards, so these
+   need the extra specificity and !important to keep the pill look. */
+.snize li.snize-product .product-metafield-badges--snize {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  margin: 0 0 6px !important;
+  text-align: center !important;
+}
+
+.snize li.snize-product .product-metafield-badges--snize .product-metafield-badges__badge {
+  display: inline-flex !important;
+  align-items: center;
+  padding: 5px 8px !important;
+  font-family: inherit !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  color: #fff !important;
+  background: #e11d2a !important;
+  border-radius: 4px !important;
+}
