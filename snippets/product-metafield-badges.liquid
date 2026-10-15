@@ -1,0 +1,32 @@
+{% comment %}
+  Renders the custom product badge pills from the product metafields
+  custom.product_badge_1 (filled red) and custom.product_badge_2 (outlined).
+
+  Accepts:
+  - product_obj: {Object} Product object
+  - show_badge_2: {Boolean} Also render product_badge_2. Default: false (optional)
+  - class: {String} Extra class names for the wrapper (optional)
+
+  Usage:
+  {% render 'product-metafield-badges', product_obj: product, show_badge_2: true %}
+{% endcomment %}
+
+{%- liquid
+  assign pb_1 = product_obj.metafields.custom.product_badge_1.value
+  assign pb_2 = nil
+  if show_badge_2
+    assign pb_2 = product_obj.metafields.custom.product_badge_2.value
+  endif
+-%}
+
+{%- if pb_1 != blank or pb_2 != blank -%}
+  {{ 'component-product-metafield-badges.css' | asset_url | stylesheet_tag }}
+  <div class="product-metafield-badges{% if class != blank %} {{ class }}{% endif %}">
+    {%- if pb_1 != blank -%}
+      <span class="product-metafield-badges__badge product-metafield-badges__badge--primary">{{ pb_1 | escape }}</span>
+    {%- endif -%}
+    {%- if pb_2 != blank -%}
+      <span class="product-metafield-badges__badge product-metafield-badges__badge--secondary">{{ pb_2 | escape }}</span>
+    {%- endif -%}
+  </div>
+{%- endif -%}
