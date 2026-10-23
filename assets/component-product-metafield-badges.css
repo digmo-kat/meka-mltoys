@@ -40,6 +40,17 @@
   padding: 5px 8px;
 }
 
+/* Cart, cart drawer and order detail line items */
+.product-metafield-badges--line-item {
+  margin: 4px 0;
+}
+
+.product-metafield-badges--line-item .product-metafield-badges__badge {
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 5px 8px;
+}
+
 /* Searchanise result cards (injected by searchanise-product-badges.js).
    Searchanise's own stylesheet restyles every span inside its cards, so these
    need the extra specificity and !important to keep the pill look. */

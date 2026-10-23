@@ -132,6 +132,7 @@
                     {%- else -%}
                       <p>{{ line_item.title }}</p>
                     {%- endif -%}
+                    {%- render 'product-metafield-badges', product_obj: line_item.product, class: 'product-metafield-badges--line-item' -%}
                     {%- assign property_size = line_item.properties | size -%}
                     {%- unless line_item.selling_plan_allocation == null and property_size == 0 -%}
                       <div class="properties">
