@@ -79,12 +79,6 @@
             "page": ""
           }
         },
-        "globo_product_options_app_block_czPKJJ": {
-          "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-          "settings": {
-            "product": ""
-          }
-        },
         "inventory_pbCRT8": {
           "type": "inventory",
           "settings": {
@@ -185,7 +179,6 @@
         "ft_save_Rq7s",
         "sku_Htybng",
         "collapsible_tab_kLNhqq",
-        "globo_product_options_app_block_czPKJJ",
         "inventory_pbCRT8",
         "variant_picker",
         "buy_buttons",
@@ -410,22 +403,18 @@
         "padding_bottom": 70
       }
     },
-    "sp_founder_nDztyp": {
-      "type": "sp-founder",
-      "name": "Founder Story",
+    "sp_video_wPGjAa": {
+      "type": "sp-video",
+      "name": "Video — See it in Action",
       "settings": {
-        "photo": "shopify://shop_images/Headshot.png",
-        "cap_tag": "ML TOYS FOUNDER",
-        "founder_name": "ALAN PLACER",
-        "eyebrow": "ABOUT THE Owner",
-        "headline": "Built By A Firefighter. For The Next Generation.",
-        "quote": "“When I say this truck is built right, I mean it. I served 20 years in fire and EMS. I was on the scene at the World Trade Center on September 11, 2001. I don’t make claims I can’t back up.”",
-        "attribution": "ALAN PLACER · FOUNDER, ML TOYS",
-        "body": "ML Toys is owned by a real American family. Alan started this company because he wanted his own kids to have something built right — and quickly realized other parents needed the same thing.",
-        "closing": "This is the perfect ride for the kids of firefighters — or for any kid who dreams of taking on the job one day.",
-        "show_top_rip": true,
-        "top_rip_bg": "#FFFFFF",
-        "show_bottom_rip": false
+        "eyebrow": "ROLL THE TAPE",
+        "headline": "Built by a Firefigher for the Next Generation",
+        "subtext": "Learn how founder Alan Placer went from being a First Responder at the World Trade Center on 9/11 to starting MLToys and bringing you this firetruck!",
+        "video_type": "youtube",
+        "youtube_url": "https://youtu.be/0qT7mspCT7Q?si=xBY_HS7X-YcYqrwj",
+        "video_file": "",
+        "poster_image": "shopify://shop_images/Headshot.png",
+        "duration_label": ""
       }
     },
     "sp_features_bhN6Pm": {
@@ -1016,7 +1005,7 @@
     "sp_social_proof_ixHC8m",
     "sp_video_9gYm76",
     "featured_collection_LM7fB8",
-    "sp_founder_nDztyp",
+    "sp_video_wPGjAa",
     "sp_features_bhN6Pm",
     "sp_upgrade_story_LeafAn",
     "sp_comparison_jWq4zE",
