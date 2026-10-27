@@ -140,8 +140,6 @@
                               {{- item.product.title | escape -}}
                             </a>
 
-                            {%- render 'product-metafield-badges', product_obj: item.product, class: 'product-metafield-badges--line-item' -%}
-
                             {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != null -%}
                               <dl class="cart-item__details-options">
                                 {%- if item.product.has_only_default_variant == false -%}
