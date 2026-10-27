@@ -58,6 +58,7 @@
           {%- comment -%} Hidden order metadata so packing slips can label variant values (Label: Value). {%- endcomment -%}
           <input type="hidden" name="properties[_option_names]" value="{{ product.options | join: '|' | escape }}">
         {%- endunless -%}
+        {%- render 'product-notice-property', product_obj: product -%}
 
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', 

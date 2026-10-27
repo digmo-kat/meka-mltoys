@@ -65,6 +65,7 @@
             {%- unless product.has_only_default_variant -%}
               <input type="hidden" name="properties[_option_names]" value="{{ product.options | join: '|' | escape }}">
             {%- endunless -%}
+            {%- render 'product-notice-property', product_obj: product -%}
               {%- if product.has_only_default_variant == false -%}
                 <div class="select small-hide{% if section.settings.style != 'default' %} medium-hide large-up-hide{% endif %}">
                   <select name="id" class="atc-bar-product__select select__select" aria-label="Select variant">

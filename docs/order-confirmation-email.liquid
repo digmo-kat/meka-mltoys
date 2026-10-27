@@ -244,10 +244,11 @@
             <span class="order-list__item-variant">{{ line.variant.title }}</span><br/>
           {% endif %}
 
-          {% assign product_badge_1 = line.product.metafields.custom.product_badge_1.value %}
-          {% if product_badge_1 != blank %}
-            <span class="order-list__item-variant" style="color: #e11d2a; font-weight: 700;">{{ product_badge_1 }}</span><br/>
-          {% endif %}
+          {% for property in line.properties %}
+            {% if property.first == 'Notice' and property.last != blank %}
+              <span class="order-list__item-variant" style="color: #e11d2a; font-weight: 700;">Notice: {{ property.last }}</span><br/>
+            {% endif %}
+          {% endfor %}
 
           {% for group in line.groups %}
             <span class="order-list__item-variant">Part of: {{ group.display_title }}</span><br/>

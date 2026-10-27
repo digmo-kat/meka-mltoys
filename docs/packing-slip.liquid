@@ -281,14 +281,17 @@
             {% endif %}
 
             {%- comment -%}
-              PRODUCT BADGE: custom.product_badge_1 metafield (e.g. "Will ship late October").
+              NOTICE: the theme adds the product's badge text (custom.product_badge_1, e.g. a pre-order date) as the
+              line item property "Notice" when the item is added to the cart. Packing slips cannot read product
+              metafields, so it comes from the property. Printed on its own line and left out of the Notes box below.
             {%- endcomment -%}
-            {% assign product_badge_1 = line_item.product.metafields.custom.product_badge_1.value %}
-            {% if product_badge_1 != blank %}
-              <span class="line-item-description-line line-item-indented product-badge-line">
-                <span class="variant-label">Badge:</span> {{ product_badge_1 }}
-              </span>
-            {% endif %}
+            {% for p in line_item.properties %}
+              {% if p.first == 'Notice' and p.last != blank %}
+                <span class="line-item-description-line line-item-indented notice-line">
+                  <span class="variant-label">Notice:</span> {{ p.last }}
+                </span>
+              {% endif %}
+            {% endfor %}
 
             {%- comment -%}
               SAFETY NOTICE: the storefront checkbox adds the line item property "Safety Notice" = "Acknowledged".
@@ -305,7 +308,7 @@
             {% assign visible_prop_count = 0 %}
             {% for p in line_item.properties %}
               {% assign first_char = p.first | truncate: 1, '' %}
-              {% unless p.last == blank or first_char == '_' or p.first == 'Safety Notice' %}
+              {% unless p.last == blank or first_char == '_' or p.first == 'Safety Notice' or p.first == 'Notice' %}
                 {% assign visible_prop_count = visible_prop_count | plus: 1 %}
               {% endunless %}
             {% endfor %}
@@ -314,7 +317,7 @@
                 <small class="notes-header">Notes</small>
                 {% for p in line_item.properties %}
                   {% assign first_character_in_key = p.first | truncate: 1, '' %}
-                  {% unless p.last == blank or first_character_in_key == '_' or p.first == 'Safety Notice' %}
+                  {% unless p.last == blank or first_character_in_key == '_' or p.first == 'Safety Notice' or p.first == 'Notice' %}
                     <div class="order-note-line">
                       <span>{{ p.first }}: </span>
                       {%- if p.last contains '/uploads/' -%}
@@ -521,7 +524,7 @@
     font-weight: bold;
   }
 
-  .product-badge-line {
+  .notice-line {
     margin-top: 4px;
     font-weight: bold;
   }

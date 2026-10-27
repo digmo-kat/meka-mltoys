@@ -1,0 +1,16 @@
+{% comment %}
+  Adds the product's badge text (custom.product_badge_1) to the add-to-cart form as the
+  line item property "Notice". The property is copied onto the order line item, so it prints
+  on the cart, checkout, order status page, emails, packing slip and admin order.
+  (Packing slips and Shopify-hosted pages cannot read product metafields themselves.)
+
+  Accepts:
+  - product_obj: {Object} Product object
+
+  Usage (inside a product form):
+  {% render 'product-notice-property', product_obj: product %}
+{% endcomment %}
+{%- assign notice_text = product_obj.metafields.custom.product_badge_1.value -%}
+{%- if notice_text != blank -%}
+  <input type="hidden" name="properties[Notice]" value="{{ notice_text | escape }}">
+{%- endif -%}
