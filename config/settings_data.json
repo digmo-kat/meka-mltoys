@@ -202,12 +202,10 @@
         "disabled": false,
         "settings": {}
       },
-      "3720565183479497137": {
-        "type": "shopify://apps/globo-product-options/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-        "disabled": true,
-        "settings": {
-          "themeInfo": "{{ theme.id }}"
-        }
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
