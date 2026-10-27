@@ -281,6 +281,16 @@
             {% endif %}
 
             {%- comment -%}
+              PRODUCT BADGE: custom.product_badge_1 metafield (e.g. "Will ship late October").
+            {%- endcomment -%}
+            {% assign product_badge_1 = line_item.product.metafields.custom.product_badge_1.value %}
+            {% if product_badge_1 != blank %}
+              <span class="line-item-description-line line-item-indented product-badge-line">
+                <span class="variant-label">Badge:</span> {{ product_badge_1 }}
+              </span>
+            {% endif %}
+
+            {%- comment -%}
               SAFETY NOTICE: the storefront checkbox adds the line item property "Safety Notice" = "Acknowledged".
               It prints as its own highlighted line here and is left out of the Notes box below.
             {%- endcomment -%}
@@ -507,6 +517,11 @@
   }
 
   .safety-notice-line {
+    margin-top: 4px;
+    font-weight: bold;
+  }
+
+  .product-badge-line {
     margin-top: 4px;
     font-weight: bold;
   }
