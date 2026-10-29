@@ -167,11 +167,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "3720565183479497137": {
-        "type": "shopify://apps/globo-product-option/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-        "disabled": false,
-        "settings": {}
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
@@ -204,6 +199,11 @@
       },
       "6603642584040985330": {
         "type": "shopify://apps/chaterimo/blocks/chat_widget/0ccccbc9-09fe-4d2f-a4f6-3aab2ab3edfe",
+        "disabled": false,
+        "settings": {}
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
       }
