@@ -383,54 +383,6 @@
             "title": "Huffy McClaren",
             "url": "shopify://collections/huffy-mcclaren-upgraded-faster-parts"
           }
-        },
-        "grid_item_14": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/vehcile-kid-motorz-camaro-800px.jpg",
-            "title": "Kid Motorz Camaro",
-            "url": "/collections/kid-motorz-camaro"
-          }
-        },
-        "grid_item_Y4ndwt": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/vehicle-kid-trax-1969-ford-bronco-800px.jpg",
-            "title": "Kid Trax 1969 Ford Bronco",
-            "url": "https://www.mltoys.com/collections/kid-trax-1969-bronco"
-          }
-        },
-        "grid_item_UhCRTj": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/vehicle-kid-trax-2021-ford-bronco-800px.jpg",
-            "title": "Kid Trax 2021 Ford Bronco",
-            "url": "https://www.mltoys.com/collections/kid-trax-2021-ford-bronco"
-          }
-        },
-        "grid_item_15": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/vehicle-kid-trax-dodge-charger-800px.jpg",
-            "title": "Kid Trax Dodge Charger",
-            "url": "/collections/kid-trax-dodge-charger"
-          }
-        },
-        "grid_item_DKtAfQ": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/vehicle-kid-trax-dodge-ram-800px.jpg",
-            "title": "Kid Trax Dodge Ram",
-            "url": "https://www.mltoys.com/collections/kid-trax-dodge-ram"
-          }
-        },
-        "grid_item_EWMgDr": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/vehicle-mercedes-G63-6x6-800px.jpg",
-            "title": "Mercedes G63 6x6",
-            "url": "https://www.mltoys.com/collections/mercedes-g63-6x6"
-          }
         }
       },
       "block_order": [
@@ -476,13 +428,7 @@
         "grid_item_egNE6n",
         "grid_item_YcEnLK",
         "grid_item_13",
-        "grid_item_hJC8tW",
-        "grid_item_14",
-        "grid_item_Y4ndwt",
-        "grid_item_UhCRTj",
-        "grid_item_15",
-        "grid_item_DKtAfQ",
-        "grid_item_EWMgDr"
+        "grid_item_hJC8tW"
       ],
       "name": "Grid view",
       "settings": {
@@ -500,6 +446,54 @@
     "featured_grid_6MymWm": {
       "type": "featured-grid",
       "blocks": {
+        "grid_item_GbJBnn": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehcile-kid-motorz-camaro-800px.jpg",
+            "title": "Kid Motorz Camaro",
+            "url": "/collections/kid-motorz-camaro"
+          }
+        },
+        "grid_item_kVNfcB": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-kid-trax-1969-ford-bronco-800px.jpg",
+            "title": "Kid Trax 1969 Ford Bronco",
+            "url": "https://www.mltoys.com/collections/kid-trax-1969-bronco"
+          }
+        },
+        "grid_item_gMMfBg": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-kid-trax-2021-ford-bronco-800px.jpg",
+            "title": "Kid Trax 2021 Ford Bronco",
+            "url": "https://www.mltoys.com/collections/kid-trax-2021-ford-bronco"
+          }
+        },
+        "grid_item_cpdCyx": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-kid-trax-dodge-charger-800px.jpg",
+            "title": "Kid Trax Dodge Charger",
+            "url": "/collections/kid-trax-dodge-charger"
+          }
+        },
+        "grid_item_PqM7qj": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-kid-trax-dodge-ram-800px.jpg",
+            "title": "Kid Trax Dodge Ram",
+            "url": "https://www.mltoys.com/collections/kid-trax-dodge-ram"
+          }
+        },
+        "grid_item_tJ8dH6": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/vehicle-mercedes-G63-6x6-800px.jpg",
+            "title": "Mercedes G63 6x6",
+            "url": "https://www.mltoys.com/collections/mercedes-g63-6x6"
+          }
+        },
         "grid_item_hBD4FX": {
           "type": "grid_item",
           "settings": {
@@ -835,6 +829,12 @@
         }
       },
       "block_order": [
+        "grid_item_GbJBnn",
+        "grid_item_kVNfcB",
+        "grid_item_gMMfBg",
+        "grid_item_cpdCyx",
+        "grid_item_PqM7qj",
+        "grid_item_tJ8dH6",
         "grid_item_hBD4FX",
         "grid_item_bqtKQW",
         "grid_item_Pd3GCT",
