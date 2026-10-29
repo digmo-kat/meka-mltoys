@@ -72,6 +72,14 @@
             "url": "shopify://collections/amazon-rideons"
           }
         },
+        "grid_item_aiGeFW": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/anpabo_24V_All-Terrain_Ride-On_Buggy_UTV.png",
+            "title": "Anpabo All Terrain 24v UTV Buggy",
+            "url": "shopify://collections/anpabo-cat-dump-truck-797f-24v-copy"
+          }
+        },
         "grid_item_43KgHN": {
           "type": "grid_item",
           "settings": {
@@ -390,6 +398,7 @@
         "grid_item_1",
         "grid_item_3Y63P3",
         "grid_item_pqTrLX",
+        "grid_item_aiGeFW",
         "grid_item_43KgHN",
         "grid_item_XqADci",
         "grid_item_Ci9xtx",
