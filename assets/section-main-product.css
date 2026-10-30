@@ -904,7 +904,7 @@ a.product__text {
 		max-width: 150%;
 	}
 }
-/* Mobile: keep vertical images fully visible (contained) in the zoom modal */
+/* Mobile: keep images fully visible (contained) in the zoom modal */
 @media screen and (max-width: 749px) {
 	.product-media-modal__dialog,
 	.product-media-modal__content {
@@ -915,7 +915,7 @@ a.product__text {
 		height: 100vh;
 		height: 100dvh;
 	}
-	.product-media-modal__content>.product__media-item--portrait {
+	.product-media-modal__content>img {
 		width: 100%;
 		max-width: 100%;
 		height: 100vh;
