@@ -1499,6 +1499,14 @@ a.product__text {
 .product-media-container .media {
 	padding-top: var(--ratio-percent);
 }
+/* Uniform 1:1 frame for gallery images; the image is contained inside it */
+.product-media-container.media-type-image {
+	--aspect-ratio: 1;
+}
+/* Never crop gallery images, even if the container is stretched by the grid/slider */
+.product-media-container .media > img {
+	object-fit: contain;
+}
 .product-media-container.constrain-height .media {
 	padding-top: min(var(--constrained-height), var(--ratio-percent));
 }
