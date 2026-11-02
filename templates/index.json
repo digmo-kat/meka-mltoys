@@ -12,6 +12,31 @@
     "6a2fc120-4bf3-4610-a05d-7f55944c6720": {
       "type": "image-banner-filter",
       "blocks": {
+        "image_slide_batteries": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Batteries-Desktop.jpg",
+            "image_mobile": "shopify://shop_images/Batteries-Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Upgraded Ride-On Batteries",
+            "heading_size": "h1",
+            "text": "<p>Extend the fun with longer lasting batteries.</p>",
+            "text_size_block": "medium",
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections/power-wheels-upgrade-batteries",
+            "button_style_secondary_1": false,
+            "enable_button_arrow": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "color_scheme": "scheme-3",
+            "show_text_box": false,
+            "desktop_content_position": "bottom-center",
+            "mobile_content_position": "bottom-center",
+            "desktop_content_alignment": "left",
+            "mobile_content_alignment": "center"
+          }
+        },
         "image_slide_6Dg7rM": {
           "type": "image_slide",
           "settings": {
@@ -79,28 +104,6 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": true,
-            "color_scheme": "scheme-3",
-            "show_text_box": false,
-            "desktop_content_position": "bottom-center",
-            "mobile_content_position": "bottom-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "center"
-          }
-        },
-        "image_slide_batteries": {
-          "type": "image_slide",
-          "settings": {
-            "image": "shopify://shop_images/Batteries-Desktop.jpg",
-            "image_mobile": "shopify://shop_images/Batteries-Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "Upgraded Ride-On Batteries",
-            "heading_size": "h1",
-            "text": "<p>Extend the fun with longer lasting batteries.</p>",
-            "text_size_block": "medium",
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify://collections/power-wheels-upgrade-batteries",
-            "button_style_secondary_1": false,
-            "enable_button_arrow": false,
             "color_scheme": "scheme-3",
             "show_text_box": false,
             "desktop_content_position": "bottom-center",
@@ -1669,7 +1672,8 @@
             "themeId": "light",
             "autoscroll": true,
             "autoplay": "off",
-            "focus": true
+            "focus": true,
+            "manropeFont": "manrope_n4"
           }
         }
       },
