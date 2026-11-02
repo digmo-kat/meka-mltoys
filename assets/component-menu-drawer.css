@@ -480,9 +480,11 @@ padding-left: 3rem;
   font-weight: bold !important;
 }
 
-/* Upgrades by Vehicle: top-level entries are bold whether they are plain links or expandable */
+/* Upgrades by Vehicle / Category: top-level entries are bold whether they are plain links or expandable */
 #link-upgrades-by-vehicle > .menu-drawer__inner-submenu > .menu-drawer__menu > li > a.menu-drawer__menu-item,
-#link-upgrades-by-vehicle > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details > summary.menu-drawer__menu-item {
+#link-upgrades-by-vehicle > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details > summary.menu-drawer__menu-item,
+#link-upgrades-by-category > .menu-drawer__inner-submenu > .menu-drawer__menu > li > a.menu-drawer__menu-item,
+#link-upgrades-by-category > .menu-drawer__inner-submenu > .menu-drawer__menu > li > details > summary.menu-drawer__menu-item {
   font-weight: bold !important;
 }
 
