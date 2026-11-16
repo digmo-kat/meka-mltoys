@@ -65,6 +65,14 @@
             "url": "https://www.mltoys.com/products/phoenix-first-gear-delete-dual-775-motor-mounting-plates"
           }
         },
+        "grid_item_MzCA4V": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/triple_delete_phoenix.jpg",
+            "title": "Phoenix & 7R First Gear Delete & Triple 775 Motor Mounting Plates",
+            "url": "shopify://products/phoenixfirst-gear-delete-triple-775-motor-mounting-plates"
+          }
+        },
         "grid_item_TkDJTP": {
           "type": "grid_item",
           "settings": {
@@ -176,20 +184,13 @@
             "title": "36 Volt Conversion Kit * RACE ONLY *",
             "url": "https://www.mltoys.com/products/36-volt-conversion-kit-race-only"
           }
-        },
-        "grid_item_YPC6Uz": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Podium-Banner-2.png",
-            "title": "Power Wheels Podium Banner - Borrow or Buy",
-            "url": "https://www.mltoys.com/products/power-wheels-podium-banner-borrow-or-buy"
-          }
         }
       },
       "block_order": [
         "grid_item_hfwMmK",
         "grid_item_jWCThX",
         "grid_item_Crar7Q",
+        "grid_item_MzCA4V",
         "grid_item_TkDJTP",
         "grid_item_MjHEAz",
         "grid_item_4MC3DY",
@@ -203,8 +204,7 @@
         "grid_item_tinjMb",
         "grid_item_FkXTmD",
         "grid_item_9NpRF9",
-        "grid_item_PqiwrK",
-        "grid_item_YPC6Uz"
+        "grid_item_PqiwrK"
       ],
       "name": "Grid view",
       "settings": {
