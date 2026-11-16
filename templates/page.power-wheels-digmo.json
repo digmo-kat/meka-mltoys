@@ -89,6 +89,14 @@
             "url": "shopify://products/te-solenoid"
           }
         },
+        "grid_item_E6dqrC": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/solenoid1.jpg",
+            "title": "Chrome Solenoid",
+            "url": "shopify://products/heavy-duty-solenoid"
+          }
+        },
         "grid_item_CPqEzt": {
           "type": "grid_item",
           "settings": {
@@ -185,6 +193,7 @@
         "grid_item_TkDJTP",
         "grid_item_MjHEAz",
         "grid_item_4MC3DY",
+        "grid_item_E6dqrC",
         "grid_item_CPqEzt",
         "grid_item_aYBG3W",
         "grid_item_wqQfHG",
