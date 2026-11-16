@@ -57,20 +57,20 @@
             "url": "https://www.mltoys.com/products/775-heatsink"
           }
         },
-        "grid_item_Crar7Q": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Dual775motorFirstGearDelete.jpg",
-            "title": "Phoenix First Gear Delete & Dual 775 Motor Mounting Plates",
-            "url": "https://www.mltoys.com/products/phoenix-first-gear-delete-dual-775-motor-mounting-plates"
-          }
-        },
         "grid_item_MzCA4V": {
           "type": "grid_item",
           "settings": {
             "image": "shopify://shop_images/triple_delete_phoenix.jpg",
             "title": "Phoenix & 7R First Gear Delete & Triple 775 Motor Mounting Plates",
             "url": "shopify://products/phoenixfirst-gear-delete-triple-775-motor-mounting-plates"
+          }
+        },
+        "grid_item_Crar7Q": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Dual775motorFirstGearDelete.jpg",
+            "title": "Phoenix First Gear Delete & Dual 775 Motor Mounting Plates",
+            "url": "https://www.mltoys.com/products/phoenix-first-gear-delete-dual-775-motor-mounting-plates"
           }
         },
         "grid_item_TkDJTP": {
@@ -87,6 +87,14 @@
             "image": "shopify://shop_images/First_Gear_Delete_Kid_Trax.jpg",
             "title": "Kid Trax First Gear Delete & Dual 775 Motor Mounting Plates",
             "url": "https://www.mltoys.com/products/kid-trax-first-gear-delete-dual-775-motor-mounting-plates"
+          }
+        },
+        "grid_item_P78egC": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Phoenix_2nd-1.jpg",
+            "title": "Phoenix Steel Second Gear",
+            "url": "shopify://products/phoenix-steel-second-gear-w-2-steel-ball-bearings"
           }
         },
         "grid_item_4MC3DY": {
@@ -189,10 +197,11 @@
       "block_order": [
         "grid_item_hfwMmK",
         "grid_item_jWCThX",
-        "grid_item_Crar7Q",
         "grid_item_MzCA4V",
+        "grid_item_Crar7Q",
         "grid_item_TkDJTP",
         "grid_item_MjHEAz",
+        "grid_item_P78egC",
         "grid_item_4MC3DY",
         "grid_item_E6dqrC",
         "grid_item_CPqEzt",
