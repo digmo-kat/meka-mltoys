@@ -85,8 +85,8 @@
           "type": "grid_item",
           "settings": {
             "image": "shopify://shop_images/solenoid.png",
-            "title": "Heavy Duty Solenoid",
-            "url": "https://www.mltoys.com/products/heavy-duty-solenoid"
+            "title": "TE Racing Solenoid",
+            "url": "shopify://products/te-solenoid"
           }
         },
         "grid_item_CPqEzt": {
