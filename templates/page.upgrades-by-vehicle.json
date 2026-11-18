@@ -72,6 +72,14 @@
             "url": "shopify://collections/amazon-rideons"
           }
         },
+        "grid_item_zYpPaT": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/direct_terrain.png",
+            "title": "Anpabo 7R10 Direct Terrain Buggy 24v 4wd",
+            "url": "shopify://collections/anpabo-7r1000-direct-terrain-4wd-24v-buggy"
+          }
+        },
         "grid_item_aiGeFW": {
           "type": "grid_item",
           "settings": {
@@ -399,38 +407,6 @@
             "title": "Garvee 24v Toyota Land Cruiser",
             "url": "shopify://collections/garvee-24v-toyota-land-cruiser"
           }
-        },
-        "grid_item_egNE6n": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Contact_Us-3.png",
-            "title": "Huffy 12v Ford F150",
-            "url": "https://www.mltoys.com/collections/huffy-12v-f-150"
-          }
-        },
-        "grid_item_YcEnLK": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Contact_Us.png",
-            "title": "Huffy C8 Corvette",
-            "url": "https://www.mltoys.com/collections/huffy-c8-corvette"
-          }
-        },
-        "grid_item_13": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Contact_Us-1.png",
-            "title": "Huffy Land Rover",
-            "url": "/collections/huffy-land-rover"
-          }
-        },
-        "grid_item_hJC8tW": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Huffy_McClaren_F1.jpg",
-            "title": "Huffy McClaren",
-            "url": "shopify://collections/huffy-mcclaren-upgraded-faster-parts"
-          }
         }
       },
       "block_order": [
@@ -438,6 +414,7 @@
         "grid_item_1",
         "grid_item_3Y63P3",
         "grid_item_pqTrLX",
+        "grid_item_zYpPaT",
         "grid_item_aiGeFW",
         "grid_item_TUT9tQ",
         "grid_item_RHhUcj",
@@ -478,11 +455,7 @@
         "grid_item_RFjFBm",
         "grid_item_MXtBim",
         "grid_item_LgDi4F",
-        "grid_item_nFnGHA",
-        "grid_item_egNE6n",
-        "grid_item_YcEnLK",
-        "grid_item_13",
-        "grid_item_hJC8tW"
+        "grid_item_nFnGHA"
       ],
       "name": "Grid view",
       "settings": {
@@ -500,6 +473,38 @@
     "featured_grid_6MymWm": {
       "type": "featured-grid",
       "blocks": {
+        "grid_item_AcjrCV": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Contact_Us-3.png",
+            "title": "Huffy 12v Ford F150",
+            "url": "https://www.mltoys.com/collections/huffy-12v-f-150"
+          }
+        },
+        "grid_item_hQYa7h": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Contact_Us.png",
+            "title": "Huffy C8 Corvette",
+            "url": "https://www.mltoys.com/collections/huffy-c8-corvette"
+          }
+        },
+        "grid_item_HkRMP9": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Contact_Us-1.png",
+            "title": "Huffy Land Rover",
+            "url": "/collections/huffy-land-rover"
+          }
+        },
+        "grid_item_UmQVDR": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Huffy_McClaren_F1.jpg",
+            "title": "Huffy McClaren",
+            "url": "shopify://collections/huffy-mcclaren-upgraded-faster-parts"
+          }
+        },
         "grid_item_GbJBnn": {
           "type": "grid_item",
           "settings": {
@@ -883,6 +888,10 @@
         }
       },
       "block_order": [
+        "grid_item_AcjrCV",
+        "grid_item_hQYa7h",
+        "grid_item_HkRMP9",
+        "grid_item_UmQVDR",
         "grid_item_GbJBnn",
         "grid_item_kVNfcB",
         "grid_item_gMMfBg",
