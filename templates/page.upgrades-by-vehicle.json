@@ -144,6 +144,14 @@
             "url": "shopify://collections/anpabo-trailstorm-x4-24v-4wd-2-seater-utv"
           }
         },
+        "grid_item_pKmJJU": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/24v_dump_utility.png",
+            "title": "Anpabo Utility Dump Truck 24v 4WD UTV",
+            "url": "shopify://collections/anpabo-24v-utility-ride-on-dump-truck"
+          }
+        },
         "grid_item_43KgHN": {
           "type": "grid_item",
           "settings": {
@@ -439,6 +447,7 @@
         "grid_item_QCP4rj",
         "grid_item_U8pf8C",
         "grid_item_zewTEb",
+        "grid_item_pKmJJU",
         "grid_item_43KgHN",
         "grid_item_XqADci",
         "grid_item_Ci9xtx",
