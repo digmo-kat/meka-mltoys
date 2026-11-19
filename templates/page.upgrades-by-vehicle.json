@@ -152,6 +152,38 @@
             "url": "shopify://collections/anpabo-24v-utility-ride-on-dump-truck"
           }
         },
+        "grid_item_eKUe9z": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/dump_truck.png",
+            "title": "Arbeli Dump Truck 24v 4wd",
+            "url": "shopify://collections/arbeli-24v-ride-on-dump-truck"
+          }
+        },
+        "grid_item_eiAaJi": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/2_seater.png",
+            "title": "Arbeli 4wd 2-Seater-Ride-on 24v",
+            "url": "shopify://collections/arbeli-4wd-2-seater-ride-on"
+          }
+        },
+        "grid_item_wE9Agr": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/arbeli_golf_cart.png",
+            "title": "Arbeli Golf Cart 24v 4WD",
+            "url": "shopify://collections/arbeli-golf-cart-24v-4wd"
+          }
+        },
+        "grid_item_jf6MkW": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/xxxl.png",
+            "title": "Arbeli XXXL 4wd 2 Seater 24v",
+            "url": "shopify://collections/arbeli-xxxl"
+          }
+        },
         "grid_item_43KgHN": {
           "type": "grid_item",
           "settings": {
@@ -399,38 +431,6 @@
             "title": "Garvee 24v Chevy Silverado",
             "url": "shopify://collections/garvee-24v-chevy-silverado"
           }
-        },
-        "grid_item_RFjFBm": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Garvee_Dump_Truck.png",
-            "title": "Garvee 24v Dump Truck 6x6",
-            "url": "shopify://collections/garvee-24v-dump-truck"
-          }
-        },
-        "grid_item_MXtBim": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Garvee_Jeep.png",
-            "title": "Garvee 24v Jeep",
-            "url": "shopify://collections/garvee-24v-jeep"
-          }
-        },
-        "grid_item_LgDi4F": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Garvee_Challenger.png",
-            "title": "Garvee 24v Speed UTV",
-            "url": "shopify://collections/big-toys-country-24v-challenger-xl-copy"
-          }
-        },
-        "grid_item_nFnGHA": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Garvee_Toyota_Landcruiser.png",
-            "title": "Garvee 24v Toyota Land Cruiser",
-            "url": "shopify://collections/garvee-24v-toyota-land-cruiser"
-          }
         }
       },
       "block_order": [
@@ -448,6 +448,10 @@
         "grid_item_U8pf8C",
         "grid_item_zewTEb",
         "grid_item_pKmJJU",
+        "grid_item_eKUe9z",
+        "grid_item_eiAaJi",
+        "grid_item_wE9Agr",
+        "grid_item_jf6MkW",
         "grid_item_43KgHN",
         "grid_item_XqADci",
         "grid_item_Ci9xtx",
@@ -478,11 +482,7 @@
         "grid_item_8zQGgK",
         "grid_item_Rd7Uwq",
         "grid_item_ch4rB3",
-        "grid_item_B68eQM",
-        "grid_item_RFjFBm",
-        "grid_item_MXtBim",
-        "grid_item_LgDi4F",
-        "grid_item_nFnGHA"
+        "grid_item_B68eQM"
       ],
       "name": "Grid view",
       "settings": {
@@ -500,6 +500,38 @@
     "featured_grid_6MymWm": {
       "type": "featured-grid",
       "blocks": {
+        "grid_item_nCcVAP": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Dump_Truck.png",
+            "title": "Garvee 24v Dump Truck 6x6",
+            "url": "shopify://collections/garvee-24v-dump-truck"
+          }
+        },
+        "grid_item_jctcNY": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Jeep.png",
+            "title": "Garvee 24v Jeep",
+            "url": "shopify://collections/garvee-24v-jeep"
+          }
+        },
+        "grid_item_43GqaM": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Challenger.png",
+            "title": "Garvee 24v Speed UTV",
+            "url": "shopify://collections/big-toys-country-24v-challenger-xl-copy"
+          }
+        },
+        "grid_item_jjgQwC": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Toyota_Landcruiser.png",
+            "title": "Garvee 24v Toyota Land Cruiser",
+            "url": "shopify://collections/garvee-24v-toyota-land-cruiser"
+          }
+        },
         "grid_item_AcjrCV": {
           "type": "grid_item",
           "settings": {
@@ -915,6 +947,10 @@
         }
       },
       "block_order": [
+        "grid_item_nCcVAP",
+        "grid_item_jctcNY",
+        "grid_item_43GqaM",
+        "grid_item_jjgQwC",
         "grid_item_AcjrCV",
         "grid_item_hQYa7h",
         "grid_item_HkRMP9",
