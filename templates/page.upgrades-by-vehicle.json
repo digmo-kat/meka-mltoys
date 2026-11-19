@@ -96,6 +96,14 @@
             "url": "shopify://collections/anpabo-cat-dump-truck-797f-24v"
           }
         },
+        "grid_item_LceNpz": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/24v_cat_dump_truck.png",
+            "title": "Anpabo Caterpillar Dump Truck 24v 4WD",
+            "url": "shopify://collections/anpabo-cat-dump-truck24v"
+          }
+        },
         "grid_item_RHhUcj": {
           "type": "grid_item",
           "settings": {
@@ -417,6 +425,7 @@
         "grid_item_zYpPaT",
         "grid_item_aiGeFW",
         "grid_item_TUT9tQ",
+        "grid_item_LceNpz",
         "grid_item_RHhUcj",
         "grid_item_QCP4rj",
         "grid_item_U8pf8C",
