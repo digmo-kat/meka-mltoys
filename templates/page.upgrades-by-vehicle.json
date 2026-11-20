@@ -423,6 +423,14 @@
             "title": "Garvee 24v Chevy Silverado",
             "url": "shopify://collections/garvee-24v-chevy-silverado"
           }
+        },
+        "grid_item_xXNgrR": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/Garvee_Dump_Truck.png",
+            "title": "Garvee 24v Dump Truck 6x6",
+            "url": "shopify://collections/garvee-24v-dump-truck"
+          }
         }
       },
       "block_order": [
@@ -473,7 +481,8 @@
         "grid_item_8zQGgK",
         "grid_item_Rd7Uwq",
         "grid_item_ch4rB3",
-        "grid_item_B68eQM"
+        "grid_item_B68eQM",
+        "grid_item_xXNgrR"
       ],
       "name": "Grid view",
       "settings": {
@@ -491,14 +500,6 @@
     "featured_grid_6MymWm": {
       "type": "featured-grid",
       "blocks": {
-        "grid_item_nCcVAP": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/Garvee_Dump_Truck.png",
-            "title": "Garvee 24v Dump Truck 6x6",
-            "url": "shopify://collections/garvee-24v-dump-truck"
-          }
-        },
         "grid_item_jctcNY": {
           "type": "grid_item",
           "settings": {
@@ -553,6 +554,62 @@
             "image": "shopify://shop_images/Huffy_McClaren_F1.jpg",
             "title": "Huffy McClaren",
             "url": "shopify://collections/huffy-mcclaren-upgraded-faster-parts"
+          }
+        },
+        "grid_item_AqX6Ab": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/joyracer_atv.png",
+            "title": "Joyracer 24V 4wd ATV 4 Wheeler",
+            "url": "shopify://collections/joyracer-24v-4wd-atv-4-wheeler"
+          }
+        },
+        "grid_item_KLmzJY": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/joyracer_chevy_cheyenne.png",
+            "title": "Joyracer 24V 4wd Chevrolet Cheyenne Truck",
+            "url": "shopify://collections/joyracer-24v-4wd-chevrolet-cheyenne-truck"
+          }
+        },
+        "grid_item_jDqWDJ": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/joyracer_raptor.png",
+            "title": "Joyracer 24V 4wd Ford Raptor T1 XL",
+            "url": "shopify://collections/joyracer-24v-4wd-ford-raptor-t1-xl"
+          }
+        },
+        "grid_item_a6QaWG": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/joyracer_gmc_canyon.png",
+            "title": "Joyracer 24V 4wd GMC Canyon",
+            "url": "shopify://collections/joyracer-24v-4wd-jeep-gmc-canyon"
+          }
+        },
+        "grid_item_yq6gaF": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/joyracer_wrangler.png",
+            "title": "Joyracer 24v 4wd Jeep Wrangler JK",
+            "url": "shopify://collections/anpabo-joyracer-wrangler-jk"
+          }
+        },
+        "grid_item_qhUdQX": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/joyracer_wrangler_JL.png",
+            "title": "Joyracer 24V 4wd Jeep Wrangler JL",
+            "url": "shopify://collections/joyracer-24v-4wd-jeep-wrangler-jl"
+          }
+        },
+        "grid_item_mbcT7n": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/joyracer_xl.png",
+            "title": "Joyracer 24V 4wd XL UTV",
+            "url": "shopify://collections/joyracer-24v-4wd-xl-utv"
           }
         },
         "grid_item_GbJBnn": {
@@ -938,7 +995,6 @@
         }
       },
       "block_order": [
-        "grid_item_nCcVAP",
         "grid_item_jctcNY",
         "grid_item_43GqaM",
         "grid_item_jjgQwC",
@@ -946,6 +1002,13 @@
         "grid_item_hQYa7h",
         "grid_item_HkRMP9",
         "grid_item_UmQVDR",
+        "grid_item_AqX6Ab",
+        "grid_item_KLmzJY",
+        "grid_item_jDqWDJ",
+        "grid_item_a6QaWG",
+        "grid_item_yq6gaF",
+        "grid_item_qhUdQX",
+        "grid_item_mbcT7n",
         "grid_item_GbJBnn",
         "grid_item_kVNfcB",
         "grid_item_gMMfBg",
