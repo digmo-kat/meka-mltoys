@@ -64,14 +64,6 @@
             "url": "https://www.mltoys.com/collections/adventure-force-24v-thunder-tank"
           }
         },
-        "grid_item_pqTrLX": {
-          "type": "grid_item",
-          "settings": {
-            "image": "shopify://shop_images/amazon-icon-logo-png_seeklogo-405254.png",
-            "title": "Amazon Brands",
-            "url": "shopify://collections/amazon-rideons"
-          }
-        },
         "grid_item_zYpPaT": {
           "type": "grid_item",
           "settings": {
@@ -437,7 +429,6 @@
         "grid_item_baetGY",
         "grid_item_1",
         "grid_item_3Y63P3",
-        "grid_item_pqTrLX",
         "grid_item_zYpPaT",
         "grid_item_aiGeFW",
         "grid_item_TUT9tQ",
