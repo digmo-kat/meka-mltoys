@@ -16,7 +16,7 @@
           "type": "image_slide",
           "name": "Black Friday",
           "settings": {
-            "image": "shopify://shop_images/MLTOYS_Slider_Black_Friday_Desktop.jpg",
+            "image": "shopify://shop_images/MLTOYS_Slider_Black_Friday_Desktop_1.jpg",
             "image_mobile": "shopify://shop_images/MLTOYS_Slider_Black_Friday_Mobile.jpg",
             "image_overlay_opacity": 0,
             "heading": "Our biggest sale of the year! Ends Monday.",
