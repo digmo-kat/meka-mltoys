@@ -995,6 +995,14 @@
             "url": "shopify://collections/sopbost-24v-rcan-am-maverick-x3-utv"
           }
         },
+        "grid_item_HgRr9W": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/utv.png",
+            "title": "Sopbost 24V Ride On UTV with Roof",
+            "url": "shopify://collections/sopbost-24v-ride-on-utv-with-roof"
+          }
+        },
         "grid_item_tbwRUM": {
           "type": "grid_item",
           "settings": {
@@ -1096,6 +1104,7 @@
         "grid_item_zpPGFw",
         "grid_item_zMGGRh",
         "grid_item_xkPyEJ",
+        "grid_item_HgRr9W",
         "grid_item_tbwRUM",
         "grid_item_GHaeWX",
         "grid_item_YFL3tK",
