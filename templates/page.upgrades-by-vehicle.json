@@ -932,12 +932,27 @@
             "url": "shopify://collections/ryder-mercedes-benz-g63"
           }
         },
+        "grid_item_yL8yzd": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/ryder_monster_max.png",
+            "title": "Ryder Toys Monster Max",
+            "url": "shopify://collections/ryder-monster-max"
+          }
+        },
         "grid_item_3Tyb6D": {
           "type": "grid_item",
           "settings": {
             "image": "shopify://shop_images/ryder_trailflex_jeep.jpg",
             "title": "Ryder Toys Trailflex Jeep",
             "url": "shopify://collections/ryder-trailflex-jeep"
+          }
+        },
+        "grid_item_3Ny37g": {
+          "type": "grid_item",
+          "settings": {
+            "title": "",
+            "url": ""
           }
         },
         "grid_item_3BxbzF": {
@@ -1049,7 +1064,9 @@
         "grid_item_LXwTRK",
         "grid_item_tb8HmJ",
         "grid_item_qKfGLY",
+        "grid_item_yL8yzd",
         "grid_item_3Tyb6D",
+        "grid_item_3Ny37g",
         "grid_item_3BxbzF",
         "grid_item_YEFLPw",
         "grid_item_tbwRUM",
