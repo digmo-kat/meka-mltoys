@@ -979,6 +979,14 @@
             "url": "shopify://collections/sopbost-24v-chevy-silverado"
           }
         },
+        "grid_item_zMGGRh": {
+          "type": "grid_item",
+          "settings": {
+            "image": "shopify://shop_images/wrangler.png",
+            "title": "Sopbost 24V 4wd Jeep Wrangler",
+            "url": "shopify://collections/sopbost-24v-4wd-jeep-wrangler"
+          }
+        },
         "grid_item_tbwRUM": {
           "type": "grid_item",
           "settings": {
@@ -1078,6 +1086,7 @@
         "grid_item_3BxbzF",
         "grid_item_YEFLPw",
         "grid_item_zpPGFw",
+        "grid_item_zMGGRh",
         "grid_item_tbwRUM",
         "grid_item_GHaeWX",
         "grid_item_YFL3tK",
